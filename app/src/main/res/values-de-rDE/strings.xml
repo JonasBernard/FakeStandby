@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_message">Zum Starten klicken</string>
+    <string name="accessibility_service_description">Dieser Service wird benötigt um die Funktionen der App bereitszustellen.
+        FakeStandby ist von diesem Service abhänging und benötigt ihn, um mit jeder anderen App zusammen zu funktionieren. Die App basiert auf der Android Barrierefreiheits-API,
+        sie wird also nicht funktionieren wenn diese Option deaktiviert bleibt. Diese API wird nur dafür benutzt, die Funktionen der App bereitzustellen und nicht dafür Daten
+        zu speichern, sammeln oder zu versenden, die abgerufen werden können.
+    </string>
+    <string name="accessibility_error_not_running_title">Die Barrierefreheits-Funktion ist für diese App nicht aktiviert</string>
+    <string name="accessibility_error_not_running_message">Der Service für Barrierefreiheit ist in den Einstellungen für FakeStandby daktiviert.
+        Die App funktioniert nur, wenn diese Einstellung aktiviert ist. Um sie zu aktivieren, öffne die Einstellungen, scrolle nach unten bis zu "\FakeStandby Service\" und erlaube
+        die Benutzung der Barrierefreiheit.
+    </string>
+    <string name="accessibility_error_settings_label">Einstellungen öffnen</string>
+    <string name="accessibility_error_no_overlay_permission_title">Der App fehlt eine Berechtigung</string>
+    <string name="accessibility_error_no_overlay_permission_message">Der App wurde es verweigert, Overlays anzuzeigen.
+        Um die App funktionsfähig zu machen ist es unerlässlich diese Berechtigung zu erteilen, andernfalls wird diese Aktion jedes mal erneut abgebrochen.
+        Die Berechtigung macht es der App nur möglich, die Inhalte anderer Apps mit eigenen Inhalten zu überdecken und kann nicht für andere
+        Zwecke genutzt werden. Um die Berechtigung zu erteilen, aktiviere die Option in der nachfolgenden Ansicht.
+    </string>
+</resources>
