@@ -6,27 +6,20 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
+import andoird.jonas.fakestandby.service.AccessibilityOverlayService;
+
 public class OverlayView extends View {
-    private long downtime = -1L;
-    private long timeToCancel = -1L;
     private float yBorder = 0;
 
     private boolean hiding = false;
     private float hidingVelocity = 40;
 
-    private boolean bouncing = false;
-    private float maxY = 0;
-    private int direction = 1;
+    private boolean falling = false;
 
-    private OverlayCancelListener overlayCancelListener = null;
+    private OnHideFinishedListener onHideFinishedListener = null;
 
-    private final int MAXRADUIS = 100; //px
-    private final long CANCELTHRESHOLD = 1000; //milliseconds
-    private final int BOUNCESTOP = 10; //px
-
-    public OverlayView(Context context, OverlayCancelListener overlayCancelListener) {
+    public OverlayView(Context context) {
         super(context);
-        this.overlayCancelListener = overlayCancelListener;
     }
 
     @Override
@@ -34,36 +27,32 @@ public class OverlayView extends View {
         super.onDraw(canvas);
         int width = getWidth();
         int height = getHeight();
-        //canvas.drawColor(Color.BLACK);
 
         canvas.drawRect(0,0, (float) width, height-yBorder, new Paint());
 
         if (hiding) {
+            if (yBorder > height) {
+                hiding = false;
+                yBorder = 0;
+                onHideFinishedListener.onHideFinished();
+                return;
+            }
+
             yBorder += hidingVelocity;
             invalidate();
             return;
         }
 
-        Paint white = new Paint();
-        white.setColor(Color.WHITE);
+        if (falling) {
+            if (yBorder < 0) {
+                AccessibilityOverlayService.state = Constants.Overlay.State.VISIBLE;
 
-        if (bouncing) {
-            if (maxY < BOUNCESTOP) {
-                bouncing = false;
+                falling = false;
                 yBorder = 0;
                 invalidate();
                 return;
-            }
-
-            if (yBorder > maxY) {
-                direction = -1;
-                yBorder = maxY-2;
-            }else if (yBorder < 0) {
-                direction = 1;
-                yBorder = 2;
-                maxY /= 2;
             }else {
-                yBorder += direction*40;
+                yBorder -= 40;
             }
             invalidate();
             return;
@@ -75,42 +64,33 @@ public class OverlayView extends View {
         return super.performClick();
     }
 
-    public long onCancelingStateChanged(long downtime) {
-        this.downtime = downtime;
-        if (downtime < 0) {
-            this.timeToCancel = -1L;
-        } else {
-            this.timeToCancel = downtime + CANCELTHRESHOLD;
-        }
-
-        invalidate();
-        return timeToCancel;
-    }
-
-    public void SetYBorder(float Y) {
+    public void setyBorder(float Y) {
         this.yBorder = Y;
         this.hiding = false;
-        this.bouncing = false;
+        this.falling = false;
         invalidate();
     }
 
     public void setHiding(boolean hiding) {
-        this.bouncing = false;
+        this.falling = false;
 
         this.hiding = hiding;
         invalidate();
     }
 
-    public void setBouncing(boolean bouncing, int height) {
+    public void setFalling(boolean falling) {
         this.hiding = false;
 
-        this.bouncing = bouncing;
-        this.maxY = height;
+        this.falling = falling;
         invalidate();
     }
 
     public void setHidingVelocity(float velocity) {
         this.hidingVelocity = velocity;
+    }
+
+    public void setOnHideFinishedListener(OnHideFinishedListener onHideFinishedListener) {
+        this.onHideFinishedListener = onHideFinishedListener;
     }
 
 }

@@ -10,31 +10,23 @@ import android.view.View.OnTouchListener;
 public class OnSwipeListener implements OnTouchListener {
 
     private final GestureDetector gestureDetector;
-    private final OnTouchListener parent, success, fail;
+    private final OnTouchListener parent;
 
-    public OnSwipeListener (Context context, int height, OnTouchListener parent, OnTouchListener success, OnTouchListener fail){
+    public OnSwipeListener (Context context, int height, OnTouchListener parent){
         gestureDetector = new GestureDetector(context, new GestureListener(height / 2));
         this.parent = parent;
-        this.success = success;
-        this.fail = fail;
     }
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         this.parent.onTouch(v, event);
-        boolean result = gestureDetector.onTouchEvent(event);
-        if (result) {
-            this.success.onTouch(v, event);
-        }else {
-            this.fail.onTouch(v, event);
-        }
-        return result;
+        return gestureDetector.onTouchEvent(event);
     }
 
     private final class GestureListener extends SimpleOnGestureListener {
 
         private final int SWIPE_THRESHOLD;
-        private final int SWIPE_VELOCITY_THRESHOLD = 500;
+        private final int SWIPE_VELOCITY_THRESHOLD = 1000;
 
         public GestureListener(int SWIPE_THRESHOLD) {
             this.SWIPE_THRESHOLD = SWIPE_THRESHOLD;
@@ -50,24 +42,12 @@ public class OnSwipeListener implements OnTouchListener {
             boolean result = false;
             try {
                 float diffY = e2.getY() - e1.getY();
-                float diffX = e2.getX() - e1.getX();
-                if (Math.abs(diffX) > Math.abs(diffY)) {
-                    if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
-                        if (diffX > 0) {
-                            onSwipeRight();
-                        } else {
-                            onSwipeLeft();
-                        }
-                        result = true;
-                    }
-                }
-                else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
-                    if (diffY > 0) {
-                        onSwipeBottom();
-                    } else {
-                        onSwipeTop(Math.abs(velocityY));
-                    }
+                if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD && velocityY < 0) {
+                    onSwipeTop(Math.abs(velocityY));
                     result = true;
+                } else {
+                    onSwipeFail();
+                    result = false;
                 }
             } catch (Exception exception) {
                 exception.printStackTrace();
@@ -76,11 +56,7 @@ public class OnSwipeListener implements OnTouchListener {
         }
     }
 
-    public void onSwipeRight() {}
-
-    public void onSwipeLeft() {}
+    public void onSwipeFail() {}
 
     public void onSwipeTop(float velocity) {}
-
-    public void onSwipeBottom() {}
 }
