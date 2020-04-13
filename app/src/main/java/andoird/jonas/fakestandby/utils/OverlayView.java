@@ -10,12 +10,19 @@ public class OverlayView extends View {
     private long downtime = -1L;
     private long timeToCancel = -1L;
     private float yBorder = 0;
+
     private boolean hiding = false;
+    private float hidingVelocity = 40;
+
+    private boolean bouncing = false;
+    private float maxY = 0;
+    private int direction = 1;
 
     private OverlayCancelListener overlayCancelListener = null;
 
     private final int MAXRADUIS = 100; //px
     private final long CANCELTHRESHOLD = 1000; //milliseconds
+    private final int BOUNCESTOP = 10; //px
 
     public OverlayView(Context context, OverlayCancelListener overlayCancelListener) {
         super(context);
@@ -32,27 +39,34 @@ public class OverlayView extends View {
         canvas.drawRect(0,0, (float) width, height-yBorder, new Paint());
 
         if (hiding) {
-            yBorder += 10;
+            yBorder += hidingVelocity;
             invalidate();
             return;
         }
 
-        if (this.timeToCancel > 0L && this.downtime > 0L) {
-            long elapsed = System.currentTimeMillis() - downtime;
-            double q = (double)(elapsed*1000) / (double)(CANCELTHRESHOLD*1000);
+        Paint white = new Paint();
+        white.setColor(Color.WHITE);
 
-            if (q > 1) {
-                this.downtime = -1L;
-                this.timeToCancel = -1L;
-                overlayCancelListener.onCancel();
+        if (bouncing) {
+            if (maxY < BOUNCESTOP) {
+                bouncing = false;
+                yBorder = 0;
+                invalidate();
                 return;
             }
 
-            Paint white = new Paint();
-            white.setColor(Color.WHITE);
-
-            canvas.drawCircle(width / 2, height / 2, (float) (MAXRADUIS * q), white);
+            if (yBorder > maxY) {
+                direction = -1;
+                yBorder = maxY-2;
+            }else if (yBorder < 0) {
+                direction = 1;
+                yBorder = 2;
+                maxY /= 2;
+            }else {
+                yBorder += direction*40;
+            }
             invalidate();
+            return;
         }
     }
 
@@ -76,12 +90,27 @@ public class OverlayView extends View {
     public void SetYBorder(float Y) {
         this.yBorder = Y;
         this.hiding = false;
+        this.bouncing = false;
         invalidate();
     }
 
     public void setHiding(boolean hiding) {
+        this.bouncing = false;
+
         this.hiding = hiding;
         invalidate();
+    }
+
+    public void setBouncing(boolean bouncing, int height) {
+        this.hiding = false;
+
+        this.bouncing = bouncing;
+        this.maxY = height;
+        invalidate();
+    }
+
+    public void setHidingVelocity(float velocity) {
+        this.hidingVelocity = velocity;
     }
 
 }

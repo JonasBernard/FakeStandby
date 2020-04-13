@@ -114,25 +114,6 @@ public class AccessibilityOverlayService extends AccessibilityService {
         layoutParams.x = 0;
         layoutParams.y = 0;
 
-        view.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    view.onCancelingStateChanged(System.currentTimeMillis());
-                    return true;
-                }else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    view.onCancelingStateChanged(-1L);
-                    return true;
-                }
-
-                if(event.getPointerCount() >= 4) {
-                    hide();
-                    return true;
-                }
-                return true;
-            }
-        });
-
         view.setOnTouchListener(new OnSwipeListener(this, view.getHeight(), new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -170,8 +151,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_UP:
+                        view.setBouncing(true, (int) Math.abs(BasePX - event.getY()) / 2);
                         BasePX = 0;
-                        view.SetYBorder(0);
                         break;
                 }
 
@@ -179,7 +160,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
             }
         }) {
             @Override
-            public void onSwipeTop() {
+            public void onSwipeTop(float velocity) {
+                view.setHidingVelocity(velocity/50);
                 hide();
             }
         });
@@ -267,7 +249,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     private void writePref(boolean value) {
-        //getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_ACTIVE_NOW, value).apply();
+        getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_ACTIVE_NOW, value).apply();
         is_active_now = value;
         Log.i(getClass().getName(), "Successfully wrote preference to " + (value ? "true":"false"));
     }

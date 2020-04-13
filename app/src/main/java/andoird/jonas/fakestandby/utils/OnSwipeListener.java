@@ -65,7 +65,7 @@ public class OnSwipeListener implements OnTouchListener {
                     if (diffY > 0) {
                         onSwipeBottom();
                     } else {
-                        onSwipeTop();
+                        onSwipeTop(Math.abs(velocityY));
                     }
                     result = true;
                 }
@@ -80,7 +80,7 @@ public class OnSwipeListener implements OnTouchListener {
 
     public void onSwipeLeft() {}
 
-    public void onSwipeTop() {}
+    public void onSwipeTop(float velocity) {}
 
     public void onSwipeBottom() {}
 }
