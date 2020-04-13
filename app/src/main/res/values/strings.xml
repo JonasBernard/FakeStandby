@@ -2,21 +2,10 @@
     <string name="app_name" translatable="false">FakeStandby</string>
     <string name="notification_message">Click to run</string>
     <string name="accessibility_service_label" translatable="false">FakeStandby Service</string>
-    <string name="accessibility_service_description">This Service is a service that is required to provide the functionality of the app.
-        FakeStandby requires accessibility service to make it possible to run on every screen and in every app. The app is based on the accessibility service API
-        so it wont work if this option is not enabled. This API will only used to provide the Overlay and will not save, collect or share any of the data that could be
-        accessed by the service.
-    </string>
+    <string name="accessibility_service_description">FakeStandby requires this service to make it possible to run on every screen and in every app. This feature will only used to provide the functionality of the app and will not access, save, collect or share any of the data.</string>
     <string name="accessibility_error_not_running_title">The Accessibility Service is not enabled</string>
-    <string name="accessibility_error_not_running_message">The Accessibility Service for FakeStandby is not enabled in your devices accessibility settings.
-        To run the app that service has to be enabled. Simply open the accessibility settings, scroll down to "FakeStandby" and enable it.
-    </string>
+    <string name="accessibility_error_not_running_message">The Accessibility Service for FakeStandby is not enabled in the accessibility settings of your device. To run the app that service has to be enabled. Simply open the accessibility settings, scroll down to FakeStandby and enable it. On some devices you may look for the option under \"in\"</string>
     <string name="accessibility_error_settings_label">Open Settings</string>
-    <string name="accessibility_error_no_overlay_permission_title">The app has no permission to draw overlays</string>
-    <string name="accessibility_error_no_overlay_permission_message">The app is not permitted to draw overlays over other apps.
-        In order to to run the app you absolutely need to grant the overlay permission for FakeStandby, otherwise the action will be cancelled every time.
-        The permission only makes it possible to draw content over the content of other apps and cannot be used for anything else.
-        To grant the permission enable the switch on the following screen.
-    </string>
-
+    <string name="accessibility_error_no_overlay_permission_message">The app is not permitted to display overlays over other apps. In order to to run the app you need to grant the \"Display over other apps\" permission for FakeStandby. The permission makes it possible for the app to display content over the content of other apps. To grant the permission enable the switch on the following screen.</string>
+    <string name="accessibility_error_no_overlay_permission_title">Permission requiered</string>
 </resources>
