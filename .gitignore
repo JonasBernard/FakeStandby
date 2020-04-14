@@ -11,3 +11,5 @@
 /build
 /captures
 .externalNativeBuild
+
+app/src/main/java/andoird/jonas/fakestandby/utils/Secrets.java
