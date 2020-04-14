@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby;
+package android.jonas.fakestandby;
 
 import org.junit.Test;
 

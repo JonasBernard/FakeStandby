@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby.service;
+package android.jonas.fakestandby.service;
 
 import android.accessibilityservice.AccessibilityService;
 import android.animation.Animator;
@@ -8,18 +8,17 @@ import android.graphics.PixelFormat;
 import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
-import andoird.jonas.fakestandby.R;
-import andoird.jonas.fakestandby.compatibility.OverlayNotification;
-import andoird.jonas.fakestandby.utils.Constants;
-import andoird.jonas.fakestandby.utils.OnHideFinishedListener;
-import andoird.jonas.fakestandby.utils.OnSwipeListener;
-import andoird.jonas.fakestandby.utils.OverlayView;
+import android.jonas.fakestandby.R;
+import android.jonas.fakestandby.compatibility.OverlayNotification;
+import android.jonas.fakestandby.utils.Constants;
+import android.jonas.fakestandby.utils.OnHideFinishedListener;
+import android.jonas.fakestandby.utils.OnSwipeListener;
+import android.jonas.fakestandby.utils.OverlayView;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 

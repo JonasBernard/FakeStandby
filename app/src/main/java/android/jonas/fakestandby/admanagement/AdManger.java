@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby.admanagement;
+package android.jonas.fakestandby.admanagement;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-import andoird.jonas.fakestandby.service.AccessibilityOverlayService;
-import andoird.jonas.fakestandby.utils.Constants;
-import andoird.jonas.fakestandby.utils.Secrets;
+import android.jonas.fakestandby.service.AccessibilityOverlayService;
+import android.jonas.fakestandby.utils.Constants;
+import android.jonas.fakestandby.utils.Secrets;
 
 public class AdManger {
 

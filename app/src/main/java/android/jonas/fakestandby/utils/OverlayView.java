@@ -1,12 +1,11 @@
-package andoird.jonas.fakestandby.utils;
+package android.jonas.fakestandby.utils;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
-import andoird.jonas.fakestandby.service.AccessibilityOverlayService;
+import android.jonas.fakestandby.service.AccessibilityOverlayService;
 
 public class OverlayView extends View {
     private float yBorder = 0;

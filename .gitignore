@@ -12,4 +12,4 @@
 /captures
 .externalNativeBuild
 
-app/src/main/java/andoird/jonas/fakestandby/utils/Secrets.java
+app/src/main/java/android/jonas/fakestandby/utils/Secrets.java

@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby;
+package android.jonas.fakestandby;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("andoird.jonas.fakestandby", appContext.getPackageName());
+        assertEquals("android.jonas.fakestandby", appContext.getPackageName());
     }
 }

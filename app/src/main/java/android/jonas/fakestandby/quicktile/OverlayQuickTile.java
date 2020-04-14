@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby.quicktile;
+package android.jonas.fakestandby.quicktile;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.annotation.TargetApi;

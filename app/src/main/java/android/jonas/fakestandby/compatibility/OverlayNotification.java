@@ -1,4 +1,4 @@
-package andoird.jonas.fakestandby.compatibility;
+package android.jonas.fakestandby.compatibility;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import andoird.jonas.fakestandby.R;
-import andoird.jonas.fakestandby.service.AccessibilityOverlayService;
-import andoird.jonas.fakestandby.utils.Constants;
+import android.jonas.fakestandby.R;
+import android.jonas.fakestandby.service.AccessibilityOverlayService;
+import android.jonas.fakestandby.utils.Constants;
 
 public class OverlayNotification {
 
