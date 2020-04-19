@@ -5,7 +5,10 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.graphics.PixelFormat;
+import android.jonas.fakestandby.permissions.OverlayPermissionRequiredDialog;
+import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -19,6 +22,12 @@ import android.jonas.fakestandby.utils.Constants;
 import android.jonas.fakestandby.utils.OnHideFinishedListener;
 import android.jonas.fakestandby.utils.OnSwipeListener;
 import android.jonas.fakestandby.utils.OverlayView;
+
+import androidx.fragment.app.DialogFragment;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 
@@ -152,53 +161,58 @@ public class AccessibilityOverlayService extends AccessibilityService {
                     return false;
                 }
 
-                // One method to hide the overlay is to trigger 4 or more touches at the same time.
-                // This is only accepted while the overlay is just visible and doing nothing ("VISIBLE")
-                // or when it is currently dragged by the user ("DRAGGING").
-                if(event.getPointerCount() >= 4 &&
-                        (state == Constants.Overlay.State.VISIBLE ||
-                                state == Constants.Overlay.State.DRAGGING)) {
-                    Log.i(getClass().getName(), "Hiding due to 4 or more simultaneous touches");
+                if (getIsCloseOptionEnabled(getResources().getStringArray(R.array.close_options_values)[0])) {
+                    // One method to hide the overlay is to trigger 4 or more touches at the same time.
+                    // This is only accepted while the overlay is just visible and doing nothing ("VISIBLE")
+                    // or when it is currently dragged by the user ("DRAGGING").
+                    if(event.getPointerCount() >= 4 &&
+                            (state == Constants.Overlay.State.VISIBLE ||
+                                    state == Constants.Overlay.State.DRAGGING)) {
+                        Log.i(getClass().getName(), "Hiding due to 4 or more simultaneous touches");
 
-                    return hide();
+                        return hide();
+                    }
+
                 }
 
-                // Alternatively to hide the overlay the user can drag. While dragging, the overlay reveals
-                // the screen content underlying the overlay by creating a transparent area.
-                // This area starts at the bottom of the screen an rises as the user swipes up more and more.
-                // This is similar to the effect of closing the android notification drawer.
-                // The height (in px) of the transparent area is called "yBorder".
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        // When the touch screen is tapped it starts tracking the movement
-                        Log.i(getClass().getName(), "Started tracking a touch event");
+                if (getIsCloseOptionEnabled(getResources().getStringArray(R.array.close_options_values)[1])) {
+                    // Alternatively to hide the overlay the user can drag. While dragging, the overlay reveals
+                    // the screen content underlying the overlay by creating a transparent area.
+                    // This area starts at the bottom of the screen an rises as the user swipes up more and more.
+                    // This is similar to the effect of closing the android notification drawer.
+                    // The height (in px) of the transparent area is called "yBorder".
+                    switch (event.getAction()) {
+                        case MotionEvent.ACTION_DOWN:
+                            // When the touch screen is tapped it starts tracking the movement
+                            Log.i(getClass().getName(), "Started tracking a touch event");
 
-                        // Set the state to dargging
-                        state = Constants.Overlay.State.DRAGGING;
-                        // Store the position where the drag started
-                        BasePX = event.getY();
-                        // Reset the overlay to display everything in black
-                        view.setyBorder(0);
-                        break;
-                    case MotionEvent.ACTION_MOVE:
-                        // While dragging, keep revealing the screen content by setting the height of
-                        // the transparent area of the overlay to the (vertical) distance of the drag
-                        view.setyBorder(BasePX - event.getY());
-                        break;
-                    case MotionEvent.ACTION_UP:
-                        // When the touch screen is released, dragging is finished
-                        Log.i(getClass().getName(), "Touchscreen released. Stopped tracking touch event");
+                            // Set the state to dargging
+                            state = Constants.Overlay.State.DRAGGING;
+                            // Store the position where the drag started
+                            BasePX = event.getY();
+                            // Reset the overlay to display everything in black
+                            view.setyBorder(0);
+                            break;
+                        case MotionEvent.ACTION_MOVE:
+                            // While dragging, keep revealing the screen content by setting the height of
+                            // the transparent area of the overlay to the (vertical) distance of the drag
+                            view.setyBorder(BasePX - event.getY());
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            // When the touch screen is released, dragging is finished
+                            Log.i(getClass().getName(), "Touchscreen released. Stopped tracking touch event");
 
-                        // For now we cannot determine weather the user just let the overlay go or swiped upwards
-                        // so lets trigger to minimize the transparent area of the overlay again.
-                        // This is called "falling" here. When the user swiped, the should not "fall down" again,
-                        // but start hiding. This action is started (see following code) and interrupts this action.
-                        // TODO fix: starting to fall even if the user swiped upwards to hide the overlay
-                        Log.i(getClass().getName(), "Released touchscreen. Falling back down...");
-                        Log.i(getClass().getName(), "If the user swiped, the action will be just cancelled");
+                            // For now we cannot determine weather the user just let the overlay go or swiped upwards
+                            // so lets trigger to minimize the transparent area of the overlay again.
+                            // This is called "falling" here. When the user swiped, the should not "fall down" again,
+                            // but start hiding. This action is started (see following code) and interrupts this action.
+                            // TODO fix: starting to fall even if the user swiped upwards to hide the overlay
+                            Log.i(getClass().getName(), "Released touchscreen. Falling back down...");
+                            Log.i(getClass().getName(), "If the user swiped, the action will be just cancelled");
 
-                        fall();
-                        break;
+                            fall();
+                            break;
+                    }
                 }
                 return true;
             }
@@ -206,19 +220,23 @@ public class AccessibilityOverlayService extends AccessibilityService {
             @Override
             // The user just released the touch screen and a swipe (upwards) was recognized
             public void onSwipeTop(float velocity) {
-                Log.i(getClass().getName(), "User swiped upwards. Hiding overlay...");
+                if (getIsCloseOptionEnabled(getResources().getStringArray(R.array.close_options_values)[1])) {
+                    Log.i(getClass().getName(), "User swiped upwards. Hiding overlay...");
 
-                // Hide the overlay by moving it out of the way with the velocity of the swipe.
-                hide(velocity);
+                    // Hide the overlay by moving it out of the way with the velocity of the swipe.
+                    hide(velocity);
+                }
             }
 
             @Override
             // The user just released the touch screen but a swipe was not recognized
             public void onSwipeFail() {
-                Log.i(getClass().getName(), "User swiped but in wrong direction or to slow. Falling back down...");
+                if (getIsCloseOptionEnabled(getResources().getStringArray(R.array.close_options_values)[1])) {
+                    Log.i(getClass().getName(), "User swiped but in wrong direction or to slow. Falling back down...");
 
-                // Start the "falling effect" to make the whole overlay black again
-                fall();
+                    // Start the "falling effect" to make the whole overlay black again
+                    fall();
+                }
             }
         });
 
@@ -265,6 +283,19 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     private void show() {
+        // Check whether at least one option to close the overlay is selected in the prefs
+        String[] options = getResources().getStringArray(R.array.close_options_values);
+        int enabled_options = 0;
+        for (int i = 0; i < options.length; i++) {
+            if (getIsCloseOptionEnabled(options[i])) enabled_options++;
+        }
+        if (enabled_options < 1) {
+            NoCloseOptionSelectedNotification notification = new NoCloseOptionSelectedNotification(this);
+            notification.drop();
+
+            return;
+        }
+
         // Check for the right state
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
@@ -386,6 +417,20 @@ public class AccessibilityOverlayService extends AccessibilityService {
         running = value;
         getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_SERVICE_RUNNING, value).apply();
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_SERVICE_RUNNING + " to " + (value ? "true":"false"));
+    }
+
+    private boolean getIsCloseOptionEnabled(String valueName) {
+        String[] defaults = getResources().getStringArray(R.array.close_options_values);
+
+        Set<String> defaults_set = new HashSet<String>(Arrays.asList(defaults));
+        Set<String> options_set = PreferenceManager.getDefaultSharedPreferences(this).getStringSet(getString(R.string.close_option_key), defaults_set);
+
+        if (options_set.contains(valueName)) {
+            Log.i(getClass().getName(), "Close option with key " + valueName + " is enabled");
+            return true;
+        }
+        Log.i(getClass().getName(), "Close option with key " + valueName + " is disabled");
+        return false;
     }
 
     @Override

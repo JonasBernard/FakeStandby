@@ -1,12 +1,11 @@
 <resources>
-    <!-- Reply Preference -->
-    <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
+    <string-array name="close_options_values">
+        <item>tap_four</item>
+        <item>swipe</item>
     </string-array>
 
-    <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
+    <string-array name="close_options_entries">
+        <item>@string/close_option_tap_four</item>
+        <item>@string/close_option_swipe</item>
     </string-array>
 </resources>

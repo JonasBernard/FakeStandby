@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">FakeStandby</string>
     <string name="notification_message">Click to run</string>
+    <string name="notification_channel_errors_name">Errors and warnings</string>
     <string name="accessibility_service_label" translatable="false">FakeStandby Service</string>
     <string name="accessibility_service_description">FakeStandby requires this service to make it possible to run on every screen and in every app. This feature will only used to provide the functionality of the app and will not access, save, collect or share any of the data.</string>
     <string name="accessibility_error_not_running_title">The Accessibility Service is not running</string>
@@ -10,21 +11,15 @@
     <string name="accessibility_error_settings_label">Open Settings</string>
     <string name="accessibility_error_no_overlay_permission_message">The app is not permitted to display overlays over other apps. In order to to run the app you need to grant the \"Display over other apps\" permission for FakeStandby. The permission makes it possible for the app to display content over the content of other apps. To grant the permission enable the switch on the following screen.</string>
     <string name="accessibility_error_no_overlay_permission_title">Permission requiered</string>
+
     <string name="title_activity_settings">Settings</string>
-    <string name="action_settings">Settings</string>
+    <string name="settings_category_overlay_options">Overlay options</string>
+    <string name="close_option_key" translatable="false">close_options</string>
+    <string name="close_option_title">Close methods</string>
+    <string name="close_option_tap_four">Tap on the screen with 4 or more touches at the same time</string>
+    <string name="close_option_swipe">Swipe from bottom to top</string>
+    <string name="close_option_summary">Choose the methods that can be used to close the Overlay</string>
+    <string name="close_option_error_no_option_selected_title">No close method set</string>
+    <string name="close_option_error_no_option_selected_description">No close method set for the overlay</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
