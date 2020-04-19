@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/aqua</item>
         <item name="colorPrimaryDark">@color/aqua_dark</item>
+        <item name="colorSecondary">@color/aqua_light</item>
         <item name="colorAccent">@color/rose</item>
 
         <item name="android:textColor">@color/text_colors</item>
@@ -22,6 +23,7 @@
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorPrimary">@color/aqua</item>
         <item name="colorPrimaryDark">@color/aqua_dark</item>
+        <item name="colorSecondary">@color/aqua_light</item>
         <item name="colorAccent">@color/rose</item>
 
         <item name="android:textColor">@color/text_colors</item>
@@ -44,5 +46,4 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
-
 </resources>

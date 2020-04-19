@@ -22,6 +22,8 @@ import android.jonas.fakestandby.utils.OverlayView;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 
+    public static boolean running = false;
+
     // Some objects that make the rendering possible
     static WindowManager windowManager;
     static WindowManager.LayoutParams layoutParams;
@@ -68,6 +70,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
         init();
         // When the device does not support QuickTiles a custom notification is dropped
         initializeNotification();
+
+        // Set preference that the service is now running
+        writePref(true);
+        Log.i(getClass().getName(), "Accessibility service started.");
     }
 
     @Override
@@ -133,7 +139,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
         view.setOnTouchListener(new OnSwipeListener(this, view.getHeight(), new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                // When the overlay is in state "falling" or "hiding" it means,
+                // When the overlay is in state "falling", "hiding" or "showing" it means,
                 // that it is currently reacting to user touch input. When another action is started now,
                 // it could lead to two actions running simultaneously. The variable "state" then
                 // gets out of sync from the actual state of the overlay. This could stop some functions to work
@@ -141,7 +147,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 // in a status where the user cannot access his phone anymore, do not accept any
                 // touch input while in animation.
                 if (state == Constants.Overlay.State.FALLING ||
-                        state == Constants.Overlay.State.HIDING) {
+                        state == Constants.Overlay.State.HIDING||
+                        state == Constants.Overlay.State.SHOWING) {
                     return false;
                 }
 
@@ -241,7 +248,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
             state = Constants.Overlay.State.ADDED;
             Log.i(getClass().getName(), "Successfully added view");
         } else {
-            Log.e(getClass().getName(), "Overlay is not in required state. Cancel adding view");
+            Log.e(getClass().getName(), "Overlay is not in required state. Cancel adding view. Overlay is in state " + Constants.Overlay.getStateName(state));
         }
     }
 
@@ -282,10 +289,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
             }).start();
 
             Log.i(getClass().getName(), "Successfully started blending to black");
-
-            writePref(true);
         } else {
-            Log.e(getClass().getName(), "Overlay already visible");
+            Log.e(getClass().getName(), "Overlay already visible. Overlay is in state " + Constants.Overlay.getStateName(state));
         }
     }
 
@@ -298,7 +303,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
             state = Constants.Overlay.State.FALLING;
             Log.i(getClass().getName(), "Started falling");
         } else {
-            Log.e(getClass().getName(), "Overlay is not in required state. Cancel falling");
+            Log.e(getClass().getName(), "Overlay is not in required state. Cancel falling. Overlay is in state " + Constants.Overlay.getStateName(state));
         }
     }
 
@@ -324,11 +329,9 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
             Log.i(getClass().getName(), "Successfully started hiding with animation");
 
-            writePref(false);
-
             return true;
         } else {
-            Log.e(getClass().getName(), "Overlay is not in required state. Cancel hiding");
+            Log.e(getClass().getName(), "Overlay is not in required state. Cancel hiding. Overlay is in state " + Constants.Overlay.getStateName(state));
             return false;
         }
     }
@@ -363,11 +366,9 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
             Log.i(getClass().getName(), "Successfully started blending to transparent");
 
-            writePref(false);
-
             return true;
         } else {
-            Log.e(getClass().getName(), "Overlay is not in required state. Cancel hiding");
+            Log.e(getClass().getName(), "Overlay is not in required state. Cancel hiding. Overlay is in state " + Constants.Overlay.getStateName(state));
             return false;
         }
     }
@@ -382,16 +383,19 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     private void writePref(boolean value) {
-        getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_ACTIVE_NOW, value).apply();
-        Log.i(getClass().getName(), "Successfully wrote preference to " + (value ? "true":"false"));
+        running = value;
+        getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_SERVICE_RUNNING, value).apply();
+        Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_SERVICE_RUNNING + " to " + (value ? "true":"false"));
     }
 
     @Override
     public void onInterrupt() {
+        writePref(false);
         // When the AccessibilityService is stopped for whatever reason try to hide the view
         if (!hide()) {
             // If the view cannot be hidden because for example it is in th wrong state just remove it
             removeView();
         }
+        Log.i(getClass().getName(), "Accessibility service started.");
     }
 }

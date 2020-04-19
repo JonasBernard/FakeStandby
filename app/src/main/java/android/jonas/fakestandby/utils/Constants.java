@@ -3,7 +3,7 @@ package android.jonas.fakestandby.utils;
 public class Constants {
 
     public static final class Preferences {
-        public static final String IS_ACTIVE_NOW = "overlay_is_visible_now"; // Key of the preference that stores weather the overlay is currently visible
+        public static final String IS_SERVICE_RUNNING = "is_accessibility_service_running_now"; // Key of the preference that stores weather the accessibility service is currently running
         public static final String PREFERENCE_NAME = "default_preference"; // Name of the default preference to use.
     }
 
@@ -24,6 +24,22 @@ public class Constants {
     }
 
     public static final class Overlay {
+        public static String getStateName(byte state) {
+            switch (state) {
+                case State.INITIALIZING: return "INITIALIZING";
+                case State.INITIALIZED: return "INITIALIZED";
+                case State.ADDED: return "ADDED";
+                case State.SHOWING: return "SHOWING";
+                case State.VISIBLE: return "VISIBLE";
+                case State.DRAGGING: return "DRAGGING";
+                case State.FALLING: return "FALLING";
+                case State.HIDING: return "HIDING";
+                case State.HIDDEN: return "HIDDEN";
+                case State.REMOVED: return "REMOVED";
+                default: return "UNSET";
+            }
+        }
+
         public static final class State {
             public static final byte UNSET = -1; // Set to as default and never entered again after the overlay was initialized successfully.
             public static final byte INITIALIZING = 1; // Set to while initializing the view component for the overlay.

@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/aqua</item>
         <item name="colorPrimaryDark">@color/aqua_dark</item>
+        <item name="colorSecondary">@color/aqua_light</item>
         <item name="colorAccent">@color/rose</item>
 
         <item name="android:textColor">@color/text_colors</item>
@@ -16,12 +17,15 @@
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
         <item name="alertDialogTheme">@style/AppTheme.Dialog</item>
 
-        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:buttonCornerRadius">10dp</item>
+        <item name="android:dialogCornerRadius">10dp</item>
     </style>
+
 
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorPrimary">@color/aqua</item>
         <item name="colorPrimaryDark">@color/aqua_dark</item>
+        <item name="colorSecondary">@color/aqua_light</item>
         <item name="colorAccent">@color/rose</item>
 
         <item name="android:textColor">@color/text_colors</item>
@@ -33,7 +37,8 @@
         <item name="android:colorBackground">@color/grey_dark</item>
         <item name="android:colorBackgroundFloating">@color/grey_dark</item>
 
-        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:buttonCornerRadius">10dp</item>
+        <item name="android:dialogCornerRadius">10dp</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="AppTheme">
