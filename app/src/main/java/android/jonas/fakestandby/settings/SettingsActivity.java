@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
 import android.os.Bundle;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -18,6 +21,8 @@ import android.jonas.fakestandby.utils.Constants;
 import android.jonas.fakestandby.permissions.PermissionUtils;
 
 public class SettingsActivity extends AppCompatActivity {
+
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,25 @@ public class SettingsActivity extends AppCompatActivity {
                 Log.i(getClass().getName(), "Sent intent to show overlay");
             }
         });
+
+        adView = (AdView) findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+
+        adView.loadAd(adRequest);
+    }
+
+    @Override
+    protected void onResume() {
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+
+        adView.loadAd(adRequest);
+
+        super.onResume();
     }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {

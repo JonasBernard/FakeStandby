@@ -1,6 +1,9 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory app:title="@string/settings_category_overlay_options">
+    <PreferenceCategory
+        app:key="overlay_category"
+        app:title="@string/settings_category_overlay_options">
 
         <MultiSelectListPreference
             app:defaultValue="@array/close_options_values"
@@ -9,6 +12,19 @@
             app:key="@string/close_option_key"
             app:title="@string/close_option_title"
             app:summary="@string/close_option_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="other_category"
+        app:title="@string/settings_category_others">
+
+        <Preference
+            app:title="@string/help_translate_title"
+            app:summary="@string/help_translate_summary">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://poeditor.com/join/project/WkxMBheCVb" />
+        </Preference>
 
     </PreferenceCategory>
 
