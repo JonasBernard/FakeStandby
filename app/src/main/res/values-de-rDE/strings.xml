@@ -20,5 +20,5 @@
     <string name="close_option_error_no_option_selected_description">"Es wurde keine Methode ausgewählt, um aus dem Fake-Standby-Modus wieder zurückzukehren"</string>
     <string name="settings_category_others">"Weitere Informationen"</string>
     <string name="help_translate_title">"Hilf, die App zu übersetzen"</string>
-    <string name="help_translate_summary"></string>
+    <string name="help_translate_summary">"Die App ist nicht in deiner Sprache verfügbar? Hilf mit bei der Übersetung!"</string>
 </resources>
