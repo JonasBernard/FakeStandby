@@ -6,7 +6,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.jonas.fakestandby.R;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
 import android.jonas.fakestandby.utils.Constants;
 
 import androidx.core.app.NotificationCompat;

@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/home/jonas/EigeneProgramme/Java/Android/FakeStandby/keys/key1.jks')
+            storePassword '13243546'
+            keyPassword '13243546'
+            keyAlias = 'key0'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "android.jonas.fakestandby"
@@ -14,10 +22,26 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
             lintOptions {
                 checkReleaseBuilds false
                 abortOnError false
             }
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            versionNameSuffix = '-debug'
+        }
+    }
+    flavorDimensions 'ads'
+    productFlavors {
+        ad {
+            dimension = 'ads'
+            versionNameSuffix = '-ad'
+        }
+        adfree {
+            dimension = 'ads'
+            versionNameSuffix = '-adfree'
         }
     }
 }
@@ -27,11 +51,11 @@ dependencies {
     //implementation 'com.android.support:appcompat-v7:28.0.0'
     //implementation "com.android.support:support-compat:28.0.0"
     implementation 'com.google.android.gms:play-services-ads:19.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.preference:preference:1.1.0-rc01'
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+    testImplementation 'junit:junit:4.13'
     //androidTestImplementation 'com.android.support.test:runner:1.0.2'
     //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
