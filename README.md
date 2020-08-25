@@ -1,5 +1,7 @@
 # FakeStandby
 
+![Android CI](https://github.com/JonasBernard/FakeStandby/workflows/Android%20CI/badge.svg)
+
 ## Where is the problem?
 
 Most smartphones have long-living batteries these days, but who doesn't want to keep their phone alive for just one hour more?
@@ -30,7 +32,7 @@ You should not except huge power saving effects on any device especially on devi
 
 ## Contribute
 
-Feel free to contribute to the FakeStandby project! You can contribute in different ways
+Feel free to contribute to the FakeStandby project! You can contribute in different ways.
 
 ### Conceptual contribution
 
