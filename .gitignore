@@ -11,5 +11,7 @@
 /build
 /captures
 .externalNativeBuild
+/keys
+/app/google-services.json
 
 app/src/main/java/android/jonas/fakestandby/utils/Secrets.java
