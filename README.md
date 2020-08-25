@@ -8,22 +8,56 @@ is consumed by the display.
 
 ## Here is the solution!
 
-FakeStandby is an Android app for turning the screen off while keeping apps running. This includes foregroud jobs, which means, you can
+FakeStandby is an Android app for turning the screen off while keeping apps running. This includes foreground jobs, which means you can
 keep
 
-- staing online on WhatsApp and other text messengers
+- staying online on WhatsApp and other text messengers
 - listen to YouTube Videos
-- run your prefered game
+- run your preferred game
 
 all with your screen turned off.
 
 ## How does it work?
 
-The app is basiccaly launching an overlay over the app currently running. Therefor it is using Android's accessibility services. All it's rendering
-on the overlay is a black canvas. effectily turning your pixels of. The apps you're using won't notice this, beacause technically your phone is turned on.
+The app is basically launching an overlay over the app currently running. Therefore it is using Android's accessibility services. All it's rendering
+on the overlay is a black canvas, effectifly turning your pixels off. The apps you're using won't notice this, beacause technically your phone is turned on.
 
 ## Disclaimer
 
-Some smartphones have LCD displays with backgroud lighting, that only turns off, when you really press the power button to lock your phone.
-The concept works better for OLED or AMOLED displays, where "turning pixels black" is identical to "turning them off"
-You should not except huge power saving effects 
+Some smartphones have LCD displays with background lighting, that only turns off, when you really press the power button to lock your phone.
+The concept works better for OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off"
+You should not except huge power saving effects on any device especially on devices with LCD display.
+
+## Contribute
+
+Feel free to contribute to the FakeStandby project! You can contribute in different ways
+
+### Conceptual contribution
+
+If you have any conceptual or strategic critics or ideas, just leave them [here on GitHub](https://github.com/JonasBernard/FakeStandby/issues/new).
+
+### Translations
+
+You can help translating the app itself and other texts using [this link](https://poeditor.com/join/project/WkxMBheCVb).
+
+### Code contribution
+
+For contribution to the code just fork this repository and create a pull request after you commited your changes to this fork.
+
+## Licensing
+
+FakeStandby is an android app that turns off your screen while keeping apps running.
+Copyright (C) 2020  Jonas Bernard
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
