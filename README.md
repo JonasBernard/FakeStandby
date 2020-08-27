@@ -32,19 +32,7 @@ You should not except huge power saving effects on any device especially on devi
 
 ## Contribute
 
-Feel free to contribute to the FakeStandby project! You can contribute in different ways.
-
-### Conceptual contribution
-
-If you have any conceptual or strategic critics or ideas, just leave them [here on GitHub](https://github.com/JonasBernard/FakeStandby/issues/new/choose).
-
-### Translations
-
-You can help translating the app itself and other texts using [this link](https://poeditor.com/join/project/WkxMBheCVb).
-
-### Code contribution
-
-For contribution to the code just fork this repository and create a pull request after you commited your changes to this fork.
+Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT.md) and the [Contributing Information](CONTRIBUTING.mb).
 
 ## Licensing
 
