@@ -36,7 +36,7 @@ Feel free to contribute to the FakeStandby project! You can contribute in differ
 
 ### Conceptual contribution
 
-If you have any conceptual or strategic critics or ideas, just leave them [here on GitHub](https://github.com/JonasBernard/FakeStandby/issues/new).
+If you have any conceptual or strategic critics or ideas, just leave them [here on GitHub](https://github.com/JonasBernard/FakeStandby/issues/new/choose).
 
 ### Translations
 
