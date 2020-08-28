@@ -56,4 +56,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ## About me
 
 I'm a student from Germany working on this project in
-my freetime. Read about me [here](about/).
+my freetime. Read about me [here](about).
