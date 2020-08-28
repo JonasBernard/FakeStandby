@@ -8,5 +8,3 @@ No registration fee. No Google Ads. I expect some revenue trough donations. Just
 Just one kind person donating 1€ would get me more money than I would earn in 10 years with Google.
 
 So if you plan to publish an think twice about whether you want to support Google or join the FLOSS community🥳.
-
-And...yes I know, GitHub is sponsored by Google...
