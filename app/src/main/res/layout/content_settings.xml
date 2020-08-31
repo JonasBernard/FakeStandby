@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="android.joans.fakestandby.settings.SettingsActivity"
+    tools:context="android.jonas.fakestandby.settings.SettingsActivity"
     tools:showIn="@layout/activity_settings">
 
     <FrameLayout

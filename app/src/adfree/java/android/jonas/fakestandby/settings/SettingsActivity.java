@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
 import android.os.Bundle;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
