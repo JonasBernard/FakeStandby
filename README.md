@@ -9,7 +9,7 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
 
-![Android CI](https://github.com/JonasBernard/FakeStandby/workflows/Android%20CI/badge.svg)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Fjonasbernard.github.io%2FFakeStandby%2F)
 
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
