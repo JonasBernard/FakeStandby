@@ -1,7 +1,14 @@
 ## Welcome to the project website of FakeStandby
 
-![Android CI](https://github.com/JonasBernard/FakeStandby/workflows/Android%20CI/badge.svg)
+![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
+
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
+
+![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
 
 ## Where is the problem?
 
