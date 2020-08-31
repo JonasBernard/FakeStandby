@@ -40,7 +40,7 @@ You should not except huge power saving effects on any device especially on devi
 
 ## Contribute
 
-Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT) and the [Contributing Information](CONTRIBUTING).
+Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](code_of_conduct) and the [Contributing Information](contributing).
 
 ## Licensing
 
