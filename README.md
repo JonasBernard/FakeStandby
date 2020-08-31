@@ -1,6 +1,7 @@
 # FakeStandby
 
 ![Android CI](https://github.com/JonasBernard/FakeStandby/workflows/Android%20CI/badge.svg)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
 
 ## Where is the problem?
 
