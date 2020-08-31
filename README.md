@@ -1,7 +1,22 @@
 # FakeStandby
 
+![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
+![GitHub repo size](https://img.shields.io/github/repo-size/JonasBernard/FakeStandby?label=repository%20size)
+
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JonasBernard/FakeStandby)
+![GitHub last commit](https://img.shields.io/github/last-commit/JonasBernard/FakeStandby)
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
+
 ![Android CI](https://github.com/JonasBernard/FakeStandby/workflows/Android%20CI/badge.svg)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Fjonasbernard.github.io%2FFakeStandby%2F)
+
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
+
+![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
+
 
 ## Where is the problem?
 
