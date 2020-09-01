@@ -10,6 +10,14 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="SFPCZ53XCNE2A" />
+  <input type="image" src="https://img.shields.io/badge/donate_via-paypal-yellow" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+
 ## Where is the problem?
 
 Most smartphones have long-living batteries these days, but who doesn't want to keep their phone alive for just one hour more?
