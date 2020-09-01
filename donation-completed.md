@@ -6,4 +6,4 @@
 
 🌈 Thanks to YOU, the next release is on its way a little bit faster.
 
-[Go back to project website](/)
+[Go back to project website](FakeStandby/)
