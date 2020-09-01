@@ -1,0 +1,18 @@
+<p>
+  Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?
+  While using an app, you maybe not nessesarily need your display. So, why don’t turn it off? <b>Up to 20%</b> of your battery
+  power is consumed by the display.
+</p>
+
+<p>
+  FakeStandby is an Android app to turn off your screen while keeping apps running. This includes foreground jobs, which means
+  you can keep
+	
+  <ul>
+    <li>listening to music on YouTube</li>
+    <li>staying online on WhatsApp and other text messengers</li> 
+    <li>running your favorite game</li>
+  </ul>
+
+  all with your screen turned off.
+</p>

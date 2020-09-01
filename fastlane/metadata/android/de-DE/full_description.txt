@@ -1,0 +1,18 @@
+<p>
+  Die meisten aktuellen Smartphones haben zwar gute Akkus, aber wer möchte sein Handy nicht trotzdem gerne noch eine Stunde länger nutzen?
+  Bis zu 20% deines Stromverbrauchs entstehen durch deinen Bildschirm. Also warum sollte man nicht einfach den Bildschirm ausschalten können, ohne dass
+  andere Apps es mitbekommen, und anhalten?
+</p>
+
+<p>
+  FakeStandby ist eine App, die es die ermöglicht, deinen Bildschirm auszuschalten, ohne dass deine Apps angehalten werden.
+  Das heißt, du kannst
+
+  <ul>
+    <li>Musik auf YouTube anhören</li>
+    <li>bei WhatsApp und anderen Nachrichten-Apps als online angezeigt werden</li>
+    <li>dein Lieblingsspiel laufen lassen</li>
+  </ul>
+
+  während dein Bildschirm ausgeschaltet ist.
+</p>
