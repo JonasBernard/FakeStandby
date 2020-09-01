@@ -11,13 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".settings.LicenseActivity"
-            android:label="@string/license_activity_title">
-            <intent-filter>
-                <action android:name="android.jonas.fakestandby.license" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
+        <activity android:name=".onboarding.OnBoardingActivity"
+            android:label="Welcome to FakeStandby" />
         <activity
             android:name=".settings.SettingsActivity"
             android:icon="@drawable/app_icon_adaptive"
@@ -27,6 +23,13 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".settings.LicenseActivity"
+            android:label="@string/license_activity_title">
+            <intent-filter>
+                <action android:name="android.jonas.fakestandby.license" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 

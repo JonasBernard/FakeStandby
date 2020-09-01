@@ -1,8 +1,11 @@
 package android.jonas.fakestandby.settings;
 
 import android.content.Intent;
+import android.jonas.fakestandby.BuildConfig;
+import android.jonas.fakestandby.onboarding.OnBoardingActivity;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
+import android.jonas.fakestandby.utils.Utils;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,10 +25,21 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (Utils.isFirstOpen(this) || BuildConfig.DEBUG) {
+            Intent i = new Intent(this, OnBoardingActivity.class);
+            startActivity(i);
+        }
+
+        inflateSettings();
+    }
+
+    private void inflateSettings() {
         setContentView(R.layout.activity_settings);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.title_activity_settings);
         setSupportActionBar(toolbar);
+
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.settings, new SettingsFragment())

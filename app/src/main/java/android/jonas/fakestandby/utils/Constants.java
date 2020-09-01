@@ -5,6 +5,7 @@ public class Constants {
     public static final class Preferences {
         public static final String IS_SERVICE_RUNNING = "is_accessibility_service_running_now"; // Key of the preference that stores weather the accessibility service is currently running
         public static final String PREFERENCE_NAME = "default_preference"; // Name of the default preference to use.
+        public static final String FIRST_OPEN = "is_app_opened_for_first_time";
     }
 
     public static final class Intent {
