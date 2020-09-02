@@ -29,11 +29,9 @@ android {
     productFlavors {
         ad {
             dimension = 'ads'
-            versionNameSuffix = '-ad'
         }
         adfree {
             dimension = 'ads'
-            versionNameSuffix = '-adfree'
         }
     }
 }
