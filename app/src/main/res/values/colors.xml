@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="aqua">#00838f</color>
-    <color name="aqua_light">#4fb3bf</color>
-    <color name="aqua_dark">#005662</color>
-    <color name="rose">#e57373</color>
-    <color name="rose_light">#ffa4a2</color>
-    <color name="rose_dark">#af4448</color>
+    <color name="cyan">#26c6da</color>
+    <color name="cyan_light">#6ff9ff</color>
+    <color name="cyan_dark">#0095a8</color>
+    <color name="pink">#d81b60</color>
+    <color name="pink_light">#ff5c8d</color>
+    <color name="pink_dark">#a00037</color>
+
+    <color name="deep_orange">#ff7043</color>
+
+    <color name="light_green">#9ccc65</color>
+
     <color name="grey_dark">#2D2D2D</color>
     <color name="grey_light">#515151</color>
-
 
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#000000</color>

@@ -3,10 +3,10 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/aqua</item>
-        <item name="colorPrimaryDark">@color/aqua_dark</item>
-        <item name="colorSecondary">@color/aqua_light</item>
-        <item name="colorAccent">@color/rose</item>
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+        <item name="colorSecondary">@color/cyan_light</item>
+        <item name="colorAccent">@color/pink</item>
 
         <item name="android:textColor">@color/text_colors</item>
         <item name="android:textColorSecondary">@color/secondary_text_colors</item>
@@ -23,10 +23,10 @@
 
 
     <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="colorPrimary">@color/aqua</item>
-        <item name="colorPrimaryDark">@color/aqua_dark</item>
-        <item name="colorSecondary">@color/aqua_light</item>
-        <item name="colorAccent">@color/rose</item>
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+        <item name="colorSecondary">@color/cyan_light</item>
+        <item name="colorAccent">@color/pink</item>
 
         <item name="android:textColor">@color/text_colors</item>
         <item name="android:textColorSecondary">@color/secondary_text_colors</item>
