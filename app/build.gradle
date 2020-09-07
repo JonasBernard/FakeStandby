@@ -45,7 +45,7 @@ dependencies {
     //implementation 'com.android.support:appcompat-v7:28.0.0'
     //implementation "com.android.support:support-compat:28.0.0"
 
-    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.preference:preference:1.1.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
@@ -60,4 +60,6 @@ dependencies {
     //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
-apply plugin: 'com.google.gms.google-services'
+if (!getGradle().getStartParameter().getTaskRequests().toString().contains("Adfree")){
+    apply plugin: 'com.google.gms.google-services'
+}

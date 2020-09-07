@@ -26,7 +26,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (Utils.isFirstOpen(this) || BuildConfig.DEBUG) {
+        if (BuildConfig.DEBUG) {
+        //if (Utils.isFirstOpen(this) || BuildConfig.DEBUG) {
             Intent i = new Intent(this, OnBoardingActivity.class);
             startActivity(i);
         }
