@@ -24,4 +24,8 @@ public class Utils {
         return firstOpen;
     }
 
+    public static boolean isOverlayShowing(Context context) {
+        return context.getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).getBoolean(Constants.Preferences.IS_OVERLAY_SHOWING, false);
+    }
+
 }

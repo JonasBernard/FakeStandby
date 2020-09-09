@@ -5,7 +5,8 @@ public class Constants {
     public static final class Preferences {
         public static final String IS_SERVICE_RUNNING = "is_accessibility_service_running_now"; // Key of the preference that stores weather the accessibility service is currently running
         public static final String PREFERENCE_NAME = "default_preference"; // Name of the default preference to use.
-        public static final String FIRST_OPEN = "is_app_opened_for_first_time";
+        public static final String FIRST_OPEN = "is_app_opened_for_first_time"; // Key of the preference that stores weather the app is opened for the first time
+        public static final String IS_OVERLAY_SHOWING = "is_overlay_showing"; // Key of the preference that stores weather the overlay is currently active
     }
 
     public static final class Intent {
@@ -14,6 +15,7 @@ public class Constants {
                 public static final String KEY = "overlay_action"; // The key for the extra of any intent that is used to control the overlay.
                 public static final byte SHOW = 1; // Value of the extra if one wants to show the overlay.
                 public static final byte HIDE = 0; // Value of the extra if one wants to hide the overlay.
+                public static final byte HIDE_IMMEDIATELY = 2; // Value of the extra if one wants to hide the overlay without blending.
                 public static final byte NOTHING = -1; // Value of the extra if nothing should happen. Just to have a default.
                 public static final byte DEFAULT = NOTHING;
             }

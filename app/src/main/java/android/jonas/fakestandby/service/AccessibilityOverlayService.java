@@ -4,6 +4,7 @@ import android.accessibilityservice.AccessibilityService;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.permissions.OverlayPermissionRequiredDialog;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
@@ -33,6 +34,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     public static boolean running = false;
 
+    private PhoneLockReceiver phoneLockReceiver;
+
     // Some objects that make the rendering possible
     static WindowManager windowManager;
     static WindowManager.LayoutParams layoutParams;
@@ -54,15 +57,22 @@ public class AccessibilityOverlayService extends AccessibilityService {
     //  INITIALIZED                           Set to when the overlay is ready.
     //     |
     //     v
-    //  ADDED  <---                           Set to after the overlay view component was added to the screen.
-    //  SHOWING   |                           Set to while the view is blending from transparent to black.
-    //  VISIBLE   |                           Set to when the overlay is visible but the user is not interacting with it.
-    //  DRAGGING  |                           Set to as soon as the user taps on the touch screen and while he is dragging.
-    //  FALLING   |                           Set to when the user releases the touch screen but did not swipe upwards to hide the overlay. Remains while the falling down animation is performed.
-    //  HIDING    |                           Set to when the user releases the touch screen and did swipe upwards to hide the overlay. Remains while the hiding animation is performed
-    //  HIDDEN    |                           Set to when the overlay is invisible to the user but still there.
-    //  REMOVED ---                           Set to when the overlay view component was removed from screen. Remains while the overlay is hidden.
-    //                                        From there it jumps back to "ADDED" as soon as the service gets an intent to show the overlay again.
+    //  ADDED  <----------------                           Set to after the overlay view component was added to the screen.
+    //     v                   |
+    //  SHOWING                |                           Set to while the view is blending from transparent to black.
+    //     v                   |
+    //  VISIBLE <--------      |                           Set to when the overlay is visible but the user is not interacting with it.
+    //     v            |      |
+    //  DRAGGING ---> FALLING  |                           DRAGGING: Set to as soon as the user taps on the touch screen and while he is dragging.
+    //     |--------           |                           FALLING: Set to when the user releases the touch screen but did not swipe upwards to hide the overlay. Remains while the falling down animation is performed.
+    //     v       |           |
+    //  HIDING     |           |                           Set to when the user releases the touch screen and did swipe upwards to hide the overlay. Remains while the hiding animation is performed.
+    //     |       |           |                           This state is skipped, if the requested action is "HIDE_IMMEDIATELY" and hide_immediately() is called.
+    //     v       |           |
+    //  HIDDEN <----           |                           Set to when the overlay is invisible to the user but still there.
+    //     v                   |
+    //  REMOVED ----------------                           Set to when the overlay view component was removed from screen. Remains while the overlay is hidden.
+    //                                                     From there it jumps back to "ADDED" as soon as the service gets an intent to show the overlay again.
 
 
     @Override
@@ -79,9 +89,11 @@ public class AccessibilityOverlayService extends AccessibilityService {
         init();
         // When the device does not support QuickTiles a custom notification is dropped
         initializeNotification();
+        // Initialize broadcast receiver
+        initializeBroadcastReceiver();
 
         // Set preference that the service is now running
-        writePref(true);
+        writeServiceRunningPref(true);
         Log.i(getClass().getName(), "Accessibility service started.");
     }
 
@@ -106,7 +118,15 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 // The requested action is to hide the overlay. Let's do it.
                 hide();
                 break;
+            case Constants.Intent.Extra.OverlayAction.HIDE_IMMEDIATELY:
+                Log.i(getClass().getName(), "Received intent to hide overlay (immediately)");
+
+                // The requested action is to hide the overlay immediately. Let's do it.
+                hide_immediately();
+                break;
             case Constants.Intent.Extra.OverlayAction.NOTHING:
+                // You may say that this is useless. But wait and see...
+
                 Log.i(getClass().getName(), "Received intent to do nothing with the overlay");
                 break;
             default:
@@ -276,6 +296,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
             windowManager.removeView(view);
             // Set the state
             state = Constants.Overlay.State.REMOVED;
+
+            writeOverlayShowingPref(false);
             Log.i(getClass().getName(), "Successfully removed view");
         } catch (IllegalArgumentException e) {
             Log.e(getClass().getName(), "Failed to remove view");
@@ -315,6 +337,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
                     super.onAnimationEnd(animation);
                     // When finished set the state to visible
                     state = Constants.Overlay.State.VISIBLE;
+                    writeOverlayShowingPref(true);
+
                     Log.i(getClass().getName(), "Finished blending to black");
                 }
             }).start();
@@ -404,6 +428,23 @@ public class AccessibilityOverlayService extends AccessibilityService {
         }
     }
 
+    private void hide_immediately() {
+        // Check for the right state. The hiding action can be started while the overlay is only visible or
+        // while the user is dragging or while the overlay is falling back to its base position
+        if (state == Constants.Overlay.State.VISIBLE ||
+                state == Constants.Overlay.State.DRAGGING ||
+                state == Constants.Overlay.State.FALLING) {
+
+            // When finished set the state and remove the (invisible) view component
+            state = Constants.Overlay.State.HIDDEN;
+            removeView();
+
+            Log.i(getClass().getName(), "Successfully hidden overlay");
+        } else {
+            Log.e(getClass().getName(), "Overlay is not in required state. Cancel hiding. Overlay is in state " + Constants.Overlay.getStateName(state));
+        }
+    }
+
     private void initializeNotification() {
         // When the device does not support QuickTiles a custom notification is dropped.
         // It gives users with older devices the ability to also start the overlay.
@@ -413,10 +454,26 @@ public class AccessibilityOverlayService extends AccessibilityService {
         }
     }
 
-    private void writePref(boolean value) {
+    public void initializeBroadcastReceiver() {
+        if (this.phoneLockReceiver == null) this.phoneLockReceiver = new PhoneLockReceiver();
+        registerReceiver(this.phoneLockReceiver, new IntentFilter(Intent.ACTION_SCREEN_ON));
+        registerReceiver(this.phoneLockReceiver, new IntentFilter(Intent.ACTION_SCREEN_OFF));
+    }
+
+    public void unregisterBroadcastReceiver() {
+        unregisterReceiver(this.phoneLockReceiver);
+        unregisterReceiver(this.phoneLockReceiver);
+    }
+
+    private void writeServiceRunningPref(boolean value) {
         running = value;
         getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_SERVICE_RUNNING, value).apply();
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_SERVICE_RUNNING + " to " + (value ? "true":"false"));
+    }
+
+    private void writeOverlayShowingPref(boolean value) {
+        getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_OVERLAY_SHOWING, value).apply();
+        Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_OVERLAY_SHOWING + " to " + (value ? "true":"false"));
     }
 
     private boolean getIsCloseOptionEnabled(String valueName) {
@@ -435,12 +492,15 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     @Override
     public void onInterrupt() {
-        writePref(false);
+        writeServiceRunningPref(false);
         // When the AccessibilityService is stopped for whatever reason try to hide the view
         if (!hide()) {
             // If the view cannot be hidden because for example it is in th wrong state just remove it
             removeView();
         }
+
+        unregisterBroadcastReceiver();
+
         Log.i(getClass().getName(), "Accessibility service started.");
     }
 }
