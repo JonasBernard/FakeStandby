@@ -3,6 +3,7 @@ package android.jonas.fakestandby.onboarding;
 import android.Manifest;
 import android.jonas.fakestandby.R;
 import android.os.Bundle;
+import android.util.TypedValue;
 
 import androidx.fragment.app.Fragment;
 
@@ -22,11 +23,30 @@ public class OnBoardingActivity extends AppIntro {
         setImmersiveMode();
         setSystemBackButtonLocked(true);
 
+        TypedValue typedValue = new TypedValue();
+        getTheme().resolveAttribute(R.attr.colorPrimary, typedValue, true);
+        int color = typedValue.data;
+
+//        addSlide(new WelcomeFragment(
+//                this,
+//                getString(R.string.visit_website_title),
+//                getString(R.string.visit_website_summary),
+//                R.drawable.fakestandby_overlay_preview,
+//                color
+//        ));
+
         addSlide(AppIntroFragment.newInstance(
                 getString(R.string.visit_website_title),
                 getString(R.string.visit_website_summary),
                 R.drawable.app_icon_adaptive,
-                getColor(R.color.aqua)
+                getColor(R.color.deep_orange)
+        ));
+
+        addSlide(AppIntroFragment.newInstance(
+                getString(R.string.visit_website_title),
+                getString(R.string.visit_website_summary),
+                R.drawable.app_icon_adaptive,
+                getColor(R.color.light_green)
         ));
     }
 
