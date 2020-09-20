@@ -17,6 +17,9 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
 
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="60">](https://f-droid.org/packages/android.jonas.fakestandby/)
 
 ## Where is the problem?
 
