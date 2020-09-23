@@ -1,0 +1,4 @@
++ Now on-screen navigation buttons (home, back, recent apps) also get covered in black.
++ When your device has a notch, the parts next to the notch should also be covered.
++ The navigation bar in the settings is now properly themed.
++ Stability has improved for using the app in landscape orientation.

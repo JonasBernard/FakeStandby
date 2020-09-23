@@ -1,0 +1,4 @@
++ Die Navigationsleiste auf dem Bildschirm (Home-Button, Zurück und letzte Apps) wird jetzt auch schwarz.
++ Wenn dein Gerät eine Notch am Bildschirmrand hat, sollte der Teil daneben jetzt auch schwarz werden.
++ Die Navigationsleite in den Einstellungen passt jetzt zum Farbschema.
++ Die Stabilität bei gedrehtem Bildschirm hat sich verbessert.
