@@ -21,7 +21,7 @@ public class PhoneLockReceiver extends BroadcastReceiver {
 
             PowerManager powerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
             PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "fakestandby:overlaystopped");
-            wakeLock.acquire();
+            wakeLock.acquire(10000);
             wakeLock.release();
         }
     }

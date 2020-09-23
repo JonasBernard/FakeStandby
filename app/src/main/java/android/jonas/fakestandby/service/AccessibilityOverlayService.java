@@ -5,16 +5,16 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Configuration;
 import android.graphics.PixelFormat;
-import android.jonas.fakestandby.permissions.OverlayPermissionRequiredDialog;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
 import android.jonas.fakestandby.R;
@@ -23,9 +23,6 @@ import android.jonas.fakestandby.utils.Constants;
 import android.jonas.fakestandby.utils.OnHideFinishedListener;
 import android.jonas.fakestandby.utils.OnSwipeListener;
 import android.jonas.fakestandby.utils.OverlayView;
-
-import androidx.fragment.app.DialogFragment;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -36,12 +33,17 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     private PhoneLockReceiver phoneLockReceiver;
 
+    // Static variables for screen dimensions
+    private DisplayMetrics dm;
+    private int height;
+    private int width;
+
     // Some objects that make the rendering possible
     static WindowManager windowManager;
     static WindowManager.LayoutParams layoutParams;
 
     // Self implemented view that renders mainly black but can also get transparent.
-    static OverlayView view;
+    OverlayView view;
 
     // Store the y-location where dragging started
     public static float BasePX = 0;
@@ -137,6 +139,20 @@ public class AccessibilityOverlayService extends AccessibilityService {
         return START_STICKY_COMPATIBILITY;
     }
 
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (state == Constants.Overlay.State.SHOWING || state == Constants.Overlay.State.VISIBLE) {
+            removeView();
+            addView();
+        }
+        if (state == Constants.Overlay.State.DRAGGING || state == Constants.Overlay.State.FALLING) {
+            hide_immediately();
+            addView();
+        }
+    }
+
     private void init() {
         // Set the right state and log it.
         state = Constants.Overlay.State.INITIALIZING;
@@ -145,22 +161,25 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Theme the app (is used for some dialogs later).
         getApplication().setTheme(R.style.AppTheme);
 
+        // Get display dimensions
+        dm = getResources().getDisplayMetrics();
+
         // Initialize the self implemented view that renders mainly black but can also get transparent.
         view = new OverlayView(getApplicationContext());
         // Manage some layout parameters fro example to match the whole screen and set that the user cannot touch through the overlay.
         layoutParams = new WindowManager.LayoutParams(
-                WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY, //TYPE_PHONE OR TYPE_SYSTEM_OVERLAY
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
                         WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION | WindowManager.LayoutParams.FLAG_FULLSCREEN |
-                        WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL |
+                        WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
                         WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 PixelFormat.TRANSLUCENT);
         layoutParams.alpha = 1;
         layoutParams.gravity = Gravity.TOP | Gravity.START;
-        layoutParams.x = 0;
-        layoutParams.y = 0;
+        layoutParams.x = -200;
+        layoutParams.y = -200;
 
         // The overlay can be stopped by dragging upwards or tapping on the screen with 4 or more fingers.
         // To manage the dragging initialize a new OnSwipeListener that extends OnTouchListener
@@ -176,7 +195,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 // in a status where the user cannot access his phone anymore, do not accept any
                 // touch input while in animation.
                 if (state == Constants.Overlay.State.FALLING ||
-                        state == Constants.Overlay.State.HIDING||
+                        state == Constants.Overlay.State.HIDING ||
                         state == Constants.Overlay.State.SHOWING) {
                     return false;
                 }
@@ -260,12 +279,6 @@ public class AccessibilityOverlayService extends AccessibilityService {
             }
         });
 
-        view.setLayoutParams(
-                new ViewGroup.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.MATCH_PARENT
-                )
-        );
         view.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE);
 
         // Assign the params defined earlier to the view component
@@ -280,6 +293,9 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Check for the right state
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
+            // Set dimensions to current width and height (these may change from time to time due to device rotation)
+            layoutParams.width = dm.widthPixels + 400;
+            layoutParams.height = dm.heightPixels + 400;
             // Add the view component
             windowManager.addView(view, layoutParams);
             // Set the state
