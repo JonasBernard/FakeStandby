@@ -1,25 +1,36 @@
-# FakeStandby
-
-![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
-![Maintenance](https://img.shields.io/maintenance/yes/2020)
-
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JonasBernard/FakeStandby)
-![GitHub last commit](https://img.shields.io/github/last-commit/JonasBernard/FakeStandby)
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
-![GitHub repo size](https://img.shields.io/github/repo-size/JonasBernard/FakeStandby?label=repository%20size)
-
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
-![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Fjonasbernard.github.io%2FFakeStandby%2F)
-
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
-
-![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
-
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="60">](https://f-droid.org/packages/android.jonas.fakestandby/)
+<div>
+   <h1 align="center">FakeStandby</h1>
+   <p align="center">
+     <img src="branding/app_icon_round.svg" height="150"><br>
+     <a href="https://f-droid.org/packages/android.jonas.fakestandby/">
+       <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="60">
+     </a><br>
+     <a href="https://github.com/JonasBernard/FakeStandby/releases">
+       <img src="https://img.shields.io/github/v/release/JonasBernard/FakeStandby" alt="GitHub release (latest by date)">
+     </a><br>
+     <a href="https://github.com/JonasBernard/FakeStandby/graphs/commit-activity">
+       <img src="https://img.shields.io/github/commit-activity/w/JonasBernard/FakeStandby" alt="GitHub commit activity">
+     </a>
+     <a href="https://github.com/JonasBernard/FakeStandby/commits/master">
+       <img src="https://img.shields.io/github/last-commit/JonasBernard/FakeStandby" alt="GitHub last commit">
+     </a>
+     <img src="https://img.shields.io/github/repo-size/JonasBernard/FakeStandby?label=repository%20size" alt="GitHub repo size">
+     <br>
+     <img src="https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI" alt="GitHub Workflow Status">
+     <a href="https://jonasbernard.github.io/FakeStandby/">
+       <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Fjonasbernard.github.io%2FFakeStandby%2F" alt="Website Status">
+     </a><br>
+     <a href="https://bestpractices.coreinfrastructure.org/projects/4235">
+       <img src="https://bestpractices.coreinfrastructure.org/projects/4235/badge" alt="CII Best Practices">
+     </a>
+     <a href="https://github.com/JonasBernard/FakeStandby/issues">
+       <img src="https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby" alt="GitHub issues">
+     </a>
+     <a href="https://github.com/JonasBernard/FakeStandby/pulls">
+       <img src="https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby" alt="GitHub pull requests">
+     </a>
+   </p>
+</div>
 
 ## Where is the problem?
 
@@ -50,10 +61,12 @@ The concept works better for OLED or AMOLED displays, where "turning pixels blac
 You should not except huge power saving effects on any device especially on devices with LCD display.
 
 ## Contribute
+![Maintenance](https://img.shields.io/maintenance/yes/2020)
 
 Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT.md) and the [Contributing Information](CONTRIBUTING.md).
 
-## Licensing
+## Licensing 
+![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 
 FakeStandby is an android app that turns off your screen while keeping apps running.
 Copyright (C) 2020  Jonas Bernard
