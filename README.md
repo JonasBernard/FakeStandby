@@ -1,7 +1,6 @@
 <div>
-   <h1 align="center">FakeStandby</h1>
+   <h1 align="center">FakeStandby<br><h6 align="center">An Android app for turning the screen off while keeping apps running.</h6></h1>
    <p align="center">
-     An Android app for turning the screen off while keeping apps running.<br>
      <img src="branding/app_icon_round.svg" height="150"><br>
      <a href="https://f-droid.org/packages/android.jonas.fakestandby/">
        <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="60">
