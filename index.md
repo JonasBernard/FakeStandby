@@ -1,3 +1,8 @@
+---
+layout: main_page
+---
+
+
 # Welcome to the project website of FakeStandby
 
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
