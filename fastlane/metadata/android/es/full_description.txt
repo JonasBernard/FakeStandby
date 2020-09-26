@@ -1,0 +1,16 @@
+<p>
+   La mayoría de los teléfonos inteligentes en estos días tienen baterías de larga duración, pero ¿quién no quiere que su teléfono dure solo una hora más?
+   Mientras usa una aplicación, es posible que no necesite necesariamente su pantalla. Entonces, ¿por qué no lo apagas? <b> Hasta un 20% </b> de su batería es consumida por la pantalla
+</p>
+
+<p>
+   FakeStandby es una aplicación de Android para apagar la pantalla mientras mantiene las aplicaciones en ejecución. Esto incluye trabajos en primer plano, lo que significa que puedes quedarte
+
+   <ul>
+     <li> escuchar música en YouTube </li>
+     <li> permanecer en línea en WhatsApp y otros mensajeros de texto </li>
+     <li> ejecutar su juego favorito </li>
+   </ul>
+
+   Todo con la pantalla apagada.
+</p>
