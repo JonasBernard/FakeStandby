@@ -11,6 +11,7 @@ github_username: JonasBernard
 email: public.jbernard@web.de
 domain: jonasbernard.github.io
 url: "https://jonasbernard.github.io/FakeStandby"
+f-droid_url: "https://f-droid.org/packages/android.jonas.fakestandby/"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

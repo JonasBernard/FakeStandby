@@ -1,15 +1,11 @@
-## Welcome to the project website of FakeStandby
+# Welcome to the project website of FakeStandby
 
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
-
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
-
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
-
 ![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
-
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="hosted_button_id" value="SFPCZ53XCNE2A" />
