@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="title_activity_settings">"تنظیمات"</string>
+    <string name="help_translate_title">"کمک به ترجمه برنامه"</string>
+    <string name="visit_website_title">"دیدن وبگاه برنامه"</string>
+    <string name="license_activity_title">"گواهینامه همگانی فراگیر گنو ۳.۰"</string>
+    <string name="license_title">"گواهینامه"</string>
+    <string name="view_source_title">"دیدن کد منبع"</string>
+</resources>
