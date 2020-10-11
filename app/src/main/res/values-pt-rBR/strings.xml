@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="notification_message">"Clique para ativar"</string>
+    <string name="accessibility_service_description">"FakeStandby necessita desta função para que seja possível comandar cada tela e cada aplicativo. Este será usado apenas para providenciar o funcionamento do aplicativo e não irá acessar, armazenar, coletar ou compartilhar nenhum de seus dados."</string>
+    <string name="accessibility_error_not_running_title">"Algum serviço exigido não está funcionando"</string>
+    <string name="accessibility_error_not_running_message">"Um serviço exigido para o uso do FakeStandby não está funcionando. Por favor reinicie seu dispositivo."</string>
+    <string name="accessibility_error_settings_label">"Abrir configurações"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Permissão exigida"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"O aplicativo não tem permissão para aparecer sobre outros apps. Para que o aplicativo funcione, você precisa autorizar o \"Aparecer sobre outros\" para o FakeStandby. A permissão possibilita que o aplicativo mostre conteúdo sobre os dos outros apps. Para garantir a permissão, ative o interruptor na próxima tela."</string>
+    <string name="notification_channel_errors_name">"Erros e avisos"</string>
+    <string name="accessibility_error_not_enabled_title">"Alguma funcionalidade não está habilitada"</string>
+    <string name="accessibility_error_not_enabled_message">"Alguma opção para o FakeStandby não está habilitada nas Configurações de Acessibilidade do seu dispositivo. Para que funcione, o aplicativo precisa que este serviço esteja funcionando. Abra as Configurações de Acessibilidade, role a página até o FakeStandby e habilite. Em outros dispositivos, talvez seja necessário procurar na seção de \\"Serviços Instalados\"\"</string>
+    <string name="title_activity_settings">"Configurações"</string>
+    <string name="settings_category_overlay_options">"Opções do Aplicativo"</string>
+    <string name="close_option_title">"Métodos para Revelar"</string>
+    <string name="close_option_tap_four">"Pressione na tela com 4 ou mais toques ao mesmo tempo"</string>
+    <string name="close_option_swipe">"Role debaixo para cima"</string>
+    <string name="close_option_summary">"Escolha os métodos que podem ser usados para revelar o estado de Fake Standby"</string>
+    <string name="close_option_error_no_option_selected_title">"Nenhum método de revela selecionado"</string>
+    <string name="close_option_error_no_option_selected_description">"Nenhum método de revela selecionado para o Fake Standby"</string>
+    <string name="settings_category_others">"Mais informaçōes"</string>
+    <string name="help_translate_title">"Ajude a traduzir o aplicativo"</string>
+    <string name="help_translate_summary">"O app está indisponível no seu idioma nativo? Ajude a traduzí-lo e ajude ele a chegar ao mundo todo!"</string>
+    <string name="visit_website_title">"Visite o site do projeto"</string>
+
+    <!-- URL should be marked as non translatable. -->
+    <string name="visit_website_summary">"https://jonasbernard.github.io/FakeStandby/"</string>
+    <string name="license_activity_title">"Licença Pública Geral GNU"</string>
+    <string name="license_title">"Licença"</string>
+    <string name="license_summary">"Veja as informações de licença do app."</string>
+    <string name="view_source_title">"Veja o código fonte"</string>
+    <string name="view_source_summary">"Visite o GitHub para ver todo o código fonte desse app."</string>
+</resources>
