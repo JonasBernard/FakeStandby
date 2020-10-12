@@ -1,8 +1,3 @@
-# !! TEMPORARILY UNMAINTAINTED !!
-# I AM ON VACATION TILL 11 OCT, 2020 AND WILL NOT GUARANTEE TO RESOND TO ISSUES AND PULL REQUESTS.
-Just be kind and wait. I'll read them as soon as possible.
-
-
 <div>
    <h1 align="center">FakeStandby<br><h6 align="center">An Android app for turning the screen off while keeping apps running.</h6></h1>
    <p align="center">
