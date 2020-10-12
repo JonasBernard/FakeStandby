@@ -8,9 +8,6 @@
      <a href="https://github.com/JonasBernard/FakeStandby/releases">
        <img src="https://img.shields.io/github/v/release/JonasBernard/FakeStandby" alt="GitHub release (latest by date)">
      </a><br>
-     <a href="https://github.com/JonasBernard/FakeStandby/graphs/commit-activity">
-       <img src="https://img.shields.io/github/commit-activity/w/JonasBernard/FakeStandby" alt="GitHub commit activity">
-     </a>
      <a href="https://github.com/JonasBernard/FakeStandby/commits/master">
        <img src="https://img.shields.io/github/last-commit/JonasBernard/FakeStandby" alt="GitHub last commit">
      </a>
