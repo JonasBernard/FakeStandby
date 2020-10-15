@@ -30,6 +30,8 @@ import java.util.Set;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 
+    public static boolean running = false;
+
     private PhoneLockReceiver phoneLockReceiver;
 
     // Static variables for screen dimensions
@@ -504,6 +506,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     private void writeServiceRunningPref(boolean value) {
+        running = value;
         getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_SERVICE_RUNNING, value).apply();
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_SERVICE_RUNNING + " to " + (value ? "true":"false"));
     }

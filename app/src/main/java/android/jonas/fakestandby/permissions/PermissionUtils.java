@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ServiceInfo;
-import android.jonas.fakestandby.utils.Constants;
 import android.net.Uri;
 import android.provider.Settings;
 import android.util.Log;
@@ -33,7 +32,8 @@ public class PermissionUtils {
 
     public static boolean checkAccessibilityServiceRunning(Context context) {
         Log.i("PermissionUtils", "Checking if accessibility service is running...");
-        boolean running = context.getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).getBoolean(Constants.Preferences.IS_SERVICE_RUNNING, false);
+        boolean running = AccessibilityOverlayService.running;
+        //boolean running = context.getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).getBoolean(Constants.Preferences.IS_SERVICE_RUNNING, false);
         if (running) {
             Log.i("PermissionUtils", "Accessibility service runs!");
             return true;
