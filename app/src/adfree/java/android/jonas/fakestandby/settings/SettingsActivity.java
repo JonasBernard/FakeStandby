@@ -5,7 +5,6 @@ import android.jonas.fakestandby.BuildConfig;
 import android.jonas.fakestandby.onboarding.OnBoardingActivity;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
-import android.jonas.fakestandby.utils.Utils;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;

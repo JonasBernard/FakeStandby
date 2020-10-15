@@ -9,7 +9,7 @@ import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -97,6 +97,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Set preference that the service is now running
         writeServiceRunningPref(true);
         Log.i(getClass().getName(), "Accessibility service started.");
+
+        if (getStartOnBootPref()) {
+            show();
+        }
     }
 
     @Override
@@ -492,11 +496,15 @@ public class AccessibilityOverlayService extends AccessibilityService {
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_OVERLAY_SHOWING + " to " + (value ? "true":"false"));
     }
 
+    private boolean getStartOnBootPref() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_start_on_boot", false);
+    }
+
     private boolean getIsCloseOptionEnabled(String valueName) {
         String[] defaults = getResources().getStringArray(R.array.close_options_values);
 
         Set<String> defaults_set = new HashSet<String>(Arrays.asList(defaults));
-        Set<String> options_set = PreferenceManager.getDefaultSharedPreferences(this).getStringSet(getString(R.string.close_option_key), defaults_set);
+        Set<String> options_set = PreferenceManager.getDefaultSharedPreferences(this).getStringSet("setting_close_options", defaults_set);
 
         if (options_set.contains(valueName)) {
             Log.i(getClass().getName(), "Close option with key " + valueName + " is enabled");
@@ -507,7 +515,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     @Override
-    public void onInterrupt() {
+    public void onInterrupt() { }
+
+    @Override
+    public boolean onUnbind(Intent intent) {
         writeServiceRunningPref(false);
         // When the AccessibilityService is stopped for whatever reason try to hide the view
         if (!hide()) {
@@ -518,5 +529,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
         unregisterBroadcastReceiver();
 
         Log.i(getClass().getName(), "Accessibility service started.");
+
+        return false;
     }
+
 }
