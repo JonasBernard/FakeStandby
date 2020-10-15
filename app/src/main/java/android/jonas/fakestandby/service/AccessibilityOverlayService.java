@@ -5,6 +5,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
@@ -29,8 +30,6 @@ import java.util.Set;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 
-    public static boolean running = false;
-
     private PhoneLockReceiver phoneLockReceiver;
 
     // Static variables for screen dimensions
@@ -44,6 +43,9 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     // Self implemented view that renders mainly black but can also get transparent.
     OverlayView view;
+
+    // The Service holds an instance of that class to manage a notification that can be dropped to start the overlay
+    OverlayNotification notification;
 
     // Store the y-location where dragging started
     public static float BasePX = 0;
@@ -126,10 +128,20 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 // The requested action is to hide the overlay immediately. Let's do it.
                 hide_immediately();
                 break;
-            case Constants.Intent.Extra.OverlayAction.NOTHING:
-                // You may say that this is useless. But wait and see...
+            case Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION:
+                Log.i(getClass().getName(), "Received intent to show the compat notification");
 
-                Log.i(getClass().getName(), "Received intent to do nothing with the overlay");
+                //Drop the notification
+                dropNotification();
+            case Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION:
+                Log.i(getClass().getName(), "Received intent to hide the compat notification");
+
+                //Cancel the notification
+                cancelNotification();
+            case Constants.Intent.Extra.OverlayAction.NOTHING:
+                Log.i(getClass().getName(), "Received intent to do nothing");
+
+                // You may say that this is useless. But wait and see...
                 break;
             default:
                 Log.i(getClass().getName(), "Received intent without usable information");
@@ -324,8 +336,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Check whether at least one option to close the overlay is selected in the prefs
         String[] options = getResources().getStringArray(R.array.close_options_values);
         int enabled_options = 0;
-        for (int i = 0; i < options.length; i++) {
-            if (getIsCloseOptionEnabled(options[i])) enabled_options++;
+        for (String option : options) {
+            if (getIsCloseOptionEnabled(option)) enabled_options++;
         }
         if (enabled_options < 1) {
             NoCloseOptionSelectedNotification notification = new NoCloseOptionSelectedNotification(this);
@@ -461,13 +473,23 @@ public class AccessibilityOverlayService extends AccessibilityService {
         }
     }
 
-    private void initializeNotification() {
+    public void initializeNotification() {
         // When the device does not support QuickTiles a custom notification is dropped.
         // It gives users with older devices the ability to also start the overlay.
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            OverlayNotification notification = new OverlayNotification(this);
+
+        notification = new OverlayNotification(this);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N || getShowNotificationPref()) {
             notification.drop();
         }
+    }
+
+    private void dropNotification() {
+        notification.drop();
+    }
+
+    private void cancelNotification() {
+        notification.cancel();
     }
 
     public void initializeBroadcastReceiver() {
@@ -482,7 +504,6 @@ public class AccessibilityOverlayService extends AccessibilityService {
     }
 
     private void writeServiceRunningPref(boolean value) {
-        running = value;
         getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_SERVICE_RUNNING, value).apply();
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_SERVICE_RUNNING + " to " + (value ? "true":"false"));
     }
@@ -492,11 +513,15 @@ public class AccessibilityOverlayService extends AccessibilityService {
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_OVERLAY_SHOWING + " to " + (value ? "true":"false"));
     }
 
+    private boolean getShowNotificationPref() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean(getString(R.string.settings_show_notification_key), false);
+    }
+
     private boolean getIsCloseOptionEnabled(String valueName) {
         String[] defaults = getResources().getStringArray(R.array.close_options_values);
 
         Set<String> defaults_set = new HashSet<String>(Arrays.asList(defaults));
-        Set<String> options_set = PreferenceManager.getDefaultSharedPreferences(this).getStringSet(getString(R.string.close_option_key), defaults_set);
+        Set<String> options_set = PreferenceManager.getDefaultSharedPreferences(this).getStringSet(getString(R.string.settings_close_option_key), defaults_set);
 
         if (options_set.contains(valueName)) {
             Log.i(getClass().getName(), "Close option with key " + valueName + " is enabled");

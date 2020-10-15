@@ -9,9 +9,29 @@
             app:defaultValue="@array/close_options_values"
             app:entries="@array/close_options_entries"
             app:entryValues="@array/close_options_values"
-            app:key="@string/close_option_key"
-            app:title="@string/close_option_title"
-            app:summary="@string/close_option_summary" />
+            app:key="@string/settings_close_option_key"
+            app:title="@string/settings_close_option_title"
+            app:summary="@string/settings_close_option_summary" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="@string/settings_show_notification_key"
+            app:title="@string/settings_show_notification_title"
+            app:summary="@string/settings_show_notification_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="open_settings_category"
+        app:title="@string/settings_category_open_other">
+
+        <Preference
+            app:title="@string/open_accessibility_settings_title"
+            app:summary="@string/open_accessibility_settings_description"
+            app:icon="@drawable/ic_baseline_open_in_new_24">
+            <intent android:action="android.settings.ACCESSIBILITY_SETTINGS"
+                android:launchMode="singleTask" />
+        </Preference>
 
     </PreferenceCategory>
 

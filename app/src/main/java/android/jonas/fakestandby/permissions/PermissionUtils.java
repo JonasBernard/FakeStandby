@@ -33,8 +33,7 @@ public class PermissionUtils {
 
     public static boolean checkAccessibilityServiceRunning(Context context) {
         Log.i("PermissionUtils", "Checking if accessibility service is running...");
-        boolean running = AccessibilityOverlayService.running;
-        //boolean running = context.getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).getBoolean(Constants.Preferences.IS_SERVICE_RUNNING, false);
+        boolean running = context.getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, Context.MODE_PRIVATE).getBoolean(Constants.Preferences.IS_SERVICE_RUNNING, false);
         if (running) {
             Log.i("PermissionUtils", "Accessibility service runs!");
             return true;
