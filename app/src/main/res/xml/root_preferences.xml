@@ -9,9 +9,15 @@
             app:defaultValue="@array/close_options_values"
             app:entries="@array/close_options_entries"
             app:entryValues="@array/close_options_values"
-            app:key="@string/close_option_key"
+            app:key="setting_close_options"
             app:title="@string/close_option_title"
             app:summary="@string/close_option_summary" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="setting_start_on_boot"
+            app:title="@string/setting_start_on_boot_title"
+            app:summary="@string/setting_start_on_boot_summary" />
 
     </PreferenceCategory>
 

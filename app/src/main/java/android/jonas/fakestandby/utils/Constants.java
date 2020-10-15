@@ -7,6 +7,7 @@ public class Constants {
         public static final String PREFERENCE_NAME = "default_preference"; // Name of the default preference to use.
         public static final String FIRST_OPEN = "is_app_opened_for_first_time"; // Key of the preference that stores weather the app is opened for the first time
         public static final String IS_OVERLAY_SHOWING = "is_overlay_showing"; // Key of the preference that stores weather the overlay is currently active
+        public static final String START_OVERLAY_ON_SERVICE_START = "start_overlay_on_service_start"; // Stores true, if the service for the overlay should immediately start the overlay after start
     }
 
     public static final class Intent {
