@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="android.jonas.fakestandby">
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".onboarding.OnBoardingActivity"
             android:label="Welcome to FakeStandby" />
+
+        <activity
+            android:name=".actions.StartOverlay"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/app_icon_adaptive"
+            android:label="@string/action_start_overlay" />
+
+        <activity
+            android:name=".actions.StopOverlay"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/app_icon_adaptive"
+            android:label="@string/action_stop_overlay" />
 
         <activity
             android:name=".settings.SettingsActivity"
@@ -29,8 +44,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".settings.LicenseActivity"
+            android:exported="false"
             android:label="@string/license_activity_title">
             <intent-filter>
                 <action android:name="android.jonas.fakestandby.license" />
@@ -38,6 +55,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8850353377499245~3510896955" />
@@ -47,14 +65,16 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_OFF" />
                 <action android:name="android.intent.action.SCREEN_ON" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
         <service
             android:name=".service.AccessibilityOverlayService"
+            android:exported="true"
             android:label="@string/accessibility_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -75,5 +95,6 @@
             </intent-filter>
         </service>
     </application>
+
 
 </manifest>

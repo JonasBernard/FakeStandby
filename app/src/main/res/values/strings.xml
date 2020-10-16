@@ -39,4 +39,6 @@
     <string name="open_accessibility_settings_title">Open accessibility settings</string>
     <string name="open_accessibility_settings_description">Open the accessibility settings of the device to manage the accessibility service for FakeStandby.</string>
     <string name="settings_category_open_other">Open other settings</string>
+    <string name="action_start_overlay">Start FakeStandby</string>
+    <string name="action_stop_overlay">Stop FakeStandby</string>
 </resources>
