@@ -1,0 +1,20 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Turn off your screen while keeping apps running"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?\n  While using an app, you maybe not nessesarily need your display. So, why don’t turn it off? <b>Up to 20%</b> of your battery\n  power is consumed by the display.\n</p>\n\n<p>\n  FakeStandby is an Android app to turn off your screen while keeping apps running. This includes foreground jobs, which means\n  you can keep\n\t\n  <ul>\n    <li>listening to music on YouTube</li>\n    <li>staying online on WhatsApp and other text messengers</li> \n    <li>running your favorite game</li>\n  </ul>\n\n  all with your screen turned off.\n</p>\n"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Added website link, source code link and License note to the app."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Now on-screen navigation buttons (home, back, recent apps) also get covered in black.\n+ When your device has a notch, the parts next to the notch should also be covered.\n+ The navigation bar in the settings is now properly themed.\n+ Stability has improved for using the app in landscape orientation."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ The app is available in Spanish now."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ The app is available in the following 6 new languages now:\n  - Chinese (simplified, 60%)\n  - French (76%)\n  - Hindi (76%)\n  - Persian (17%)\n  - Portuguese (76%)\n  - Russian (63%)\n+ Added a setting to enable a persistent notification for devices, that do not support quick settings.\n+ Added a setting to start the fake standby on boot\n+ The app acquires a wake lock now. This should fix many issues.\n+ Added exported activities for starting and stopping the fake standby. This way you can start the\n  overlay from automation apps.\n  (This is not tested well. Please report any issues with that.)\n+ Added Fastlane and localized and device specific screenshots.\n\n- Removed a redundant button on the dialog, that advises to restart the device.\n\n* Fixed issue #11\n* Closed issue #12"
+    }
+}
