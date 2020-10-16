@@ -1,0 +1,17 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Schalte deinen Bildschirm aus, ohne dass andere Apps es bemerken"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  Die meisten aktuellen Smartphones haben zwar gute Akkus, aber wer möchte sein Handy nicht trotzdem gerne noch eine Stunde länger nutzen?\n  Bis zu 20% deines Stromverbrauchs entstehen durch deinen Bildschirm. Also warum sollte man nicht einfach den Bildschirm ausschalten können, ohne dass\n  andere Apps es mitbekommen, und anhalten?\n</p>\n\n<p>\n  FakeStandby ist eine App, die es die ermöglicht, deinen Bildschirm auszuschalten, ohne dass deine Apps angehalten werden.\n  Das heißt, du kannst\n\n  <ul>\n    <li>Musik auf YouTube anhören</li>\n    <li>bei WhatsApp und anderen Nachrichten-Apps als online angezeigt werden</li>\n    <li>dein Lieblingsspiel laufen lassen</li>\n  </ul>\n\n  während dein Bildschirm ausgeschaltet ist.\n</p>\n"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Link zur Webseite und dem Quellcode, sowie die Lizenz zur App hinzugefügt."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Die Navigationsleiste auf dem Bildschirm (Home-Button, Zurück und letzte Apps) wird jetzt auch schwarz.\n+ Wenn dein Gerät eine Notch am Bildschirmrand hat, sollte der Teil daneben jetzt auch schwarz werden.\n+ Die Navigationsleite in den Einstellungen passt jetzt zum Farbschema.\n+ Die Stabilität bei gedrehtem Bildschirm hat sich verbessert."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Die App ist jetzt auf Spanisch verfügbar."
+    }
+}
