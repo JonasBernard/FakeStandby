@@ -1,0 +1,4 @@
++ Maintenant les boutons virtuels de navigation (home, retour et applications récentes) sont aussi masqués.
++ Quand votre appareil a une encoche, la partie proche de l'encoche devrait aussi être masquée.
++ La barre de navigation dans les paramètres utilise le thème maintenant.
++ Stabilité améliorée lors de l'utilisation en mode paysage.

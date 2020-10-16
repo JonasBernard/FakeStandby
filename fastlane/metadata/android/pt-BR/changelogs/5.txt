@@ -1,0 +1,4 @@
++ Agora botões de navegação na tela (tela inicial, voltar e apps recentes) também são cobertos pelo preto.
++ Quando seu aparelho tiver uma indentação, as partes próximas a ela também provavelmente estarão cobertas.
++ A barra de navegação nas configurações está agora com o tema apropriado. 
++ Estabilidade do uso em modo retrato melhorada.
