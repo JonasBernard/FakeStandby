@@ -1,0 +1,11 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Apaga la pantalla mientras mantiene las aplicaciones en ejecución"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n   La mayoría de los teléfonos inteligentes en estos días tienen baterías de larga duración, pero ¿quién no quiere que su teléfono dure solo una hora más?\n   Mientras usa una aplicación, es posible que no necesite necesariamente su pantalla. Entonces, ¿por qué no lo apagas? <b> Hasta un 20% </b> de su batería es consumida por la pantalla\n</p>\n\n<p>\n   FakeStandby es una aplicación de Android para apagar la pantalla mientras mantiene las aplicaciones en ejecución. Esto incluye trabajos en primer plano, lo que significa que puedes quedarte\n\n   <ul>\n     <li> escuchar música en YouTube </li>\n     <li> permanecer en línea en WhatsApp y otros mensajeros de texto </li>\n     <li> ejecutar su juego favorito </li>\n   </ul>\n\n   Todo con la pantalla apagada.\n</p>"
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Die App ist jetzt auf Spanisch verfügbar."
+    }
+}
