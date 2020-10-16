@@ -1,0 +1,17 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Éteignez votre écran tout en gardant vos applications fonctionnelles"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  De nos jours la plupart des smartphones ont des batteries décentes, mais qui n'a jamais voulu que leur téléphone ne tienne juste une heure de plus?\n  Quand vous utilisez une application, vous n'avez pas forcément besoin de votre écran. Alors, pourquoi ne pas l'éteindre? <b>Jusqu'à 20%</b> de votre batterie est consommée par l'écran.\n</p>\n\n<p>\n  FakeStandby est une application pour Android qui éteint votre écran tout en gardant les applications actives. Ça inclut les tâches au premier plan, ce qui signifie que vous pouvez\n\t\n  <ul>\n    <li>écouter de la musique sur YouTube</li>\n    <li>rester en ligne sur WhatsApp et les autres applications de messagerie</li> \n    <li>jouer à votre jeu favori</li>\n  </ul>\n\n  tout ça avec votre écran éteint.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Ajout à l'application des liens vers le site web, le code source et la note de license "
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Maintenant les boutons virtuels de navigation (home, retour et applications récentes) sont aussi masqués.\n+ Quand votre appareil a une encoche, la partie proche de l'encoche devrait aussi être masquée.\n+ La barre de navigation dans les paramètres utilise le thème maintenant.\n+ Stabilité améliorée lors de l'utilisation en mode paysage."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ L'application est disponible en Espagnol maintenant."
+    }
+}
