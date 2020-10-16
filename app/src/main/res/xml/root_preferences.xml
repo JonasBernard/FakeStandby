@@ -15,9 +15,35 @@
 
         <SwitchPreference
             app:defaultValue="false"
+            app:key="setting_show_notification"
+            app:title="@string/settings_show_notification_title"
+            app:summary="@string/settings_show_notification_summary" />
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="setting_use_wake_lock"
+            app:title="@string/settings_use_wake_lock_title"
+            app:summary="@string/settings_use_wake_lock_summary" />
+
+        <SwitchPreference
+            app:defaultValue="false"
             app:key="setting_start_on_boot"
             app:title="@string/setting_start_on_boot_title"
             app:summary="@string/setting_start_on_boot_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="open_settings_category"
+        app:title="@string/settings_category_open_other">
+
+        <Preference
+            app:title="@string/open_accessibility_settings_title"
+            app:summary="@string/open_accessibility_settings_description"
+            app:icon="@drawable/ic_baseline_open_in_new_24">
+            <intent android:action="android.settings.ACCESSIBILITY_SETTINGS"
+                android:launchMode="singleTask" />
+        </Preference>
 
     </PreferenceCategory>
 

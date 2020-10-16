@@ -19,12 +19,15 @@ public class Constants {
                 public static final byte HIDE_IMMEDIATELY = 2; // Value of the extra if one wants to hide the overlay without blending.
                 public static final byte NOTHING = -1; // Value of the extra if nothing should happen. Just to have a default.
                 public static final byte DEFAULT = NOTHING;
+                public static final byte SHOW_NOTIFICATION = 3;
+                public static final byte HIDE_NOTIFICATION = 4;
             }
         }
     }
 
     public static final class Notification {
         public static final int ID = 647832961; // Just some random ID for the notification that is displayed when the device does not support QuickTiles.
+        public static final String CHANNEL_ID = "default"; // Just some random ID for the notification channel.
     }
 
     public static final class Overlay {

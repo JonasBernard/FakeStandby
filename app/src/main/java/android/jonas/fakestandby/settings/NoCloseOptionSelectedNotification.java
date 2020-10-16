@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.jonas.fakestandby.R;
 import android.jonas.fakestandby.utils.Constants;
+import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -22,21 +23,27 @@ public class NoCloseOptionSelectedNotification {
         intent = new Intent(context, SettingsActivity.class);
         pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            NotificationChannel erorrs = new NotificationChannel("errors", context.getString(R.string.notification_channel_errors_name), NotificationManager.IMPORTANCE_HIGH);
+        if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationChannel errors = new NotificationChannel("errors", context.getString(R.string.notification_channel_errors_name), NotificationManager.IMPORTANCE_HIGH);
             NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(erorrs);
+            notificationManager.createNotificationChannel(errors);
 
+            builder = new NotificationCompat.Builder(context, "errors")
+                    .setSmallIcon(R.mipmap.simple_tile_icon_36dp)
+                    .setContentTitle(context.getString(R.string.close_option_error_no_option_selected_title))
+                    .setContentText(context.getString(R.string.close_option_error_no_option_selected_description))
+                    .setAutoCancel(true)
+                    .setContentIntent(pendingIntent)
+                    .setChannelId("errors");
+        } else {
+            builder = new NotificationCompat.Builder(context)
+                    .setSmallIcon(R.mipmap.simple_tile_icon_36dp)
+                    .setContentTitle(context.getString(R.string.close_option_error_no_option_selected_title))
+                    .setContentText(context.getString(R.string.close_option_error_no_option_selected_description))
+                    .setAutoCancel(true)
+                    .setContentIntent(pendingIntent)
+                    .setPriority(NotificationCompat.PRIORITY_HIGH);
         }
-
-        builder = new NotificationCompat.Builder(context)
-                .setSmallIcon(R.mipmap.simple_tile_icon_36dp)
-                .setContentTitle(context.getString(R.string.close_option_error_no_option_selected_title))
-                .setContentText(context.getString(R.string.close_option_error_no_option_selected_description))
-                .setAutoCancel(true)
-                .setContentIntent(pendingIntent)
-                .setChannelId("errors")
-                .setPriority(NotificationCompat.PRIORITY_HIGH);
 
         notificationManager = NotificationManagerCompat.from(context);
     }

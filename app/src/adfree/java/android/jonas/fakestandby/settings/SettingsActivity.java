@@ -1,6 +1,7 @@
 package android.jonas.fakestandby.settings;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.jonas.fakestandby.BuildConfig;
 import android.jonas.fakestandby.onboarding.OnBoardingActivity;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
@@ -11,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
+
 import android.util.Log;
 import android.view.View;
 import android.jonas.fakestandby.R;
@@ -32,18 +35,6 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         inflateSettings();
-    }
-
-    private void inflateSettings() {
-        setContentView(R.layout.activity_settings);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.title_activity_settings);
-        setSupportActionBar(toolbar);
-
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.settings, new SettingsFragment())
-                .commit();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +51,33 @@ public class SettingsActivity extends AppCompatActivity {
                 Log.i(getClass().getName(), "Sent intent to show overlay");
             }
         });
+
+        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
+            @Override
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                if (key.equals("setting_show_notification")) {
+                    Intent intent = new Intent(getApplicationContext(), AccessibilityOverlayService.class);
+                    if (sharedPreferences.getBoolean("setting_show_notification", false)) {
+                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION);
+                    } else {
+                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION);
+                    }
+                    startService(intent);
+                }
+            }
+        });
+    }
+
+    private void inflateSettings() {
+        setContentView(R.layout.activity_settings);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.title_activity_settings);
+        setSupportActionBar(toolbar);
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.settings, new SettingsFragment())
+                .commit();
     }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {

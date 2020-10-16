@@ -1,6 +1,7 @@
 package android.jonas.fakestandby.settings;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
 import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
 import android.os.Bundle;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
+
 import android.util.Log;
 import android.view.View;
 import android.jonas.fakestandby.R;
@@ -58,6 +61,21 @@ public class SettingsActivity extends AppCompatActivity {
                 .build();
 
         adView.loadAd(adRequest);
+
+        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
+            @Override
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                if (key.equals("setting_show_notification")) {
+                    Intent intent = new Intent(getApplicationContext(), AccessibilityOverlayService.class);
+                    if (sharedPreferences.getBoolean("setting_show_notification", false)) {
+                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION);
+                    } else {
+                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION);
+                    }
+                    startService(intent);
+                }
+            }
+        });
     }
 
     @Override

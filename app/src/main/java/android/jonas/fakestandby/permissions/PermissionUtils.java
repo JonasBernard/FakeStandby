@@ -6,13 +6,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ServiceInfo;
-import android.jonas.fakestandby.utils.Constants;
 import android.net.Uri;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.accessibility.AccessibilityManager;
 
 import androidx.appcompat.view.ContextThemeWrapper;
+import androidx.fragment.app.DialogFragment;
 
 import java.util.List;
 
@@ -88,13 +88,7 @@ public class PermissionUtils {
         AlertDialog alertDialog = new AlertDialog.Builder(new ContextThemeWrapper(context, R.style.AppTheme_Dialog)).create();
         alertDialog.setTitle(context.getString(R.string.accessibility_error_not_running_title));
         alertDialog.setMessage(context.getString(R.string.accessibility_error_not_running_message));
-        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, context.getString(android.R.string.cancel),
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, context.getString(android.R.string.ok),
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, context.getString(android.R.string.ok),
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();

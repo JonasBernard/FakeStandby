@@ -35,8 +35,12 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     // Static variables for screen dimensions
     private DisplayMetrics dm;
-    private int height;
-    private int width;
+
+    private final int flags_no_wake_lock = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
+            WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION | WindowManager.LayoutParams.FLAG_FULLSCREEN |
+            WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
+    private final int flags_wake_lock = flags_no_wake_lock | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 
     // Some objects that make the rendering possible
     static WindowManager windowManager;
@@ -44,6 +48,9 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     // Self implemented view that renders mainly black but can also get transparent.
     OverlayView view;
+
+    // The Service holds an instance of that class to manage a notification that can be dropped to start the overlay
+    OverlayNotification notification;
 
     // Store the y-location where dragging started
     public static float BasePX = 0;
@@ -130,10 +137,20 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 // The requested action is to hide the overlay immediately. Let's do it.
                 hide_immediately();
                 break;
-            case Constants.Intent.Extra.OverlayAction.NOTHING:
-                // You may say that this is useless. But wait and see...
+            case Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION:
+                Log.i(getClass().getName(), "Received intent to show the compat notification");
 
-                Log.i(getClass().getName(), "Received intent to do nothing with the overlay");
+                //Drop the notification
+                dropNotification();
+            case Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION:
+                Log.i(getClass().getName(), "Received intent to hide the compat notification");
+
+                //Cancel the notification
+                cancelNotification();
+            case Constants.Intent.Extra.OverlayAction.NOTHING:
+                Log.i(getClass().getName(), "Received intent to do nothing");
+
+                // You may say that this is useless. But wait and see...
                 break;
             default:
                 Log.i(getClass().getName(), "Received intent without usable information");
@@ -171,14 +188,12 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Initialize the self implemented view that renders mainly black but can also get transparent.
         view = new OverlayView(getApplicationContext());
         // Manage some layout parameters fro example to match the whole screen and set that the user cannot touch through the overlay.
+        int flags = getUseWakeLockPref() ? flags_wake_lock : flags_no_wake_lock;
         layoutParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY, //TYPE_PHONE OR TYPE_SYSTEM_OVERLAY
-                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
-                        WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION | WindowManager.LayoutParams.FLAG_FULLSCREEN |
-                        WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
-                        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                flags,
                 PixelFormat.TRANSLUCENT);
         layoutParams.alpha = 1;
         layoutParams.gravity = Gravity.TOP | Gravity.START;
@@ -300,6 +315,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
             // Set dimensions to current width and height (these may change from time to time due to device rotation)
             layoutParams.width = dm.widthPixels + 400;
             layoutParams.height = dm.heightPixels + 400;
+            layoutParams.flags = getUseWakeLockPref() ? flags_wake_lock : flags_no_wake_lock;
             // Add the view component
             windowManager.addView(view, layoutParams);
             // Set the state
@@ -328,8 +344,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Check whether at least one option to close the overlay is selected in the prefs
         String[] options = getResources().getStringArray(R.array.close_options_values);
         int enabled_options = 0;
-        for (int i = 0; i < options.length; i++) {
-            if (getIsCloseOptionEnabled(options[i])) enabled_options++;
+        for (String option : options) {
+            if (getIsCloseOptionEnabled(option)) enabled_options++;
         }
         if (enabled_options < 1) {
             NoCloseOptionSelectedNotification notification = new NoCloseOptionSelectedNotification(this);
@@ -465,13 +481,23 @@ public class AccessibilityOverlayService extends AccessibilityService {
         }
     }
 
-    private void initializeNotification() {
+    public void initializeNotification() {
         // When the device does not support QuickTiles a custom notification is dropped.
         // It gives users with older devices the ability to also start the overlay.
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            OverlayNotification notification = new OverlayNotification(this);
+
+        notification = new OverlayNotification(this);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N || getShowNotificationPref()) {
             notification.drop();
         }
+    }
+
+    private void dropNotification() {
+        notification.drop();
+    }
+
+    private void cancelNotification() {
+        notification.cancel();
     }
 
     public void initializeBroadcastReceiver() {
@@ -498,6 +524,14 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     private boolean getStartOnBootPref() {
         return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_start_on_boot", false);
+    }
+
+    private boolean getShowNotificationPref() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_show_notification", false);
+    }
+
+    private boolean getUseWakeLockPref() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_use_wake_lock", true);
     }
 
     private boolean getIsCloseOptionEnabled(String valueName) {
