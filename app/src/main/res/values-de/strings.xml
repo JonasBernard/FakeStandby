@@ -22,7 +22,7 @@
     <string name="help_translate_title">"Hilf, die App zu übersetzen"</string>
     <string name="help_translate_summary">"Die App ist nicht in deiner Sprache verfügbar? Hilf mit bei der Übersetung!"</string>
     <string name="visit_website_title">"Besuche die Projektwebseite"</string>
-    <string name="visit_website_summary">"jonasbernard.github.io/FakeStandby"</string>
+    <string name="visit_website_summary">"jonasbernard.de/FakeStandby/"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"Lizenzinformationen"</string>
     <string name="license_summary">"Lies dir die Lizenz dieser App durch."</string>

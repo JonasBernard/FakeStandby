@@ -50,7 +50,7 @@
             app:summary="@string/visit_website_summary"
             app:icon="@drawable/ic_baseline_public_24">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://jonasbernard.github.io/FakeStandby/" />
+                android:data="https://jonasbernard.de/FakeStandby/" />
         </Preference>
 
         <Preference
