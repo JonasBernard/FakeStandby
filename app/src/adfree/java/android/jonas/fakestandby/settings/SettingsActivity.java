@@ -28,10 +28,10 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (BuildConfig.DEBUG) {
+        if (BuildConfig.DEBUG && !getIntent().getBooleanExtra("skip_intro", false)) {
         //if (Utils.isFirstOpen(this) || BuildConfig.DEBUG) {
             Intent i = new Intent(this, OnBoardingActivity.class);
-            startActivity(i);
+            //startActivity(i);
         }
 
         inflateSettings();

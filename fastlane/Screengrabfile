@@ -1,0 +1,20 @@
+# remove the leading '#' to uncomment lines
+
+app_package_name('android.jonas.fakestandby')
+tests_package_name('android.jonas.fakestandby.test')
+# use_tests_in_packages(['your.screenshot.tests.package'])
+
+app_apk_path('app/build/outputs/apk/adfree/debug/app-adfree-debug.apk')
+tests_apk_path('app/build/outputs/apk/androidTest/adfree/debug/app-adfree-debug-androidTest.apk')
+
+locales(['en-US', 'bn', 'de', 'es', 'fa', 'fr', 'fr', 'hi', 'hi', 'nl', 'pt-BR', 'ru', 'tr', 'zh-CN'])
+ending_locale('en-US')
+
+use_timestamp_suffix(false)
+reinstall_app(false)
+
+# clear all previously generated screenshots in your local output directory before creating new ones
+clear_previous_screenshots(true)
+
+# For more information about all available options run
+#   fastlane screengrab --help

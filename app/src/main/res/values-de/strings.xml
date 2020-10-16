@@ -12,10 +12,10 @@
     <string name="accessibility_error_not_enabled_message">"Der Service für Barrierefreiheit ist in den Einstellungen daktiviert. Die App funktioniert nur, wenn diese Einstellung aktiviert ist. Um sie zu aktivieren, öffne die Einstellungen, scrolle nach unten bis zu FakeStandby Service und erlaube die Benutzung der Barrierefreiheits-Funktionen. Bei einigen Geräten ist die Funktion unter dem Menüpunkt \"Installierte Dienste\" zu finden."</string>
     <string name="title_activity_settings">"Einstellungen"</string>
     <string name="settings_category_overlay_options">"Fake-Standby-Optionen"</string>
-    <string name="close_option_title">"Methoden zum Zurückkehren"</string>
+    <string name="settings_show_notification_title">Zeige eine Benachrichtung mit der man FakeStandby aktivieren kann.</string>
+    <string name="settings_show_notification_summary">Aktiviere diese Einstellung, falls dein Gerät keine benutzerdefinierten Schnelleinstellungs-Kacheln unterstützt.</string>
     <string name="close_option_tap_four">"Tippe an 4 verschiedenen Punkten gleichzeitig auf den Bildschrim"</string>
     <string name="close_option_swipe">"Wische von unten nach oben"</string>
-    <string name="close_option_summary">"Wähle, welche Methoden dir zur Verfügung stehen, um den Fake-Sandby-Modus zu verlassen"</string>
     <string name="close_option_error_no_option_selected_title">"Keine Methode zum zurückkehren festgelegt"</string>
     <string name="close_option_error_no_option_selected_description">"Es wurde keine Methode ausgewählt, um aus dem Fake-Standby-Modus wieder zurückzukehren"</string>
     <string name="settings_category_others">"Weitere Informationen"</string>
