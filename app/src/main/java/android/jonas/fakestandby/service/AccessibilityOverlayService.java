@@ -36,11 +36,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
     // Static variables for screen dimensions
     private DisplayMetrics dm;
 
-    private final int flags_no_wake_lock = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
+    private final int flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS |
             WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION | WindowManager.LayoutParams.FLAG_FULLSCREEN |
             WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN |
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
-    private final int flags_wake_lock = flags_no_wake_lock | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 
     // Some objects that make the rendering possible
     static WindowManager windowManager;
@@ -188,7 +187,6 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Initialize the self implemented view that renders mainly black but can also get transparent.
         view = new OverlayView(getApplicationContext());
         // Manage some layout parameters fro example to match the whole screen and set that the user cannot touch through the overlay.
-        int flags = getUseWakeLockPref() ? flags_wake_lock : flags_no_wake_lock;
         layoutParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
@@ -315,7 +313,6 @@ public class AccessibilityOverlayService extends AccessibilityService {
             // Set dimensions to current width and height (these may change from time to time due to device rotation)
             layoutParams.width = dm.widthPixels + 400;
             layoutParams.height = dm.heightPixels + 400;
-            layoutParams.flags = getUseWakeLockPref() ? flags_wake_lock : flags_no_wake_lock;
             // Add the view component
             windowManager.addView(view, layoutParams);
             // Set the state

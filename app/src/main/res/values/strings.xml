@@ -20,7 +20,7 @@ Warning: If you have the "Start standby on boot" option enabled, your screen wil
     <string name="settings_show_notification_summary">Use this option, if your device does not support custum quick settings tiles.</string>
     <string name="close_option_tap_four">"Tap on the screen with 4 or more touches at the same time"</string>
     <string name="close_option_swipe">"Swipe from bottom to top"</string>
-    <string name="settings_close_option_summary">"Choose the methods that can be used to escape the fake standby state"</string>
+    <string name="close_option_summary">"Choose the methods that can be used to escape the fake standby state"</string>
     <string name="close_option_error_no_option_selected_title">"No close method set"</string>
     <string name="close_option_error_no_option_selected_description">"No close method set for the fake standby"</string>
     <string name="settings_category_others">"Further information"</string>
@@ -43,6 +43,4 @@ Warning: If you have the "Start standby on boot" option enabled, your screen wil
     <string name="settings_category_open_other">Open other settings</string>
     <string name="action_start_overlay">Start FakeStandby</string>
     <string name="action_stop_overlay">Stop FakeStandby</string>
-    <string name="settings_use_wake_lock_title">Use wake lock</string>
-    <string name="settings_use_wake_lock_summary">Use wake lock while fake standby is turned on to prevent android from locking the phone and start the real standby. (recommended)</string>
 </resources>

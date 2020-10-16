@@ -18,13 +18,7 @@
             app:key="setting_show_notification"
             app:title="@string/settings_show_notification_title"
             app:summary="@string/settings_show_notification_summary" />
-
-        <CheckBoxPreference
-            app:defaultValue="true"
-            app:key="setting_use_wake_lock"
-            app:title="@string/settings_use_wake_lock_title"
-            app:summary="@string/settings_use_wake_lock_summary" />
-
+        
         <SwitchPreference
             app:defaultValue="false"
             app:key="setting_start_on_boot"
