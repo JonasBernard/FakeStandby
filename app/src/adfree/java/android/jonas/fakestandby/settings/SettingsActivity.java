@@ -56,9 +56,9 @@ public class SettingsActivity extends AppCompatActivity {
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
             @Override
             public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-                if (key.equals(getString(R.string.settings_show_notification_key))) {
+                if (key.equals("setting_show_notification")) {
                     Intent intent = new Intent(getApplicationContext(), AccessibilityOverlayService.class);
-                    if (sharedPreferences.getBoolean(getString(R.string.settings_show_notification_key), false)) {
+                    if (sharedPreferences.getBoolean("setting_show_notification", false)) {
                         intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION);
                     } else {
                         intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION);

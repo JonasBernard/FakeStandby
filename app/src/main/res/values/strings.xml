@@ -15,7 +15,6 @@
     <string name="settings_category_overlay_options">"FakeStandby options"</string>
     <string name="settings_close_option_key" translatable="false">"close_options"</string>
     <string name="settings_close_option_title">"Escape methods"</string>
-    <string name="settings_show_notification_key" translatable="false">settings_show_notification</string>
     <string name="settings_show_notification_title">Always show a notification to start the fake standby</string>
     <string name="settings_show_notification_summary">Use this option, if your device does not support custum quick settings tiles.</string>
     <string name="close_option_tap_four">"Tap on the screen with 4 or more touches at the same time"</string>
@@ -41,4 +40,6 @@
     <string name="settings_category_open_other">Open other settings</string>
     <string name="action_start_overlay">Start FakeStandby</string>
     <string name="action_stop_overlay">Stop FakeStandby</string>
+    <string name="settings_use_wake_lock_title">Use wake lock</string>
+    <string name="settings_use_wake_lock_summary">Use wake lock while fake standby is turned on to prevent android from locking the phone and start the real standby. (recommended)</string>
 </resources>
