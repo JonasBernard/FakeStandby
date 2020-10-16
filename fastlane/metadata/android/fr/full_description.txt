@@ -1,0 +1,16 @@
+<p>
+  De nos jours la plupart des smartphones ont des batteries décentes, mais qui n'a jamais voulu que leur téléphone ne tienne juste une heure de plus?
+  Quand vous utilisez une application, vous n'avez pas forcément besoin de votre écran. Alors, pourquoi ne pas l'éteindre? <b>Jusqu'à 20%</b> de votre batterie est consommée par l'écran.
+</p>
+
+<p>
+  FakeStandby est une application pour Android qui éteint votre écran tout en gardant les applications actives. Ça inclut les tâches au premier plan, ce qui signifie que vous pouvez
+	
+  <ul>
+    <li>écouter de la musique sur YouTube</li>
+    <li>rester en ligne sur WhatsApp et les autres applications de messagerie</li> 
+    <li>jouer à votre jeu favori</li>
+  </ul>
+
+  tout ça avec votre écran éteint.
+</p>

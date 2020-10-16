@@ -1,0 +1,19 @@
+
+<p>
+  A maioria dos smartphones nos dias de hoje possuem baterias de longa duração, mas quem não quer que o celular dure só mais uma horinha?
+  Enquanto usa um aplicativo, você talvez não precise usar seu display. Então, por que não desligá-lo? <b>Até 20%</b> da sua bateria
+  é gasta pelo display.
+</p>
+
+<p>
+  FakeStandby é um aplicativo Android que desliga sua tela enquanto deixa seus outros apps rodando. Isso inclue os trabalhos em primeiro plano, o que significa que
+  você pode continuar
+	
+  <ul>
+    <li>ouvindo música no YouTube</li>
+    <li>permanecendo on-line no WhatsApp ou em outros apps de mensagem de texto/li> 
+    <li>rodando seu jogo favorito</li>
+  </ul>
+
+  tudo com sua tela desligada.
+</p>
