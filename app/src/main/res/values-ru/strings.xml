@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="notification_message">"Нажми, чтобы запустить"</string>
+    <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
+    <string name="accessibility_error_not_running_message">"Служба, необходимая для работы FakeStandby, не запущена. Пожалуйста, перезапустите устройство."</string>
+    <string name="accessibility_error_settings_label">"Открыть Настройки"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Необходимы разрешения"</string>
+    <string name="notification_channel_errors_name">"Ошибки и предупреждения"</string>
+    <string name="title_activity_settings">"Настройки"</string>
+    <string name="settings_category_overlay_options">"Настройки фейкового режима ожидания "</string>
+    <string name="close_option_title">"Методы закрытия"</string>
+    <string name="close_option_tap_four">"Одновременое нажатие более чем тремя пальцами"</string>
+    <string name="close_option_swipe">"Свайп снизу вверх"</string>
+
+    <!-- Fuzzy -->
+    <string name="close_option_summary">"Выберите, как можно быдет выйти из фейкового режима ожидания"</string>
+    <string name="close_option_error_no_option_selected_title">"Метод закрытия не выбран"</string>
+    <string name="close_option_error_no_option_selected_description">"Не установлен метод выхода из фейкового режима ожидания"</string>
+    <string name="settings_category_others">"Дальнейшая информация"</string>
+    <string name="help_translate_title">"Помогите с переводом приложения"</string>
+    <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом, дав шанс приложению пойти по миру!"</string>
+    <string name="visit_website_title">"Посетить сайт проекта"</string>
+    <string name="visit_website_summary">"jonasbernard.github.io/FakeStandby/"</string>
+    <string name="license_activity_title">"Универсальная общественная лицензия GNU 3.0"</string>
+    <string name="license_title">"Лицензия"</string>
+    <string name="license_summary">"Посмотреть информацию о лизензировании этого приложения."</string>
+    <string name="view_source_title">"Посмотреть исходный код"</string>
+    <string name="view_source_summary">"Посетить GitHub для просмотра исходного кода."</string>
+</resources>
