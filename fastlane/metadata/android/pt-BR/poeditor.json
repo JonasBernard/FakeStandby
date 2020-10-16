@@ -1,0 +1,17 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Desligue sua tela enquanto mantém aplicativos ativos"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "\n<p>\n  A maioria dos smartphones nos dias de hoje possuem baterias de longa duração, mas quem não quer que o celular dure só mais uma horinha?\n  Enquanto usa um aplicativo, você talvez não precise usar seu display. Então, por que não desligá-lo? <b>Até 20%</b> da sua bateria\n  é gasta pelo display.\n</p>\n\n<p>\n  FakeStandby é um aplicativo Android que desliga sua tela enquanto deixa seus outros apps rodando. Isso inclue os trabalhos em primeiro plano, o que significa que\n  você pode continuar\n\t\n  <ul>\n    <li>ouvindo música no YouTube</li>\n    <li>permanecendo on-line no WhatsApp ou em outros apps de mensagem de texto/li> \n    <li>rodando seu jogo favorito</li>\n  </ul>\n\n  tudo com sua tela desligada.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Adicionado link para o website, link para o código fonte e notas de Licença para o app."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Agora botões de navegação na tela (tela inicial, voltar e apps recentes) também são cobertos pelo preto.\n+ Quando seu aparelho tiver uma indentação, as partes próximas a ela também provavelmente estarão cobertas.\n+ A barra de navegação nas configurações está agora com o tema apropriado. \n+ Estabilidade do uso em modo retrato melhorada."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Agora o aplicativo está disponível em Espanhol."
+    }
+}
