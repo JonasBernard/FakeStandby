@@ -5,17 +5,17 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: update_fastlane" time="0.067022984">
+      <testcase classname="fastlane.lanes" name="0: update_fastlane" time="0.055662887">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00025447">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000143991">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: capture_android_screenshots" time="168.623705262">
+      <testcase classname="fastlane.lanes" name="2: node metadata/android/poeditor2fastlane.js" time="0.056855443">
         
       </testcase>
     

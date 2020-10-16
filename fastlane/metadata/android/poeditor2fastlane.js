@@ -69,3 +69,5 @@ dirs.forEach(dir => {
 
     }
 });
+
+console.log("Finished importing!")

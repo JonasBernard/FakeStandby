@@ -36,6 +36,11 @@ Take localized screenshots for small tablets
 fastlane android screenshots_tenInch
 ```
 Take localized screenshots for large tablets
+### android import_poeditor
+```
+fastlane android import_poeditor
+```
+Import localized changelogs and descriptions from poeditor.json into android metadata
 
 ----
 

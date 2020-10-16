@@ -72,4 +72,10 @@ platform :android do
         )
     end
 
+    desc "Import localized changelogs and descriptions from poeditor.json into android metadata"
+    lane :import_poeditor do
+        sh(
+            command: 'node metadata/android/poeditor2fastlane.js'
+        )
+    end
 end
