@@ -1,0 +1,19 @@
++ The app is available in the following 6 new languages now:
+  - Chinese (simplified, 60%)
+  - French (76%)
+  - Hindi (76%)
+  - Persian (17%)
+  - Portuguese (76%)
+  - Russian (63%)
++ Added a setting to enable a persistent notification for devices, that do not support quick settings.
++ Added a setting to start the fake standby on boot
++ The app acquires a wake lock now. This should fix many issues.
++ Added exported activities for starting and stopping the fake standby. This way you can start the
+  overlay from automation apps.
+  (This is not tested well. Please report any issues with that.)
++ Added Fastlane and localized and device specific screenshots.
+
+- Removed a redundant button on the dialog, that advises to restart the device.
+
+* Fixed issue #11
+* Closed issue #12
