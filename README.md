@@ -14,7 +14,7 @@
      <img src="https://img.shields.io/github/repo-size/JonasBernard/FakeStandby?label=repository%20size" alt="GitHub repo size">
      <br>
      <img src="https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI" alt="GitHub Workflow Status">
-     <a href="https://jonasbernard.github.io/FakeStandby/">
+     <a href="https://fakestandby.jonasbernard.de/">
        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Ffakestandby.jonasbernard.de" alt="Website Status">
      </a><br>
      <a href="https://bestpractices.coreinfrastructure.org/projects/4235">
