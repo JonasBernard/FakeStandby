@@ -28,7 +28,7 @@ Warning: If you have the "Start standby on boot" option enabled, your screen wil
     <string name="help_translate_summary">"The app is currently not available in your native language? Help translating it to help it go around the world!"</string>
     <string name="app_name" translatable="false">"FakeStandby"</string>
     <string name="visit_website_title">"Visit the projects website"</string>
-    <string name="visit_website_summary" translatable="false">"jonasbernard.github.io/FakeStandby/"</string>
+    <string name="visit_website_summary" translatable="false">fakestandby.jonasbernard.de</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"License"</string>
     <string name="license_summary">"See the licensing information of the app."</string>
