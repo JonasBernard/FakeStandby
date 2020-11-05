@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="notification_message">"Нажми, чтобы запустить"</string>
+    <string name="accessibility_service_label">"FakeStandby Service"</string>
     <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
     <string name="accessibility_error_not_running_message">"Служба, необходимая для работы FakeStandby, не запущена. Пожалуйста, перезапустите устройство."</string>
     <string name="accessibility_error_settings_label">"Открыть Настройки"</string>
@@ -20,7 +21,6 @@
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом, дав шанс приложению пойти по миру!"</string>
     <string name="visit_website_title">"Посетить сайт проекта"</string>
-    <string name="visit_website_summary">"jonasbernard.github.io/FakeStandby/"</string>
     <string name="license_activity_title">"Универсальная общественная лицензия GNU 3.0"</string>
     <string name="license_title">"Лицензия"</string>
     <string name="license_summary">"Посмотреть информацию о лизензировании этого приложения."</string>
