@@ -13,5 +13,8 @@
     },
     "Changelog vor version 1.2.3": {
         "store_changelog_6": "+ L'application est disponible en Espagnol maintenant."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ l'application est maintenant disponible  dans les 6 nouvelles langues suivantes:\n  - Chinois (simplifié, 60%)\n  - Français (100%)\n  - Hindi (76%)\n  - Persian (17%)\n  - Portuguais (76%)\n  - Russe (63%)\n+ Ajout d'un paramètre activant une notification persistente sur les appareils ne supportant pas les paramétrages rapides.\n+ Ajout d'un paramètre pour lancer FakeStandby au démarrage\n+ L'application comporte un verrouilkage d'écran maintenant. Ça devrait résoudre beaucoup de problèmes.\n+ Ajout des activitées exportées pour le lancement et l'arrêt de FakeStandby. Voys pouvez ainsi démarrer FakeStandby via les applications de gestion de démarrage automatique d'application. (Ça n'a pas été testé en profondeur. N'hésitez pas à signaler tout problème rencontré.)\n+ Ajout de captures d'écrans rapides, localisées et spécifiques aux appareils.\n\n- Retrait d'un bouton redondant sur l'interface qui conseillait de redémarrer l'appareil.\n\n* Résolution du bug #11\n* Fermeture du bug #12"
     }
 }
