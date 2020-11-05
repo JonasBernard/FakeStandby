@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="notification_message">"Clique para ativar"</string>
+
+    <!-- Ainda tá em inglês -->
+    <string name="accessibility_service_label">"FakeStandby Service"</string>
     <string name="accessibility_service_description">"FakeStandby necessita desta função para que seja possível comandar cada tela e cada aplicativo. Este será usado apenas para providenciar o funcionamento do aplicativo e não irá acessar, armazenar, coletar ou compartilhar nenhum de seus dados."</string>
     <string name="accessibility_error_not_running_title">"Algum serviço exigido não está funcionando"</string>
     <string name="accessibility_error_not_running_message">"Um serviço exigido para o uso do FakeStandby não está funcionando. Por favor reinicie seu dispositivo."</string>
@@ -22,9 +25,6 @@
     <string name="help_translate_title">"Ajude a traduzir o aplicativo"</string>
     <string name="help_translate_summary">"O app está indisponível no seu idioma nativo? Ajude a traduzí-lo e ajude ele a chegar ao mundo todo!"</string>
     <string name="visit_website_title">"Visite o site do projeto"</string>
-
-    <!-- URL should be marked as non translatable. -->
-    <string name="visit_website_summary">"https://jonasbernard.github.io/FakeStandby/"</string>
     <string name="license_activity_title">"Licença Pública Geral GNU"</string>
     <string name="license_title">"Licença"</string>
     <string name="license_summary">"Veja as informações de licença do app."</string>
