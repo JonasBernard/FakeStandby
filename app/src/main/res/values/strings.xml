@@ -2,22 +2,18 @@
 <resources>
     <string name="notification_message">"Click to run"</string>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
-    <string name="accessibility_service_description">"FakeStandby requires this functionality to make it possible to control every screen and every app. This feature will only used to provide the functionality of the app and will not access, save, collect or share any of the data.
-
-Warning: If you have the "Start standby on boot" option enabled, your screen will get dark after enabling this. Press the power button and wait a few seconds to escape this."</string>
+    <string name="accessibility_service_description">"FakeStandby requires this functionality to make it possible to control every screen and every app. This feature will only used to provide the functionality of the app and will not access, save, collect or share any of the data."</string>
     <string name="accessibility_error_not_running_title">"Some required service is not running"</string>
     <string name="accessibility_error_not_running_message">"A required service for FakeStandby is not running. Please restart your device."</string>
     <string name="accessibility_error_settings_label">"Open Settings"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Permission requiered"</string>
-    <string name="accessibility_error_no_overlay_permission_message">"The app is not permitted to display overlays over other apps. In order to run the app you need to grant the "Display over other apps" permission for FakeStandby. The permission makes it possible for the app to display content over the content of other apps. To grant the permission enable the switch on the following screen."</string>
+    <string name="accessibility_error_no_overlay_permission_message">"The app is not permitted to display overlays over other apps. In order to to run the app you need to grant the \\"Display over other apps\\" permission for FakeStandby. The permission makes it possible for the app to display content over the content of other apps. To grant the permission enable the switch on the following screen."</string>
     <string name="notification_channel_errors_name">"Errors and warnings"</string>
-    <string name="accessibility_error_not_enabled_title">"Some functionality is not enabled"</string>
-    <string name="accessibility_error_not_enabled_message">"Some option for FakeStandby is not enabled in the accessibility settings of your device. To run the app that service has to be enabled. Simply open the accessibility settings, scroll down to FakeStandby and enable it. On some devices you may look for the option under "installed services""</string>
+    <string name="accessibility_error_not_enabled_title">"Some functionallity is not enabled"</string>
+    <string name="accessibility_error_not_enabled_message">"Some option for FakeStandby is not enabled in the accessibility settings of your device. To run the app that service has to be enabled. Simply open the accessibility settings, scroll down to FakeStandby and enable it. On some devices you may look for the option under \\"installed services\\""</string>
     <string name="title_activity_settings">"Settings"</string>
     <string name="settings_category_overlay_options">"Fake standby options"</string>
     <string name="close_option_title">"Escape methods"</string>
-    <string name="settings_show_notification_title">Always show a notification to start the fake standby</string>
-    <string name="settings_show_notification_summary">Use this option, if your device does not support custum quick settings tiles.</string>
     <string name="close_option_tap_four">"Tap on the screen with 4 or more touches at the same time"</string>
     <string name="close_option_swipe">"Swipe from bottom to top"</string>
     <string name="close_option_summary">"Choose the methods that can be used to escape the fake standby state"</string>
@@ -28,19 +24,21 @@ Warning: If you have the "Start standby on boot" option enabled, your screen wil
     <string name="help_translate_summary">"The app is currently not available in your native language? Help translating it to help it go around the world!"</string>
     <string name="app_name" translatable="false">"FakeStandby"</string>
     <string name="visit_website_title">"Visit the projects website"</string>
-    <string name="visit_website_summary" translatable="false">fakestandby.jonasbernard.de</string>
+    <string name="visit_website_summary" translatable="false">"jonasbernard.github.io/FakeStandby/"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"License"</string>
     <string name="license_summary">"See the licensing information of the app."</string>
     <string name="view_source_title">"View source code"</string>
     <string name="view_source_summary">"Visit GitHub to see all the source code of this app."</string>
-    <string name="setting_start_on_boot_title">Start standby on boot</string>
-    <string name="setting_start_on_boot_summary">When enabled, the fake standby will be started as soon as the accessibility service is started. For example after boot.</string>
-    <string name="notification_default_channel_name">Main</string>
-    <string name="notification_default_channel_description">Main channel for the compatibility notification</string>
-    <string name="open_accessibility_settings_title">Open accessibility settings</string>
-    <string name="open_accessibility_settings_description">Open the accessibility settings of the device to manage the accessibility service for FakeStandby.</string>
-    <string name="settings_category_open_other">Open other settings</string>
-    <string name="action_start_overlay">Start FakeStandby</string>
-    <string name="action_stop_overlay">Stop FakeStandby</string>
+    <string name="settings_show_notification_title">"Always show a notification to start the fake standby"</string>
+    <string name="settings_show_notification_summary">"Use this option, if your device does not support custum quick settings tiles."</string>
+    <string name="setting_start_on_boot_title">"Start standby on boot"</string>
+    <string name="setting_start_on_boot_summary">"When enabled, the fake standby will be started as soon as the accessibility service is started. For example after boot."</string>
+    <string name="notification_default_channel_name">"Main"</string>
+    <string name="notification_default_channel_description">"Main channel for the compatibility notification"</string>
+    <string name="open_accessibility_settings_title">"Open accessibility settings"</string>
+    <string name="open_accessibility_settings_description">"Open the accessibility settings of the device to manage the accessibility service for FakeStandby."</string>
+    <string name="settings_category_open_other">"Open other settings"</string>
+    <string name="action_start_overlay">"Start FakeStandby"</string>
+    <string name="action_stop_overlay">"Stop FakeStandby"</string>
 </resources>
