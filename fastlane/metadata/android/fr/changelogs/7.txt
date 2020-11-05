@@ -1,0 +1,17 @@
++ l'application est maintenant disponible  dans les 6 nouvelles langues suivantes:
+  - Chinois (simplifié, 60%)
+  - Français (100%)
+  - Hindi (76%)
+  - Persian (17%)
+  - Portuguais (76%)
+  - Russe (63%)
++ Ajout d'un paramètre activant une notification persistente sur les appareils ne supportant pas les paramétrages rapides.
++ Ajout d'un paramètre pour lancer FakeStandby au démarrage
++ L'application comporte un verrouilkage d'écran maintenant. Ça devrait résoudre beaucoup de problèmes.
++ Ajout des activitées exportées pour le lancement et l'arrêt de FakeStandby. Voys pouvez ainsi démarrer FakeStandby via les applications de gestion de démarrage automatique d'application. (Ça n'a pas été testé en profondeur. N'hésitez pas à signaler tout problème rencontré.)
++ Ajout de captures d'écrans rapides, localisées et spécifiques aux appareils.
+
+- Retrait d'un bouton redondant sur l'interface qui conseillait de redémarrer l'appareil.
+
+* Résolution du bug #11
+* Fermeture du bug #12

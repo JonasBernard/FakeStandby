@@ -1,0 +1,4 @@
++ Ekrandaki yönelme butonları da kapanacak (ileri, home tuşu, geçmiş uygulamar.)
++ Cihazınızın çentiği varsa, onun yanları da kapacak.
++ Ayarlar kısmındaki navigasyon çubuğu görünümü düzeltildi.
++ Yatay pozisyonda artık uygulama daha iyi çalışacak.

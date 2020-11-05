@@ -1,0 +1,17 @@
+<p>
+  Çoğu yeni telefonların uzun süren bataryaları var, fakat kim sarjını bir saat daha uzun tutmak istemez ki?
+  Bir uygulama kullanırken ekrana ihtiyacın olmayabilir. Neden hem uygulama çalışsın ve uygulamanın ekranını kapatmak istemeyesin ki? Bataryanızın <b>%20 oranı</b>
+  gereksiz olarak açık kalan ekrandan gidiyor.
+</p>
+
+<p>
+  FakeStandby uygulamarın çalışmasını durdurmadan ekranı kapatır. Bu demek oluyor ki
+	
+  <ul>
+    <li>YouTube'dan müzik dinleyebillirsiniz</li>
+    <li>Sohbet uygulamasında çevrimiçi olabilirsiniz</li> 
+    <li>En sevdiğiniz oyunu açık bırakabilirsiniz</li>
+  </ul>
+
+  ve hepsi de ekranınız kapalı bir şekilde.
+</p>

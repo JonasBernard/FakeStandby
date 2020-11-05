@@ -1,0 +1,17 @@
++ Bu uygulama 6 yeni dilde mevcut:
+-Çince (basitleştirilmiş, %60) 
+-Fransızca (%76)
+-Hintçe (%76)
+-Farsça (%17)
+-Portekizce (76)
+-Rusça (63)
++ Hızlı ayar desteklemeyen cihazlar için sürekli kalan bildirim seçeneği eklendi.
++ Fake standby'ı cihaz açılışında başlatmak için seçenek getirildi.
++ Bir çok sorunu çözecek uygulama uyandırma kilidi eklendi.
++ Fake standby'ı başlatmak ve durdurmak için dışa aktarılan etkinlikler eklendi. Bu şekilde açmayı ve kapatmayı otomatik yapabilirsiniz. (Test edilmediği için lütfen hataları bildirin.)
++Fastlane eklendi, farklı cihazlara özel farklı dillerde ekran görüntüleri getirildi.
+
+-Cihazınızı yeniden başlatmanızı söyleyen gereksiz buton kaldırıldı.
+
+* Sorun #11 çözüldü
+* Sorun #12 kapatıldı
