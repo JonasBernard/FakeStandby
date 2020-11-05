@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="notification_message">"Cliquez pour lancer"</string>
+    <string name="accessibility_service_label">"Service FakeStandby"</string>
     <string name="accessibility_service_description">"FakeStandby a besoin de cette fonction pour pouvoir contrôler chaque écran et chaque application. Cette option sera utilisée seulement pour fournir la fonction de l'application et n'accèdera, n'enregistrera, ne collectera ni ne partagera aucune information."</string>
-    <string name="accessibility_error_not_running_title">"Un service requis ne fonctionne pas "</string>
+    <string name="accessibility_error_not_running_title">"Un service requis ne fonctionne pas"</string>
     <string name="accessibility_error_not_running_message">"Un service requis pour FakeStandby ne fonctionne pas. Veuillez redémarrer votre appareil."</string>
     <string name="accessibility_error_settings_label">"Ouvrir les paramètres"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Permission requise"</string>
@@ -22,10 +23,20 @@
     <string name="help_translate_title">"Aider à traduire l'application"</string>
     <string name="help_translate_summary">"L'application n'est pas disponible dans votre langue? Traduisez-la pour lui faire faire le tour du monde!"</string>
     <string name="visit_website_title">"Visiter le site des projets"</string>
-    <string name="visit_website_summary">"jonasbernard.github.io/FakeStandby/"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"License"</string>
     <string name="license_summary">"Voir la license d'utilisation de l'application."</string>
     <string name="view_source_title">"Voir le code source"</string>
     <string name="view_source_summary">"Visiter GitHub pour voir le code source de cette application."</string>
+    <string name="settings_show_notification_title">"Toujours afficher une notification pour démarrer FakeStandby"</string>
+    <string name="settings_show_notification_summary">"Utilisez cette option si votre appareil ne supporte pas les tuiles de paramétrages rapides"</string>
+    <string name="setting_start_on_boot_title">"Lancer au démarrage de l'appareil"</string>
+    <string name="setting_start_on_boot_summary">"Une fois activé, FakeStandby sera lancé une fois le service d'accessibilité lancé, par exemple après le (re)démarrage de l'appareil."</string>
+    <string name="notification_default_channel_name">"Principal"</string>
+    <string name="notification_default_channel_description">"Canal principal pour la notification de compatibilité"</string>
+    <string name="open_accessibility_settings_title">"Ouvrir les paramètres d'accessibilité"</string>
+    <string name="open_accessibility_settings_description">"Ouvre les paramètres d'accessibilité de l'appareil pour gérer l'accès de FakeStandby"</string>
+    <string name="settings_category_open_other">"Ouvrir les autres paramètres"</string>
+    <string name="action_start_overlay">"Lancer FakeStandby"</string>
+    <string name="action_stop_overlay">"Arrêter FakeStandby"</string>
 </resources>
