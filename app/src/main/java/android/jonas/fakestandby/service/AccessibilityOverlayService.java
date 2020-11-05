@@ -29,6 +29,8 @@ import java.util.Set;
 
 public class AccessibilityOverlayService extends AccessibilityService {
 
+    private static final int pixelOffset = 400;
+
     public static boolean running = false;
 
     private PhoneLockReceiver phoneLockReceiver;
@@ -195,8 +197,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
                 PixelFormat.TRANSLUCENT);
         layoutParams.alpha = 1;
         layoutParams.gravity = Gravity.TOP | Gravity.START;
-        layoutParams.x = -200;
-        layoutParams.y = -200;
+        layoutParams.x = -pixelOffset;
+        layoutParams.y = -pixelOffset;
 
         // The overlay can be stopped by dragging upwards or tapping on the screen with 4 or more fingers.
         // To manage the dragging initialize a new OnSwipeListener that extends OnTouchListener
@@ -311,8 +313,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
             // Set dimensions to current width and height (these may change from time to time due to device rotation)
-            layoutParams.width = dm.widthPixels + 400;
-            layoutParams.height = dm.heightPixels + 400;
+            layoutParams.width = dm.widthPixels + 2 * pixelOffset;
+            layoutParams.height = dm.heightPixels + 2 * pixelOffset;
             // Add the view component
             windowManager.addView(view, layoutParams);
             // Set the state
