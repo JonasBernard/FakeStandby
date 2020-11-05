@@ -1,0 +1,20 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Uygulamalar çalışırken ekranınızı kapatın"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  Çoğu yeni telefonların uzun süren bataryaları var, fakat kim sarjını bir saat daha uzun tutmak istemez ki?\n  Bir uygulama kullanırken ekrana ihtiyacın olmayabilir. Neden hem uygulama çalışsın ve uygulamanın ekranını kapatmak istemeyesin ki? Bataryanızın <b>%20 oranı</b>\n  gereksiz olarak açık kalan ekrandan gidiyor.\n</p>\n\n<p>\n  FakeStandby uygulamarın çalışmasını durdurmadan ekranı kapatır. Bu demek oluyor ki\n\t\n  <ul>\n    <li>YouTube'dan müzik dinleyebillirsiniz</li>\n    <li>Sohbet uygulamasında çevrimiçi olabilirsiniz</li> \n    <li>En sevdiğiniz oyunu açık bırakabilirsiniz</li>\n  </ul>\n\n  ve hepsi de ekranınız kapalı bir şekilde.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ İnternet sitesi, kaynak kodu linki ve lisans notu uygulamaya eklendi."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Ekrandaki yönelme butonları da kapanacak (ileri, home tuşu, geçmiş uygulamar.)\n+ Cihazınızın çentiği varsa, onun yanları da kapacak.\n+ Ayarlar kısmındaki navigasyon çubuğu görünümü düzeltildi.\n+ Yatay pozisyonda artık uygulama daha iyi çalışacak."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+Uygulamanın artık İspanyolca çevirisi var."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ Bu uygulama 6 yeni dilde mevcut:\n-Çince (basitleştirilmiş, %60) \n-Fransızca (%76)\n-Hintçe (%76)\n-Farsça (%17)\n-Portekizce (76)\n-Rusça (63)\n+ Hızlı ayar desteklemeyen cihazlar için sürekli kalan bildirim seçeneği eklendi.\n+ Fake standby'ı cihaz açılışında başlatmak için seçenek getirildi.\n+ Bir çok sorunu çözecek uygulama uyandırma kilidi eklendi.\n+ Fake standby'ı başlatmak ve durdurmak için dışa aktarılan etkinlikler eklendi. Bu şekilde açmayı ve kapatmayı otomatik yapabilirsiniz. (Test edilmediği için lütfen hataları bildirin.)\n+Fastlane eklendi, farklı cihazlara özel farklı dillerde ekran görüntüleri getirildi.\n\n-Cihazınızı yeniden başlatmanızı söyleyen gereksiz buton kaldırıldı.\n\n* Sorun #11 çözüldü\n* Sorun #12 kapatıldı"
+    }
+}
