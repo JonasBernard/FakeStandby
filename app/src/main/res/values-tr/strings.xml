@@ -1,2 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="notification_message">"Çalıştırmak için dokunun"</string>
+    <string name="accessibility_service_label">"FakeStandby Servisi"</string>
+    <string name="accessibility_service_description">"FakeStandby her uygulama üstünde her ekranı kontrol edebilmesi için bu özelliğe ihtiyacı var. FakeStandby'ın bu özelliği sadece uygulamayı kullanışlı kılmak için kullanılacak ve başka uygulamalara erişmeyecek, kaydetmeyecek, bilgi toplamayacak ve paylaşmayacaktır."</string>
+    <string name="accessibility_error_not_running_title">"Gerekli servis(ler) çalışmıyor"</string>
+    <string name="accessibility_error_not_running_message">"FakeStandby'ın doğru çalışması için bir servis çalışmıyor. Lütfen "</string>
+    <string name="accessibility_error_settings_label">"Ayarları aç"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"İzin gerekiyor"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Uygulama başka uygulamaların üstünde olmaya yetkisi yok. Uygulamayı çalıştırmak için \"başka uygulamarın üstüne çiz\" yetkisini vermeniz gerekiyor. Bu yetki FakeStandby'ı başka uygulamarın üstünü kapatmasına izin verir. İzni vermek için şimdi açılacak olan ayarlar kısmında gereken yetkiyi verin."</string>
+    <string name="notification_channel_errors_name">"Hatalar ve uyarılar"</string>
+    <string name="accessibility_error_not_enabled_title">"Bazı fonksiyonlar etkinleştirilmedi"</string>
+    <string name="accessibility_error_not_enabled_message">"Cihazınızın erişebilirlik seçeneklerinde FakeStandby için bazı ayarlar açık değil. Uygulamayı çalıştırmak için bu ayarın açık olması lazım. Açmak için sadece erişebilirlik ayarlarına girin, FakeStandby kısmına gelin ve onu etkinleştirin. FakeStandby'ı görmüyorsanız \"indirilen servisler\" kısmına bakmanız gerekebilir."</string>
+    <string name="title_activity_settings">"Ayarlar"</string>
+    <string name="settings_category_overlay_options">"Fake standby ayarları"</string>
+    <string name="close_option_title">"Kapatma yöntemleri"</string>
+    <string name="close_option_tap_four">"Aynı anda ekrana 4 veya daha fazla kez dokunun"</string>
+    <string name="close_option_swipe">"Üstten aşağıya kaydırın"</string>
+    <string name="close_option_summary">"Fake standby durumunu kapatmak için yöntem seçin"</string>
+    <string name="close_option_error_no_option_selected_title">"Kapatma yöntemi seçilmedi"</string>
+    <string name="close_option_error_no_option_selected_description">"Fake standby için kapatma yöntemi seçilmedi"</string>
+    <string name="settings_category_others">"Daha fazla bilgi"</string>
+    <string name="help_translate_title">"Bu uygulamayı çevirmeye yardımcı olun"</string>
+    <string name="help_translate_summary">"Bu uygulama ana dilinizde yok mu? Çevirmeye yardımcı olun!"</string>
+    <string name="visit_website_title">"Projenin internet sitesini ziyaret edin"</string>
+    <string name="license_activity_title">"GNU General Public License 3.0"</string>
+    <string name="license_title">"Lisans"</string>
+    <string name="license_summary">"Uygulamanın lisansını görün."</string>
+    <string name="view_source_title">"Kaynak kodunu görün"</string>
+    <string name="view_source_summary">"Kaynak kodunu görmek için GitHub sitesini ziyaret edin."</string>
+    <string name="settings_show_notification_title">"Fake standby'ı hızlıca başlatmak için her zaman bildirim göster"</string>
+    <string name="settings_show_notification_summary">"Eğer cihazınız hızlı ayar karolarını desteklemiyorsa, bu ayarı seçin."</string>
+    <string name="setting_start_on_boot_title">"Açılışta standby'ı çalıştır"</string>
+    <string name="setting_start_on_boot_summary">"Seçildiği zaman, fake standby erişebilirlik özellikleri çalışmaya basladığı anda açılacaktır. Örneğin telefonun açılışından sonra."</string>
+
+    <!-- Fuzzy -->
+    <string name="notification_default_channel_name">"Ana kanal"</string>
+
+    <!-- Fuzzy -->
+    <string name="notification_default_channel_description">"Uyumluluk bildirimleri için ana kanal"</string>
+    <string name="open_accessibility_settings_title">"Erişebilirlik ayarlarını açın"</string>
+    <string name="open_accessibility_settings_description">"FakeStandby'ın servislerini etkinleştirmek için cihazın erişebilirlik ayarlarını açın."</string>
+    <string name="settings_category_open_other">"Diğer ayarları aç"</string>
+    <string name="action_start_overlay">"FakeStandby'ı başlatın"</string>
+    <string name="action_stop_overlay">"FakeStandby'ı kapatın"</string>
+</resources>
