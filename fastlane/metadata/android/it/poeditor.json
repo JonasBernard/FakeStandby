@@ -1,0 +1,20 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Spegni lo schermo mentre le applicazioni continuano la loro esecuzione"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n La maggior parte degli smartphones al giorno d'oggi possiedono una batteria a lunga durata, ma chi non desidera che il proprio telefono duri un'ora in più?\n Durante l'uso di un'app, potresti non avere necessariamente bisogno del display. Quindi, perchè non spegnerlo? <b>Fino al 20%</b> della batteria è consumata dal display.\n</p>\n\n<p>\n FakeStandby è un'app Android che permette di spegnere lo schermo continuando l'esecuzione delle app. Questo include le attività in foreground, cioè puoi\n\n<ul>\n <li>ascoltare musica su YouTube</li>\n <li>rimanere online su WhatsApp e altre applicazioni di messaggistica</li>\n <li>giocare al tuo gioco preferito</li>\n</ul>\n\ntutto con lo schermo spento.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "Aggiunto link al sito web, link al codice sorgente e Licenza dell'app"
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Ora anche i tasti di navigazione su schermo (home, indietro, app recenti) sono coperti in nero.\n+ Se il dispositivo possiede il notch, ora anche la porzione di schermo vicina dovrebbe essere coperta.\n+ Il tema per la barra di navigazione nelle impostazioni ora è correttamente applicato.\n+ La stabilità dell'applicazione in modalità landscape è migliorata."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "Questa applicazione è ora disponibile in Spagnolo"
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ Questa applicazione è ora disponibile nelle 6 seguenti lingue:\n - Cinese (semplificato, 60%)\n - Francese (76%)\n - Hindi (76%)\n - Persiano (17%)\n - Portoghese (76%)\n - Russo (63%)\n+ Aggiunta una impostazione per abilitare una notifica persostente per i dispositivi che non supportano i riquadri rapidi\n+ Aggiunta una impostazione per avviare il finto standby all'avvio del dispositivo\n+ L'app permette lo stato di wake lock. Questo dovrebbe fixare diversi problemi\n+ Added exported activities for starting and stopping the fake standby. This way you can start the\n  overlay from automation apps.\n  (This is not tested well. Please report any issues with that.)\n+ Added Fastlane and localized and device specific screenshots.\n\n\n- Rimosso il bottone ridondante sul dialog che avvisava di riavviare il dispositivo\n\n* Fixato il problema #11\n* Chiuso il problema #12"
+    }
+}
