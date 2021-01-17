@@ -4,7 +4,7 @@
     <string name="accessibility_service_label">"FakeStandby Servisi"</string>
     <string name="accessibility_service_description">"FakeStandby her uygulama üstünde her ekranı kontrol edebilmesi için bu özelliğe ihtiyacı var. FakeStandby'ın bu özelliği sadece uygulamayı kullanışlı kılmak için kullanılacak ve başka uygulamalara erişmeyecek, kaydetmeyecek, bilgi toplamayacak ve paylaşmayacaktır."</string>
     <string name="accessibility_error_not_running_title">"Gerekli servis(ler) çalışmıyor"</string>
-    <string name="accessibility_error_not_running_message">"FakeStandby'ın doğru çalışması için bir servis çalışmıyor. Lütfen "</string>
+    <string name="accessibility_error_not_running_message">"FakeStandby'a gereken bir servis çalışmıyor.  Cihazını yeniden başlatın. "</string>
     <string name="accessibility_error_settings_label">"Ayarları aç"</string>
     <string name="accessibility_error_no_overlay_permission_title">"İzin gerekiyor"</string>
     <string name="accessibility_error_no_overlay_permission_message">"Uygulama başka uygulamaların üstünde olmaya yetkisi yok. Uygulamayı çalıştırmak için \"başka uygulamarın üstüne çiz\" yetkisini vermeniz gerekiyor. Bu yetki FakeStandby'ı başka uygulamarın üstünü kapatmasına izin verir. İzni vermek için şimdi açılacak olan ayarlar kısmında gereken yetkiyi verin."</string>
