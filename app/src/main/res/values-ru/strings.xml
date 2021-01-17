@@ -2,21 +2,24 @@
 <resources>
     <string name="notification_message">"Нажми, чтобы запустить"</string>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
+    <string name="accessibility_service_description">"FakeStandby необходим этот функционал для управления всеми экранами и всеми приложениями. Это будет использоваться только для предоставления функционала приложения, и не для доступа, сохранения, собирания или распространения любой информации."</string>
     <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
     <string name="accessibility_error_not_running_message">"Служба, необходимая для работы FakeStandby, не запущена. Пожалуйста, перезапустите устройство."</string>
     <string name="accessibility_error_settings_label">"Открыть Настройки"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Необходимы разрешения"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Приложению не разрешено отображать оверлэи над другими приложениями. Для использования приложения, вам надо предоставить разрешение \"Показывать поверх других приложений\" для FakeStandby. Это разрешение даёт приложению возможность показывать контент поверх других приложений.
+Чтобы предоставить разрешение, включите переключатель на следующем экране."</string>
     <string name="notification_channel_errors_name">"Ошибки и предупреждения"</string>
+    <string name="accessibility_error_not_enabled_title">"Некоторый функционал не включён"</string>
+    <string name="accessibility_error_not_enabled_message">"Разрешение доступа для FakeStandy не включена в настройках доступа вашего устройства. Для запуска приложения эта служба должна быть включена. Просто откройте настройки доступа, прокрутите вниз до FakeStandy и включите её. На некоторых устройствах вы можете поискать в разделе \"установленные службы\""</string>
     <string name="title_activity_settings">"Настройки"</string>
-    <string name="settings_category_overlay_options">"Настройки фейкового режима ожидания "</string>
+    <string name="settings_category_overlay_options">"Настройки режима лже-блокировки"</string>
     <string name="close_option_title">"Методы закрытия"</string>
     <string name="close_option_tap_four">"Одновременое нажатие более чем тремя пальцами"</string>
     <string name="close_option_swipe">"Свайп снизу вверх"</string>
-
-    <!-- Fuzzy -->
-    <string name="close_option_summary">"Выберите, как можно быдет выйти из фейкового режима ожидания"</string>
+    <string name="close_option_summary">"Выберите метод для выхода из лже-блокировки"</string>
     <string name="close_option_error_no_option_selected_title">"Метод закрытия не выбран"</string>
-    <string name="close_option_error_no_option_selected_description">"Не установлен метод выхода из фейкового режима ожидания"</string>
+    <string name="close_option_error_no_option_selected_description">"Не установлен метод выхода из режима лже-блокировки"</string>
     <string name="settings_category_others">"Дальнейшая информация"</string>
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом, дав шанс приложению пойти по миру!"</string>
@@ -26,4 +29,15 @@
     <string name="license_summary">"Посмотреть информацию о лизензировании этого приложения."</string>
     <string name="view_source_title">"Посмотреть исходный код"</string>
     <string name="view_source_summary">"Посетить GitHub для просмотра исходного кода."</string>
+    <string name="settings_show_notification_title">"Всегда показывать уведомление для запуска лже"</string>
+    <string name="settings_show_notification_summary">"Используйте эту опцию если ваше устройство не поддерживает плитки быстрых настроек."</string>
+    <string name="setting_start_on_boot_title">"Начать лже-блокировку при загрузке"</string>
+    <string name="setting_start_on_boot_summary">"Когда включено, лже-блокировка будет запущена сразу же после запуска службы доступности. При загрузке, к примеру."</string>
+    <string name="notification_default_channel_name">"Основной"</string>
+    <string name="notification_default_channel_description">"Основной канал для уведомлений совместимости"</string>
+    <string name="open_accessibility_settings_title">"Открыть настройки доступности"</string>
+    <string name="open_accessibility_settings_description">"Открыть настройки доступности устройства для управления службой доступности для FakeStandby."</string>
+    <string name="settings_category_open_other">"Открыть другие настройки"</string>
+    <string name="action_start_overlay">"Запустить FakeStandby"</string>
+    <string name="action_stop_overlay">"Остановить FakeStandby"</string>
 </resources>
