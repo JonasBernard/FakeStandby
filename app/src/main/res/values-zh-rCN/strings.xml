@@ -23,6 +23,7 @@
     <string name="help_translate_title">"帮助翻译这个APP"</string>
     <string name="help_translate_summary">"该应用程序当前没有适配您的母语吗？ 帮助翻译以让它国际化！"</string>
     <string name="visit_website_title">"访问项目网站"</string>
+    <string name="license_activity_title">"GNU通用公共许可证3"</string>
     <string name="license_title">"许可"</string>
     <string name="license_summary">"查看许可信息"</string>
     <string name="view_source_title">"查看源代码"</string>
