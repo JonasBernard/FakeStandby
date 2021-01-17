@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
-    <string name="title_activity_settings">"تنظیمات"</string>
-    <string name="help_translate_title">"کمک به ترجمه برنامه"</string>
-    <string name="visit_website_title">"دیدن وبگاه برنامه"</string>
+    <string name="accessibility_error_settings_label">"گشودن ساماندهی"</string>
+    <string name="title_activity_settings">"ساماندهی"</string>
+    <string name="help_translate_title">"یاری برای ترگومه برنامه"</string>
+    <string name="visit_website_title">"نگریدن به وبگاه برنامه"</string>
     <string name="license_activity_title">"گواهینامه همگانی فراگیر گنو ۳.۰"</string>
     <string name="license_title">"گواهینامه"</string>
-    <string name="view_source_title">"دیدن کد منبع"</string>
-    <string name="open_accessibility_settings_title">"گشودن تنظیمات دسترس‌پذیری"</string>
-    <string name="settings_category_open_other">"گشودن دیگر تنظیمات"</string>
+    <string name="view_source_title">"نگریدن به بُن‌کد"</string>
+    <string name="open_accessibility_settings_title">"گشودن ساماندهی دسترس‌پذیری"</string>
+    <string name="settings_category_open_other">"گشودن ساماندهی دیگر"</string>
     <string name="action_start_overlay">"آغاز FakeStandby"</string>
     <string name="action_stop_overlay">"ایست FakeStandby"</string>
 </resources>
