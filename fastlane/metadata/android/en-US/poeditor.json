@@ -16,5 +16,8 @@
     },
     "Changelog for version 1.3.0": {
         "store_changelog_7": "+ The app is available in the following 6 new languages now:\n  - Chinese (simplified, 60%)\n  - French (76%)\n  - Hindi (76%)\n  - Persian (17%)\n  - Portuguese (76%)\n  - Russian (63%)\n+ Added a setting to enable a persistent notification for devices, that do not support quick settings.\n+ Added a setting to start the fake standby on boot\n+ The app acquires a wake lock now. This should fix many issues.\n+ Added exported activities for starting and stopping the fake standby. This way you can start the\n  overlay from automation apps.\n  (This is not tested well. Please report any issues with that.)\n+ Added Fastlane and localized and device specific screenshots.\n\n- Removed a redundant button on the dialog, that advises to restart the device.\n\n* Fixed issue #11\n* Closed issue #12"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Imported translations from PoEditor\n+ Added Chinese (traditional), Ukrainian, Polish, Italian, Indonesian"
     }
 }
