@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FakeStandby</string>
+    <string name="notification_message">"Premi per avviare"</string>
+    <string name="accessibility_service_label">"Servizio FakeStandby"</string>
+    <string name="accessibility_service_description">"FakeStandby richiede l'autorizzazione per questa funzionalità per far si che sia possibile controllare ogni schermata e ogni applicazione. Questa funzione sarà usata solamente per consentire all'app di funzionare correttamente e nessun dato sarà acceduto, salvato, collezionato o condiviso."</string>
+    <string name="accessibility_error_not_running_title">"Uno o più servizi richiesti non è in esecuzione"</string>
+    <string name="accessibility_error_not_running_message">"Uno o più servizi richiesti per FakeStandby non è in esecuzione. Per favore riavvia il tuo dispositivo."</string>
+    <string name="accessibility_error_settings_label">"Apri le impostazioni"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Permesso richiesto"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Questa applicazione non ha il permesso di essere mostrata sopra altre app. Per eseguire l'app è necessario acconsentire all'opzione \\"Mostra sopra altre app\\" per FakeStandby. Questo permesso rende possibile all'applicazione di mostrare del contenuto sopra altre applicazioni. Per abilitare il permesso clicca sul bottone nella schermata seguente."</string>
+    <string name="notification_channel_errors_name">"Errori e avvertimenti"</string>
+    <string name="accessibility_error_not_enabled_title">"Una o più funzionalità non sono abilitate"</string>
+    <string name="accessibility_error_not_enabled_message">"Una o più impostazioni per FakeStandby non è stata abilitata nelle impostazioni di accessibilità del dispositivo. Per eseguire l'app il servizio deve essere abilitato. È sufficiente aprire le impostazioni di accessibilità, scorrere fino alla voce FakeStandby e abilitarla. In alcuni dispositivi potresti trovare l'opzione sotto la voce \\"servizi installati\\""</string>
+    <string name="title_activity_settings">"Impostazioni"</string>
+    <string name="settings_category_overlay_options">"Opzioni di FakeStandby"</string>
+    <string name="close_option_title">"Metodo di uscita"</string>
+    <string name="close_option_tap_four">"Tocca lo schermo 4 o più volte ripetutamente"</string>
+    <string name="close_option_swipe">"Fai uno swipe dal basso verso l'alto"</string>
+    <string name="close_option_summary">"Scegli i metodi per uscire dallo stato di finto standby"</string>
+    <string name="close_option_error_no_option_selected_title">"Nessun metodo di chiusura impostato"</string>
+    <string name="close_option_error_no_option_selected_description">"Nessun metodo di chiusura impostato per il finto standby"</string>
+    <string name="settings_category_others">"Ulteriori informazioni"</string>
+    <string name="help_translate_title">"Aiuta la traduzione di quest'applicazione"</string>
+    <string name="help_translate_summary">"Quest'applicazione non è attualmente disponibile nella tua lingua? Aiutaci a tradurla per renderla disponibile in tutto il mondo!"</string>
+    <string name="visit_website_title">"Visita il sito web del progetto"</string>
+    <string name="license_activity_title">"GNU General Public License 3.0"</string>
+    <string name="license_title">"Licenza"</string>
+    <string name="license_summary">"Mostra le informazioni di licenza dell'app"</string>
+    <string name="view_source_title">"Mostra codice sorgente"</string>
+    <string name="view_source_summary">"Visita GitHub per leggere il codice sorgente di quest'app."</string>
+    <string name="settings_show_notification_title">"Mostra sempre una notifica per attivare il finto standby"</string>
+    <string name="settings_show_notification_summary">"Usa questa opzione se il tuo dispositivo non supporta i riquadri personalizzati"</string>
+    <string name="setting_start_on_boot_title">"Entra in standby all'avvio del dispositivo"</string>
+    <string name="setting_start_on_boot_summary">"Quando questa opzione è abilitata il finto standby sarà attivato appena il servizio di accessibilità sarà avviato, per esempio dopo l'avvio del dispositivo."</string>
+    <string name="notification_default_channel_name">"Main"</string>
+    <string name="open_accessibility_settings_title">"Apri le impostazioni di accessibilità"</string>
+    <string name="open_accessibility_settings_description">"Apri le impostazioni di accessibilità del dispositivo per configurare il servizio di accessibilità per FakeStandby."</string>
+    <string name="settings_category_open_other">"Apri altre impostazioni"</string>
+    <string name="action_start_overlay">"Avvia FakeStandby"</string>
+    <string name="action_stop_overlay">"Ferma FakeStandby"</string>
 </resources>
