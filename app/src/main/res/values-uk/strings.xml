@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FakeStandby</string>
+    <string name="title_activity_settings">"Налаштування "</string>
+    <string name="close_option_swipe">"Проведіть по екрану знизу наверх "</string>
 </resources>
