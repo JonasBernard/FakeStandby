@@ -30,4 +30,12 @@
     <string name="license_summary">"Veja as informações de licença do app."</string>
     <string name="view_source_title">"Veja o código fonte"</string>
     <string name="view_source_summary">"Visite o GitHub para ver todo o código fonte desse app."</string>
+    <string name="settings_show_notification_title">"Sempre mostrar uma notificação para iniciar o Fake Standby"</string>
+    <string name="setting_start_on_boot_title">"Iniciar standby ao ligar"</string>
+    <string name="setting_start_on_boot_summary">"Se ativado, o FakeStandby vai ser iniciado assim que ao serviço de acessibilidade iniciar. Por exemplo depois de ligar."</string>
+    <string name="notification_default_channel_name">"Principal"</string>
+    <string name="open_accessibility_settings_title">"Abrir configurações de acessibilidade"</string>
+    <string name="open_accessibility_settings_description">"Abrir configurações de acessibilidade do dispositivo para gerenciar o serviço de acessibilidade do FakeStandby."</string>
+    <string name="action_start_overlay">"Iniciar o Fake Standby"</string>
+    <string name="action_stop_overlay">"Parar o FakeStandby"</string>
 </resources>
