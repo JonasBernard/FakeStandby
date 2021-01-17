@@ -1,0 +1,8 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Wyłącz ekran nie wstrzymując działania aplikacji"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n Większość dzisiejszych smartfonów posiada pojemne baterie, ale któż by nie chciał, aby jego telefon podziałał choćby o godzinę dłużej?\n Używając niektórych aplikacji niekoniecznie potrzebujesz mieć włączony ekran. No więc czemu by go nie wyłączyć? <b>Nawet 20%</b>baterii jest zużywane przez włączony ekran.\n</p>\n<p>\nFakeStandby to aplikacja dla Androida, która wyłączy ekran Twojego telefonu nie wstrzymując działania innych aplikacji. Tyczy się to aplikacji pierwszoplanowych, co oznacza, że możesz\n\n<ul>\n<li>słuchać muzyki na YouTube</li>\n<li>być online na WhatsApp a także innych komunikatorach tekstowych</li>\n<li>mieć włączoną ulubioną grę</li>\n\nA wszystko to z wyłączonym ekranem.\n</p>"
+    }
+}
