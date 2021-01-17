@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FakeStandby</string>
+    <string name="notification_message">"Kliknij aby uruchomić"</string>
+    <string name="accessibility_service_label">"FakeStandby"</string>
+    <string name="accessibility_service_description">"Usługa FakeStandby jest wymagana do kontroli każdego ekranu oraz każdej aplikacji. Wykorzystana jedynie w celu umożliwienia działania aplikacji; nie będzie uzyskiwać dostępu, zapisywać, gromadzić czy udostępniać żadnych danych."</string>
+    <string name="accessibility_error_not_running_title">"Wymagana usługa nie działa"</string>
+    <string name="accessibility_error_not_running_message">"Usługa wymagana do działania FakeStandby jest wyłączona. Proszę zrestartować urządzenie"</string>
+    <string name="accessibility_error_settings_label">"Otwórz Ustawienia"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Wymagane uprawnienie"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Nie zezwolono na wyświetlanie nakładek nad innymi aplikacjami. Aby skorzystać z aplikacji, należy udzielić pozwolenia \\"Wyświetlaj nad innymi aplikacjami\\" dla FakeStandby. Pozwala to wyświetlać zawartość nad innymi aplikacjami. Udziel pozwolenia na następnym ekranie"</string>
+    <string name="notification_channel_errors_name">"Błędy i ostrzeżenia"</string>
+    <string name="accessibility_error_not_enabled_title">"Pewne funkcje nie zostały uruchomione"</string>
+    <string name="accessibility_error_not_enabled_message">"Nie uruchomiono usług ułatwień dostępu koniecznych do działania aplikacji FakeStandby. Proszę otworzyć Ułatwienia Dostępu, odnaleźć usługę FakeStandby i włączyć ją. Na niektórych urządzeniach należy szukać w \\"zainstalowane usługi\\""</string>
+    <string name="title_activity_settings">"Ustawienia"</string>
+    <string name="settings_category_overlay_options">"Ustawienia pozornego wygaszenia"</string>
+    <string name="close_option_title">"Sposoby wyjścia"</string>
+    <string name="close_option_tap_four">"Dotknij ekranu 4 lub więcej palcami"</string>
+    <string name="close_option_swipe">"Przesuń od dołu ku górze"</string>
+    <string name="close_option_summary">"Wybierz sposoby wyjścia ze stanu pozornego wygaszenia ekranu"</string>
+    <string name="close_option_error_no_option_selected_title">"Nie wybrano sposobu wyjścia"</string>
+    <string name="close_option_error_no_option_selected_description">"Nie wybrano sposobu wyjścia ze stanu pozornego wygaszenia"</string>
+    <string name="settings_category_others">"Pozostałe informacje"</string>
+    <string name="help_translate_title">"Pomóż przetłumaczyć"</string>
+    <string name="help_translate_summary">"Aplikacja niedostępna w Twoim języku? Pomóż ją przetłumaczyć i udostępnić dla całego świata!"</string>
+
+    <!-- Shouldn't be here "project's website"? -->
+    <string name="visit_website_title">"Odwiedź stronę projektu"</string>
+    <string name="license_activity_title">"Licencja GNU GPL 3.0"</string>
+    <string name="license_title">"Licencja"</string>
+    <string name="license_summary">"Zobacz informacje o licencji"</string>
+    <string name="view_source_title">"Zobacz kod źródłowy"</string>
+    <string name="view_source_summary">"Odwiedź GitHub aby zobaczyć cały kod źródłowy aplikacji."</string>
+    <string name="settings_show_notification_title">"Pokazuj stałe powiadomienie aby uruchomić pozorne wygaszenie"</string>
+    <string name="settings_show_notification_summary">"Użyj tej opcji, jeśli Twój telefon nie wspiera niestandardowych kafelków szybkich ustawień."</string>
+    <string name="setting_start_on_boot_title">"Autostart wygaszenia"</string>
+    <string name="setting_start_on_boot_summary">"Jeśli zaznaczono,  pozorne wygaszenie zostanie włączone natychmiast po uruchomieniu usługi ułatwień dostępu. Na przykład tuż po uruchomieniu telefonu."</string>
+    <string name="notification_default_channel_name">"Główne"</string>
+    <string name="notification_default_channel_description">"Główna kategoria powiadomień (dla zgodności)"</string>
+    <string name="open_accessibility_settings_title">"Otwórz Ułatwienia Dostępu"</string>
+    <string name="open_accessibility_settings_description">"Otwórz ustawienia ułatwień dostępu aby zarządzać usługą FakeStandby"</string>
+    <string name="settings_category_open_other">"Otwórz dodatkowe ustawienia"</string>
+    <string name="action_start_overlay">"Uruchom FakeStandby"</string>
+    <string name="action_stop_overlay">"Zatrzymaj FakeStandby"</string>
 </resources>
