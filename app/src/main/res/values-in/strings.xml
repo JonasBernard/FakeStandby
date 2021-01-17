@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FakeStandby</string>
+    <string name="notification_message">"Tekan untuk mulai"</string>
+    <string name="accessibility_service_label">"Layanan FakeStandby"</string>
+    <string name="accessibility_service_description">"FakeStandby memerlukan fungsi ini untuk mengendalikan setiap layar dan aplikasi. Fitur ini hanya untuk penggunaan aplikasi dan tidak akan mengakses, menyimpan, mengumpulkan, atau membagikan data apa pun. "</string>
+    <string name="accessibility_error_not_running_title">"Beberapa layanan yang diperlukan tidak berjalan"</string>
+    <string name="accessibility_error_not_running_message">"Layanan yang diperlukan untuk FakeStandby tidak berjalan. Restart Perangkat Anda."</string>
+    <string name="accessibility_error_settings_label">"Buka Setelan"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Izin diperlukan"</string>
+    <string name="notification_channel_errors_name">"Kesalahan dan peringatan"</string>
+
+    <!-- Fuzzy -->
+    <string name="accessibility_error_not_enabled_title">"Beberapa kegunaan tidak diaktifkan"</string>
+    <string name="title_activity_settings">"Setelan"</string>
+    <string name="settings_category_overlay_options">"Pilihan Overlay Siaga"</string>
+    <string name="close_option_title">"Metode keluar"</string>
+    <string name="close_option_tap_four">"Sentuh layar sebanyak 4 kali atau lebih secara bersamaan"</string>
+    <string name="close_option_swipe">"Usap dari bawah ke atas"</string>
+
+    <!-- Fuzzy -->
+    <string name="close_option_summary">"Pilih metode untuk keluar dari status siaga"</string>
+    <string name="close_option_error_no_option_selected_title">"Tidak ada metode terpilih"</string>
+
+    <!-- Fuzzy -->
+    <string name="close_option_error_no_option_selected_description">"Tidak ada metode yang dipilih untuk keluar dari siaga palsu"</string>
+    <string name="settings_category_others">"Informasi tambahan"</string>
 </resources>
