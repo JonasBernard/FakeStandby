@@ -2,14 +2,16 @@ const fs = require('fs');
 const fse = require('fs-extra');
 let dirs = [];
 
-langs = fs.readdirSync('.')
+let prefix = "metadata/android/";
+
+langs = fs.readdirSync(prefix);
 
 langs.forEach(lang => {
-    if (fs.lstatSync(lang).isDirectory() ) {
-        content = fs.readdirSync(lang)
+    if (fs.lstatSync(prefix + lang).isDirectory() ) {
+        content = fs.readdirSync(prefix + lang);
 
         if (content.indexOf('poeditor.json') > -1) {
-            dirs.push(lang);
+            dirs.push(prefix + lang);
         }
     }
 });
