@@ -32,7 +32,7 @@
 ## Where is the problem?
 
 Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?
-While using an app, you maybe not nessesarily need your display. So, why don’t turn it off? Up to 20% of your battery
+While using an app, you maybe not necessarily need your display. So, why don’t turn it off? Up to 20% of your battery
 power is consumed by the display.
 
 ## Here is the solution!
@@ -58,7 +58,7 @@ The concept works better for OLED or AMOLED displays, where "turning pixels blac
 You should not except huge power saving effects on any device especially on devices with LCD display.
 
 ## Contribute
-![Maintenance](https://img.shields.io/maintenance/yes/2020)
+![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT.md) and the [Contributing Information](CONTRIBUTING.md).
 
@@ -66,7 +66,7 @@ Feel free to contribute to the FakeStandby project! Make sure to look at the [Co
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 
 FakeStandby is an android app that turns off your screen while keeping apps running.
-Copyright (C) 2020  Jonas Bernard
+Copyright (C) 2021  Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
