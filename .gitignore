@@ -19,3 +19,5 @@ app/src/main/java/android/jonas/fakestandby/utils/Secrets.java
 .idea/misc.xml
 
 fastlane/metadata/android/screenshots.html
+
+fastlane/report.xml
