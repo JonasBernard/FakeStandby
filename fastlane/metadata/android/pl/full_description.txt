@@ -1,0 +1,14 @@
+<p>
+ Większość dzisiejszych smartfonów posiada pojemne baterie, ale któż by nie chciał, aby jego telefon podziałał choćby o godzinę dłużej?
+ Używając niektórych aplikacji niekoniecznie potrzebujesz mieć włączony ekran. No więc czemu by go nie wyłączyć? <b>Nawet 20%</b>baterii jest zużywane przez włączony ekran.
+</p>
+<p>
+FakeStandby to aplikacja dla Androida, która wyłączy ekran Twojego telefonu nie wstrzymując działania innych aplikacji. Tyczy się to aplikacji pierwszoplanowych, co oznacza, że możesz
+
+<ul>
+<li>słuchać muzyki na YouTube</li>
+<li>być online na WhatsApp a także innych komunikatorach tekstowych</li>
+<li>mieć włączoną ulubioną grę</li>
+
+A wszystko to z wyłączonym ekranem.
+</p>

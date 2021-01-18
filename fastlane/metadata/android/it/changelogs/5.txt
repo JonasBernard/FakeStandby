@@ -1,0 +1,4 @@
++ Ora anche i tasti di navigazione su schermo (home, indietro, app recenti) sono coperti in nero.
++ Se il dispositivo possiede il notch, ora anche la porzione di schermo vicina dovrebbe essere coperta.
++ Il tema per la barra di navigazione nelle impostazioni ora è correttamente applicato.
++ La stabilità dell'applicazione in modalità landscape è migliorata.

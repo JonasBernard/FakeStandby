@@ -1,0 +1,20 @@
++ Questa applicazione è ora disponibile nelle 6 seguenti lingue:
+ - Cinese (semplificato, 60%)
+ - Francese (76%)
+ - Hindi (76%)
+ - Persiano (17%)
+ - Portoghese (76%)
+ - Russo (63%)
++ Aggiunta una impostazione per abilitare una notifica persostente per i dispositivi che non supportano i riquadri rapidi
++ Aggiunta una impostazione per avviare il finto standby all'avvio del dispositivo
++ L'app permette lo stato di wake lock. Questo dovrebbe fixare diversi problemi
++ Added exported activities for starting and stopping the fake standby. This way you can start the
+  overlay from automation apps.
+  (This is not tested well. Please report any issues with that.)
++ Added Fastlane and localized and device specific screenshots.
+
+
+- Rimosso il bottone ridondante sul dialog che avvisava di riavviare il dispositivo
+
+* Fixato il problema #11
+* Chiuso il problema #12

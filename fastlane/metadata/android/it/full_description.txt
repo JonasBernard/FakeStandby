@@ -1,0 +1,16 @@
+<p>
+ La maggior parte degli smartphones al giorno d'oggi possiedono una batteria a lunga durata, ma chi non desidera che il proprio telefono duri un'ora in più?
+ Durante l'uso di un'app, potresti non avere necessariamente bisogno del display. Quindi, perchè non spegnerlo? <b>Fino al 20%</b> della batteria è consumata dal display.
+</p>
+
+<p>
+ FakeStandby è un'app Android che permette di spegnere lo schermo continuando l'esecuzione delle app. Questo include le attività in foreground, cioè puoi
+
+<ul>
+ <li>ascoltare musica su YouTube</li>
+ <li>rimanere online su WhatsApp e altre applicazioni di messaggistica</li>
+ <li>giocare al tuo gioco preferito</li>
+</ul>
+
+tutto con lo schermo spento.
+</p>

@@ -1,0 +1,1 @@
+Spegni lo schermo mentre le applicazioni continuano la loro esecuzione
