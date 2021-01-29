@@ -9,7 +9,7 @@ import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
-import androidx.preference.PreferenceManager;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
