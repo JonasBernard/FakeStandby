@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@octokit/rest": "^18.2.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^9.1.0",
+    "node-poeditor": "^1.0.7",
+    "nunjucks": "^3.2.3"
+  }
+}

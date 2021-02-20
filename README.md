@@ -62,6 +62,11 @@ You should not except huge power saving effects on any device especially on devi
 
 Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT.md) and the [Contributing Information](CONTRIBUTING.md).
 
+## Special Thanks
+
+Special thanks goes to all contributors! You can find them in the [CONTRIBUTORS.md](CONTRIBUTORS.md).
+I also want to thank all nice people, who donated some money!
+
 ## Licensing 
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 

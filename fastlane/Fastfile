@@ -78,4 +78,11 @@ platform :android do
             command: 'node metadata/android/poeditor2fastlane.js'
         )
     end
+
+    desc "Fetch GitHub and POEditor contributors and render a CONTRIBUTORS.md file"
+    lane :fetch_contributors do
+        Dir.chdir("../") do
+            sh 'node pull-contributors.js'
+        end
+    end
 end

@@ -41,6 +41,11 @@ Take localized screenshots for large tablets
 fastlane android import_poeditor
 ```
 Import localized changelogs and descriptions from poeditor.json into android metadata
+### android fetch_contributors
+```
+fastlane android fetch_contributors
+```
+Fetch GitHub and POEditor contributors and render a CONTRIBUTORS.md file
 
 ----
 
