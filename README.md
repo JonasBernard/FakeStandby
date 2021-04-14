@@ -45,7 +45,7 @@ you can keep
 - staying online with various text messengers
 - running your favorite game
 
-all with your screen turned off.
+all with your screen turned off!
 
 ## How does it work?
 
@@ -57,6 +57,7 @@ is a black canvas, effectively turning your pixels off. The apps you're using wo
 Some smartphones have LCD displays with background lighting that only turns off when you actually press the power button to lock your phone.
 The concept of this app works better with OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
 You should not except huge power saving effects on any device, especially on devices with LCD displays.
+
 
 ## Contribute
 
@@ -73,7 +74,9 @@ I also want to thank all the nice people who have donated some money!
 
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 
-FakeStandby is an Android app that turns off your screen pixels while keeping apps running.
+
+FakeStandby is an Android app that turns off your screen while keeping apps running.
+
 Copyright (C) 2021  Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
