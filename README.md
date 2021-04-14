@@ -32,45 +32,51 @@
 ## What is the problem?
 
 Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?
-While using an app, you maybe not necessarily need your display. So, why don’t turn it off? Up to 20% of your battery
-power is consumed by the display.
+While using an app, you maybe not necessarily need your display. Up to 20% of your battery power is consumed by the display.
+So, why not turn off all the pixels on it? Plus, this app can help prevent burn-in caused by statically displayed images and text.
 
 ## Here is the solution!
 
 FakeStandby is an Android app to turn off your screen while keeping apps running. This includes foreground jobs, which means
 you can keep
 
+- listening to podcasts
 - listening to music on YouTube
-- staying online on WhatsApp and other text messengers
+- staying online with various text messengers
 - running your favorite game
 
 all with your screen turned off!
 
 ## How does it work?
 
-This app basically launches an overlay over the app currently running. Therefore, it uses Android's accessibility services. All it's rendering
-on the overlay is a black canvas, effectively turning your pixels off. The apps you are using won't notice this, because technically your phone is turned on.
+This app displays an overlay over the foreground app using Android's accessibility services. All it renders on the overlay
+is a black canvas, effectively turning your pixels off. The apps you're using won't notice this, because technically your phone is turned on.
 
 ## Disclaimer
 
-Some smartphones have LCD displays with background lighting that only turns off when you really press the power button to lock your phone.
-The concept of this app works better with OLED and AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
-It's best not to expect *huge* power savings on any device, especially on devices with LCD display, but you will likely see at least some power savings.
+Some smartphones have LCD displays with background lighting that only turns off when you actually press the power button to lock your phone.
+The concept of this app works better with OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
+You should not except huge power saving effects on any device, especially on devices with LCD displays.
+
 
 ## Contribute
+
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 Feel free to contribute to the FakeStandby project! Make sure to look at the [Code Of Conduct](CODE_OF_CONDUCT.md) and the [Contributing Information](CONTRIBUTING.md).
 
 ## Special Thanks
 
-Special thanks goes to all contributors! You can find them in the [CONTRIBUTORS.md](CONTRIBUTORS.md).
-I also want to thank all the nice people who donated some money!
+Special thanks goes to all contributors! You can find them in [CONTRIBUTORS.md](CONTRIBUTORS.md).
+I also want to thank all the nice people who have donated some money!
 
-## Licensing 
+## Licensing
+
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 
+
 FakeStandby is an Android app that turns off your screen while keeping apps running.
+
 Copyright (C) 2021  Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
