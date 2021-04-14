@@ -29,7 +29,7 @@
    </p>
 </div>
 
-## Where is the problem?
+## What is the problem?
 
 Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?
 While using an app, you maybe not necessarily need your display. So, why don’t turn it off? Up to 20% of your battery
@@ -44,18 +44,18 @@ you can keep
 - staying online on WhatsApp and other text messengers
 - running your favorite game
 
-all with your screen turned off.
+all with your screen turned off!
 
 ## How does it work?
 
-The app is basically launching an overlay over the app currently running. Therefore it is using Android's accessibility services. All it's rendering
-on the overlay is a black canvas, effectifly turning your pixels off. The apps you're using won't notice this, beacause technically your phone is turned on.
+This app basically launches an overlay over the app currently running. Therefore, it uses Android's accessibility services. All it's rendering
+on the overlay is a black canvas, effectively turning your pixels off. The apps you are using won't notice this, because technically your phone is turned on.
 
 ## Disclaimer
 
-Some smartphones have LCD displays with background lighting, that only turns off, when you really press the power button to lock your phone.
-The concept works better for OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off"
-You should not except huge power saving effects on any device especially on devices with LCD display.
+Some smartphones have LCD displays with background lighting that only turns off when you really press the power button to lock your phone.
+The concept of this app works better with OLED and AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
+It's best not to expect *huge* power savings on any device, especially on devices with LCD display, but you will likely see at least some power savings.
 
 ## Contribute
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
@@ -65,12 +65,12 @@ Feel free to contribute to the FakeStandby project! Make sure to look at the [Co
 ## Special Thanks
 
 Special thanks goes to all contributors! You can find them in the [CONTRIBUTORS.md](CONTRIBUTORS.md).
-I also want to thank all nice people, who donated some money!
+I also want to thank all the nice people who donated some money!
 
 ## Licensing 
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 
-FakeStandby is an android app that turns off your screen while keeping apps running.
+FakeStandby is an Android app that turns off your screen while keeping apps running.
 Copyright (C) 2021  Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
