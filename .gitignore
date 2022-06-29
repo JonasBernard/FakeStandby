@@ -22,3 +22,4 @@ fastlane/metadata/android/screenshots.html
 fastlane/report.xml
 
 node_modules/
+.vscode/
