@@ -24,6 +24,7 @@
     <string name="settings_category_others">"Mais informaçōes"</string>
     <string name="help_translate_title">"Ajude a traduzir o aplicativo"</string>
     <string name="help_translate_summary">"O app está indisponível no seu idioma nativo? Ajude a traduzí-lo e ajude ele a chegar ao mundo todo!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Visite o site do projeto"</string>
     <string name="license_activity_title">"Licença Pública Geral GNU"</string>
     <string name="license_title">"Licença"</string>

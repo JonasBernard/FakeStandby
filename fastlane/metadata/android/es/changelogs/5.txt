@@ -1,0 +1,4 @@
++Ahora con botones de navegación en pantalla (Inicio, atrás, apps recientes) además sombreados.
++Los dispositivos con muesca, pueden cubrir un poco la ventana.
++Barra de navegación ahora acorde al tema.
++Estabilidad mejorada en horizontal.

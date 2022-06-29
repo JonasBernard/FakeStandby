@@ -1,0 +1,18 @@
+Die App ist bereits in den 6 folgenden Sprachen verfügbar:
+  - Chinesisch (vereinfacht, 60%)
+  - Französisch (76%)
+  - Hindi (76%)
+  - Persisch (17%)
+  - Portugiesisch (76%)
+  - Russisch (63%)
++ Hinzugefügt wurde die Option eine dauerhafte Meldung anzuzeigen, falls das Gerät keine Schnelleinstellung erlaubt
++ Hinzugefügt wurde die Option fake-standby beim Hochfahren zu starten
++ The app acquires a wake lock now. This should fix many issues.
++ Externe Steuerung ermöglicht, damit du deiner Automatisierungapp das Abblenden überlassen kannst
+(Nicht umfassend getestet. Probleme bitte melden.)
++ Added Fastlane and localized and device specific screenshots.
+
+- Entfernt wurde ein überflüssiger Hinweis das Gerät neu zu starten
+
+* Problem behoben #11
+* Problem bearbeitet #12

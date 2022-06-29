@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="notification_message">"按此運行"</string>
-    <string name="accessibility_service_label">"\"閉幕偽術\"服務"</string>
-    <string name="accessibility_service_description">"\"閉幕偽術\"需要盡可能控制每個畫面和應用程式。這個選os"</string>
-    <string name="accessibility_error_not_running_title">"部份必要的服務不在運行中"</string>
-    <string name="accessibility_error_not_running_message">"必要的服務未在運作中，麻煩你重開裝置"</string>
-    <string name="accessibility_error_settings_label">"開啟設定"</string>
-    <string name="accessibility_error_no_overlay_permission_title">"需要許可"</string>
-    <string name="notification_channel_errors_name">"錯誤與警告"</string>
-    <string name="accessibility_error_not_enabled_title">"部份功能未被開啟"</string>
-    <string name="title_activity_settings">"設定"</string>
-    <string name="close_option_title">"撒退方法"</string>
-    <string name="close_option_tap_four">"一次過輕觸螢幕4次或更多"</string>
-    <string name="close_option_error_no_option_selected_title">"不設閉昇"</string>
+    <string name="notification_message">"点击运行"</string>
+    <string name="accessibility_service_label">"无障碍服务"</string>
+    <string name="app_name">"FakeStandby"</string>
 </resources>

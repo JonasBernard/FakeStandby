@@ -4,5 +4,20 @@
     },
     "Description of the app for F-Droid Store. Can conatin simple html.": {
         "store_full_description": "<p>\n Większość dzisiejszych smartfonów posiada pojemne baterie, ale któż by nie chciał, aby jego telefon podziałał choćby o godzinę dłużej?\n Używając niektórych aplikacji niekoniecznie potrzebujesz mieć włączony ekran. No więc czemu by go nie wyłączyć? <b>Nawet 20%</b>baterii jest zużywane przez włączony ekran.\n</p>\n<p>\nFakeStandby to aplikacja dla Androida, która wyłączy ekran Twojego telefonu nie wstrzymując działania innych aplikacji. Tyczy się to aplikacji pierwszoplanowych, co oznacza, że możesz\n\n<ul>\n<li>słuchać muzyki na YouTube</li>\n<li>być online na WhatsApp a także innych komunikatorach tekstowych</li>\n<li>mieć włączoną ulubioną grę</li>\n\nA wszystko to z wyłączonym ekranem.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Dodano linki do strony aplikacji, kodu źródłowego oraz licencji"
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Teraz przyciski nawigacyjne (ekran główny, cofnij oraz ostatnie aplikacje) są również zaciemnione.\n+ Jeśli Twoje urządzenie posiada wcięcie (notch), partie ekranu obok niego również powinny być zakryte.\n+ Pasek nawigacji w ustawieniach ma wygląd właściwy  dla motywu.\n+ Poprawa stabilności działania w orientacji poziomej."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Aplikacja przetłumaczona na hiszpański."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ Aplikacja jest dostępna teraz w 6 językach:\n - chiński (uproszczony, 60%)\n - francuski (76%)\n - hindi (76%)\n - perski (17%)\n - portugalski (76%)\n - rosyjski (63%)\n+ Dodano możliwość włączenia stałego powiadomienia dla urządzeń, które nie obsługują kafelków szybkich ustawień.\n+ Dodano opcję uruchamiania fake standby przy starcie systemu.\n+ Aplikacja korzysta teraz z tzw. \"wake lock'a\". Powinno to rozwiązać wiele problemów.\n+ dodano tzw. \"exported activities\" do zatrzymywania i uruchamiania nakładki przez aplikacje służące do automatyzacji działań.\n(Nie zostało to dobrze przetestowane. Proszę o zgłaszanie wszelkich związanych z tym błędów.)\n+ Dodano Fastlane oraz dodano zrzuty ekranu w dostępnych językach dla odpowiednich typów urządzeń.\n\n- Usunięto zdublowany przycisk na komunikacie zalecającym restart urządzenia.\n\n* Naprawiono zgłoszenie #11\n* Zamknięto zgłoszenie #12"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Import tłumaczeń z PoEditor'a\n+ Dodano języki: chiński (tradycyjny), ukraiński, polski, włoski, indonezyjski"
     }
 }

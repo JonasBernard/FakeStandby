@@ -1,6 +1,6 @@
 {
     "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
-        "store_short_description": "Schalte deinen Bildschirm aus, ohne dass andere Apps es bemerken"
+        "store_short_description": "Schalte deinen Bildschirm aus, während die Apps geöffnet bleiben"
     },
     "Description of the app for F-Droid Store. Can conatin simple html.": {
         "store_full_description": "<p>\n  Die meisten aktuellen Smartphones haben zwar gute Akkus, aber wer möchte sein Handy nicht trotzdem gerne noch eine Stunde länger nutzen?\n  Bis zu 20% deines Stromverbrauchs entstehen durch deinen Bildschirm. Also warum sollte man nicht einfach den Bildschirm ausschalten können, ohne dass\n  andere Apps es mitbekommen, und anhalten?\n</p>\n\n<p>\n  FakeStandby ist eine App, die es die ermöglicht, deinen Bildschirm auszuschalten, ohne dass deine Apps angehalten werden.\n  Das heißt, du kannst\n\n  <ul>\n    <li>Musik auf YouTube anhören</li>\n    <li>bei WhatsApp und anderen Nachrichten-Apps als online angezeigt werden</li>\n    <li>dein Lieblingsspiel laufen lassen</li>\n  </ul>\n\n  während dein Bildschirm ausgeschaltet ist.\n</p>\n"
@@ -13,5 +13,11 @@
     },
     "Changelog vor version 1.2.3": {
         "store_changelog_6": "+ Die App ist jetzt auf Spanisch verfügbar."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "Die App ist bereits in den 6 folgenden Sprachen verfügbar:\n  - Chinesisch (vereinfacht, 60%)\n  - Französisch (76%)\n  - Hindi (76%)\n  - Persisch (17%)\n  - Portugiesisch (76%)\n  - Russisch (63%)\n+ Hinzugefügt wurde die Option eine dauerhafte Meldung anzuzeigen, falls das Gerät keine Schnelleinstellung erlaubt\n+ Hinzugefügt wurde die Option fake-standby beim Hochfahren zu starten\n+ The app acquires a wake lock now. This should fix many issues.\n+ Externe Steuerung ermöglicht, damit du deiner Automatisierungapp das Abblenden überlassen kannst\n(Nicht umfassend getestet. Probleme bitte melden.)\n+ Added Fastlane and localized and device specific screenshots.\n\n- Entfernt wurde ein überflüssiger Hinweis das Gerät neu zu starten\n\n* Problem behoben #11\n* Problem bearbeitet #12"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Übersetzungen von PoEditor verwendet\n+ Chinesisch (traditionel), Ukrainisch, Polnisch, Italienisch und Indonesisch hinzugefügt"
     }
 }

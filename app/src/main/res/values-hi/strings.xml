@@ -23,6 +23,7 @@
     <string name="settings_category_others">"अधिक जानकारी"</string>
     <string name="help_translate_title">"ऐप का अनुवाद करने में सहायता करें"</string>
     <string name="help_translate_summary">"क्या ये ऐप आप की मात्र भाषा में मौजूद नहीं है? अनुवाद में सहायता कर इस ऐप को लोकप्रिय करने में मदद करें!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"प्रोजेक्ट की वेबसाइट पे जाएँ"</string>
     <string name="license_activity_title">"GNU जनरल पब्लिक लाइसेंस 3.0"</string>
     <string name="license_title">"लाइसेंस"</string>

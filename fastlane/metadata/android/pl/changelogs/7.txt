@@ -1,0 +1,18 @@
++ Aplikacja jest dostępna teraz w 6 językach:
+ - chiński (uproszczony, 60%)
+ - francuski (76%)
+ - hindi (76%)
+ - perski (17%)
+ - portugalski (76%)
+ - rosyjski (63%)
++ Dodano możliwość włączenia stałego powiadomienia dla urządzeń, które nie obsługują kafelków szybkich ustawień.
++ Dodano opcję uruchamiania fake standby przy starcie systemu.
++ Aplikacja korzysta teraz z tzw. "wake lock'a". Powinno to rozwiązać wiele problemów.
++ dodano tzw. "exported activities" do zatrzymywania i uruchamiania nakładki przez aplikacje służące do automatyzacji działań.
+(Nie zostało to dobrze przetestowane. Proszę o zgłaszanie wszelkich związanych z tym błędów.)
++ Dodano Fastlane oraz dodano zrzuty ekranu w dostępnych językach dla odpowiednich typów urządzeń.
+
+- Usunięto zdublowany przycisk na komunikacie zalecającym restart urządzenia.
+
+* Naprawiono zgłoszenie #11
+* Zamknięto zgłoszenie #12

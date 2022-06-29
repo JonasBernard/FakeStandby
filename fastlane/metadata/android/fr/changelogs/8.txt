@@ -1,0 +1,2 @@
++ Import des traductions depuis PoEditor
++ Ajouts du Chinois (traditionnel), Ukrainien, Polonais, Italien, Indonésien

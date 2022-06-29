@@ -22,6 +22,7 @@
     <string name="settings_category_others">"Ulteriori informazioni"</string>
     <string name="help_translate_title">"Aiuta la traduzione di quest'applicazione"</string>
     <string name="help_translate_summary">"Quest'applicazione non è attualmente disponibile nella tua lingua? Aiutaci a tradurla per renderla disponibile in tutto il mondo!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Visita il sito web del progetto"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"Licenza"</string>
@@ -33,6 +34,7 @@
     <string name="setting_start_on_boot_title">"Entra in standby all'avvio del dispositivo"</string>
     <string name="setting_start_on_boot_summary">"Quando questa opzione è abilitata il finto standby sarà attivato appena il servizio di accessibilità sarà avviato, per esempio dopo l'avvio del dispositivo."</string>
     <string name="notification_default_channel_name">"Main"</string>
+    <string name="notification_default_channel_description">"Canale principale per la notifica di compatibilità"</string>
     <string name="open_accessibility_settings_title">"Apri le impostazioni di accessibilità"</string>
     <string name="open_accessibility_settings_description">"Apri le impostazioni di accessibilità del dispositivo per configurare il servizio di accessibilità per FakeStandby."</string>
     <string name="settings_category_open_other">"Apri altre impostazioni"</string>

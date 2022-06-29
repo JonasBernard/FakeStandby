@@ -24,4 +24,5 @@
     <!-- Fuzzy -->
     <string name="close_option_error_no_option_selected_description">"Tidak ada metode yang dipilih untuk keluar dari siaga palsu"</string>
     <string name="settings_category_others">"Informasi tambahan"</string>
+    <string name="app_name">"FakeStandby"</string>
 </resources>

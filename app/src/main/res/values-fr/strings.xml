@@ -22,6 +22,7 @@
     <string name="settings_category_others">"Informations supplémentaires"</string>
     <string name="help_translate_title">"Aider à traduire l'application"</string>
     <string name="help_translate_summary">"L'application n'est pas disponible dans votre langue? Traduisez-la pour lui faire faire le tour du monde!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Visiter le site des projets"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"License"</string>

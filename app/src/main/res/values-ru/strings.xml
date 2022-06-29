@@ -23,6 +23,7 @@
     <string name="settings_category_others">"Дальнейшая информация"</string>
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом, дав шанс приложению пойти по миру!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Посетить сайт проекта"</string>
     <string name="license_activity_title">"Универсальная общественная лицензия GNU 3.0"</string>
     <string name="license_title">"Лицензия"</string>

@@ -22,6 +22,7 @@
     <string name="settings_category_others">"Pozostałe informacje"</string>
     <string name="help_translate_title">"Pomóż przetłumaczyć"</string>
     <string name="help_translate_summary">"Aplikacja niedostępna w Twoim języku? Pomóż ją przetłumaczyć i udostępnić dla całego świata!"</string>
+    <string name="app_name">"FakeStandby"</string>
 
     <!-- Shouldn't be here "project's website"? -->
     <string name="visit_website_title">"Odwiedź stronę projektu"</string>

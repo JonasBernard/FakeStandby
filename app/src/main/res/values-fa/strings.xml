@@ -4,6 +4,7 @@
     <string name="accessibility_error_settings_label">"گشودن ساماندهی"</string>
     <string name="title_activity_settings">"ساماندهی"</string>
     <string name="help_translate_title">"یاری برای ترگومه برنامه"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"نگریدن به وبگاه برنامه"</string>
     <string name="license_activity_title">"گواهینامه همگانی فراگیر گنو ۳.۰"</string>
     <string name="license_title">"گواهینامه"</string>

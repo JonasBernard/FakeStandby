@@ -1,35 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="notification_message">"Haga clic para ejecutar"</string>
-    <string name="accessibility_service_label">"FakeStandby Service"</string>
+
+    <!-- Fuzzy -->
+    <string name="notification_message">"Haga clic para ejecutarejecutar"</string>
+
+    <!-- Fuzzy -->
+    <string name="accessibility_service_label">"Servicio FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby requiere esta funcionalidad para poder controlar todas las pantallas y aplicaciones. Esta función solo se utilizará para proporcionar la funcionalidad de la aplicación y no accederá, guardará, recopilará ni compartirá ninguno de los datos."</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"Algún servicio requerido no se está ejecutando"</string>
     <string name="accessibility_error_not_running_message">"Un servicio requerido por FakeStandby no se está ejecutando. Reinicia tu dispositivo."</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_settings_label">"Abrir configuración"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_title">"Se requiere permiso"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"No se permite que la aplicación muestre superposiciones sobre otras aplicaciones. Para ejecutar la aplicación, debe otorgar el permiso \\"Mostrar sobre otras aplicaciones\\" para FakeStandby. El permiso hace posible que la aplicación muestre contenido sobre el contenido de otras aplicaciones. Para otorgar el permiso, habilite la opción en la siguiente pantalla."</string>
+
+    <!-- Fuzzy -->
     <string name="notification_channel_errors_name">"Errores y advertencias"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"Algunas funciones no están habilitadas"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"Algunas opciones para FakeStandby no están habilitadas en la configuración de accesibilidad de su dispositivo. Para ejecutar la aplicación, ese servicio debe estar habilitado. Simplemente abra la configuración de accesibilidad, desplácese hacia abajo hasta FakeStandby y habilítelo. En algunos dispositivos, puede buscar la opción en \\"servicios instalados\\""</string>
+
+    <!-- Fuzzy -->
     <string name="title_activity_settings">"Configuración"</string>
-    <string name="settings_category_overlay_options">"Opciones de FakeStandby"</string>
+    <string name="settings_category_overlay_options">"Opciones de modo de espera falso."</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_title">"Métodos de salida"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"Toque la pantalla con 4 o más toques al mismo tiempo"</string>
     <string name="close_option_swipe">"Deslice de abajo hacia arriba"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_summary">"Elija los métodos que se pueden utilizar para salir del estado de espera falso"</string>
 
     <!-- No se ha establecido ningún método de cierre Its an option too -->
+    <!-- Fuzzy -->
     <string name="close_option_error_no_option_selected_title">"No se ha establecido ninguna forma de cerrar"</string>
 
     <!-- Metodo de cierre(close method), o, Forma de cerrar (way to close) -->
+    <!-- Fuzzy -->
     <string name="close_option_error_no_option_selected_description">"No se ha establecido ninguna forma de cerrar el modo de espera falso"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_category_others">"Más información"</string>
     <string name="help_translate_title">"Ayuda a traducir la aplicación"</string>
     <string name="help_translate_summary">"¿La aplicación no está disponible actualmente en tu idioma nativo? ¡Ayuda a traducirlo para que se distribuya por todo el mundo!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Visite el sitio web de los proyectos"</string>
-    <string name="license_activity_title">"GNU General Public License 3.0"</string>
+    <string name="license_activity_title">"GNU Licencia Pública General 3.0"</string>
     <string name="license_title">"Licencia"</string>
     <string name="license_summary">"Consulte la información de licencia de la aplicación."</string>
     <string name="view_source_title">"Ver código fuente"</string>
     <string name="view_source_summary">"Visite GitHub para ver todo el código fuente de esta aplicación"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_show_notification_title">"Mostrar notificación al iniciar el modo de espera falso"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_show_notification_summary">"Use esta opción si su dispositivo no cuenta con cuadros de ajuste rápido."</string>
+
+    <!-- Fuzzy -->
+    <string name="setting_start_on_boot_title">"Inicio automático"</string>
+
+    <!-- Fuzzy -->
+    <string name="setting_start_on_boot_summary">"Una vez habilitado FakeStandby arrancará tan pronto sea posible luego del arranque del dispositivo."</string>
+
+    <!-- Fuzzy -->
+    <string name="notification_default_channel_name">"Principal"</string>
 </resources>

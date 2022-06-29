@@ -1,0 +1,4 @@
++ Teraz przyciski nawigacyjne (ekran główny, cofnij oraz ostatnie aplikacje) są również zaciemnione.
++ Jeśli Twoje urządzenie posiada wcięcie (notch), partie ekranu obok niego również powinny być zakryte.
++ Pasek nawigacji w ustawieniach ma wygląd właściwy  dla motywu.
++ Poprawa stabilności działania w orientacji poziomej.

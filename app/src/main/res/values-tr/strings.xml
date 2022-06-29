@@ -22,6 +22,7 @@
     <string name="settings_category_others">"Daha fazla bilgi"</string>
     <string name="help_translate_title">"Bu uygulamayı çevirmeye yardımcı olun"</string>
     <string name="help_translate_summary">"Bu uygulama ana dilinizde yok mu? Çevirmeye yardımcı olun!"</string>
+    <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Projenin internet sitesini ziyaret edin"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"Lisans"</string>

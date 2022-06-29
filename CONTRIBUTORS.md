@@ -8,73 +8,113 @@
 > Those require very precise and good work. Thanks to all code contributors!
 
  
+* [Gitoffthelawn](https://github.com/Gitoffthelawn) (3 contributions)  
+* [dependabot[bot]](https://github.com/apps/dependabot) (3 contributions)  
 * [Poussinou](https://github.com/Poussinou) (1 contribution) 
 
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 17 languages!
+> The app is now already translated into 18 languages!
 
  
-* 123077  
 * 200308  
+* Adam  
 * aevw  
-* Ah5an9so7ab5  
-* Alexander Levkin  
+* Agung krisdayanto  
+* Agungkris  
+* Alejandro  
 * Alexandr  
-* Alexey  
 * Ali  
-* ali  
 * Alice  
-* Andrew  
+* angel Jose azamar  
 * Anon  
 * Antonio Silva  
-* ask  
+* Atiq kaled  
+* bibobob  
 * Cetinibrahim  
+* Chebab zouhir   
 * Cor Menger  
-* Daniel  
 * Danieldesouzamelo07  
 * DarkGagan  
-* Dhruv Chatrani  
 * Diego flores   
+* dour  
+* Doy Fancher  
+* Elessar Trancos  
 * Elizabeth Aburto  
 * Emir can  
+* Fernando Piedra  
+* Frank  
 * Freefeel  
-* Gökhan Güzel  
-* Goosan  
+* Giulio  
 * h  
+* HA05 Hardy  
+* Hakan  
 * Henrique  
+* Info  
 * Ioji Barrett  
+* jh5909  
+* jimmy  
+* jk  
 * Juan  
+* Kaan Kutan  
+* Katherine  
+* Kristijan Krezic  
 * L  
+* Lau  
+* liu  
 * Lqwh2h2cwa  
+* Maciej   
+* makjdd  
 * marlon  
-* Matt  
+* Martina Thakur  
 * Max Burkardt  
-* Maxim  
 * mecqor  
+* Meeo35  
+* mode  
+* Mohamed messak  
 * Muddy  
-* Murlimanoharsoni4  
+* Murat  
 * musics  
 * nate  
-* Neranus  
+* navier  
+* Niko  
+* odkate  
 * Pascal  
 * Pelian  
-* Pita  
 * Pratik Mullick  
 * Randi Setiawan  
-* renee hall  
-* Rossini  
-* Sata  
+* Redouane  
+* Riccardo Bettoli  
+* Rinat  
+* Robb  
+* Ruben Marquez   
+* Salih  
+* sans  
 * Sergei  
+* su  
 * SuppaMan  
+* tenoredigrazia  
 * tGd  
+* Thomas kuruvilla George  
 * Tom  
+* tybercylez  
 * Tyson Silva  
 * undra thomas  
-* Vicky  
+* vip  
 * wainortyho  
 * xiaowei  
-* ZhanZhenyong  
+* zer  
+* zuoxp  
 * zwis  
-* Джесіка 
+* Валерий Ермолаев  
+* Джесіка  
+* Игорь Петрович Гуменников  
+* حسين  
+* محمد  
+* 张雨虹  
+* 染色体X_Y  
+* 王无极  
+* 郑硕  
+* 陈上杰  
+* 黄 
