@@ -28,7 +28,7 @@ steps:
     POEDITOR_API_TOKEN:
       from_secret: POEDITOR_API_TOKEN
 - name: report 
-  image: git
+  image: bitnami/git
   commands:
   - echo "Git status now:"
   - git status
