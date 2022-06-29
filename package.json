@@ -1,4 +1,9 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JonasBernard/FakeStandby.git"
+  },
+  "license" : "GPL-3.0",
   "dependencies": {
     "@octokit/rest": "^18.2.0",
     "fs": "^0.0.1-security",
