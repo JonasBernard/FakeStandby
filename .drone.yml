@@ -1,0 +1,39 @@
+kind: pipeline
+type: docker
+name: import_translations_update_contributors
+
+steps:
+- name: get_translations_and_update_contributors
+  image: alpine
+  commands:
+  - apk add --update npm nodejs git
+  - npm install
+  - cd ci
+  - node import_translations.js
+  - cd ../fastlane/
+  - node metadata/android/poeditor2fastlane.js
+  - cd ../
+  - node pull_contributors.js
+  - echo "Git status now:"
+  - git status
+  # Do not push package-lock.json
+  - git restore package-lock.json
+  environment:
+    POEDITOR_API_TOKEN:
+      from_secret: POEDITOR_API_TOKEN
+- name: push
+  image: appleboy/drone-git-push
+  settings:
+    branch: master
+    remote: git@github.com:JonasBernard/FakeStandby.git
+    ssh_key:
+      from_secret: GH_SSH_KEY
+    force: false
+    commit: true
+    commit_message: "Auto-imported translations from PoEditor and updated CONTRIBUTING.MD"
+    author_name: Drone Pipeline
+trigger:
+  event:
+    include:
+    - promote
+    - custom

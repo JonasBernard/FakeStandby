@@ -4,7 +4,10 @@ const fse = require('fs-extra');
 // get tokens
 async function readTokens() {
     try {
-        return tokens = await fse.readJSON("keys/tokens.json");
+        return tokens = {
+          github: process.env.GH_ACCESS_TOKEN,
+          poeditor: process.env.POEDITOR_API_TOKEN,
+        }
     } catch (error) {
         console.log(error);
         process.exit(1);
