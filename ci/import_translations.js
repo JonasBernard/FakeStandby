@@ -136,11 +136,12 @@ async function processLanguage(
 ) {
   const name = language.name;
   const poeditor_code = language.poeditor_code;
+  const android_path = language.android_path;
   const fastlane_path = language.fastlane_path;
 
   console.log("Start processing language: " + name);
 
-  if (poeditor_code) {
+  if (android_path) {
     console.log("Getting URL for android xml download...");
     const url = await getPOEditorAndroidXMLDownloadURL(
       poconnect,
