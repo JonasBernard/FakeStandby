@@ -1,26 +1,39 @@
 kind: pipeline
 type: docker
-name: import_translations_update_contributors
+name: translations and contributors
 
 steps:
-- name: get_translations_and_update_contributors
-  image: alpine
+- name: install dependencies
+  image: node
   commands:
-  - apk add --update npm nodejs git
   - npm install
-  - cd ci
+- name: import translations
+  image: node
+  commands:
+  - cd ci/
   - node import_translations.js
-  - cd ../fastlane/
+  environment:
+    POEDITOR_API_TOKEN:
+      from_secret: POEDITOR_API_TOKEN
+- name: convert to fastlane files
+  image: node
+  commands:
+  - cd fastlane/
   - node metadata/android/poeditor2fastlane.js
-  - cd ../
+- name: create contributors.md
+  image: node
+  commands:
   - node pull_contributors.js
+  environment:
+    POEDITOR_API_TOKEN:
+      from_secret: POEDITOR_API_TOKEN
+- name: report 
+  image: git
+  commands:
   - echo "Git status now:"
   - git status
   # Do not push package-lock.json
   - git restore package-lock.json
-  environment:
-    POEDITOR_API_TOKEN:
-      from_secret: POEDITOR_API_TOKEN
 - name: push
   image: appleboy/drone-git-push
   settings:
