@@ -1,0 +1,4 @@
++ Added arabic language. The app is now available in 18 languages.
++ Imported all translations from translation platform.
++ Made app name translatable
++ Thanks to @Gitoffthelawn for pull requests to improve spelling and 
