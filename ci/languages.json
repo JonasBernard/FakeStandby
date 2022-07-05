@@ -27,7 +27,7 @@
         {
             "name": "Chinese (traditional, android only)",
             "poeditor_code": "zh-Hant",
-            "android_path": "values-zh-Hant/"
+            "android_path": "values-zh-rTW/"
         },
         {
             "name": "Dutch",
