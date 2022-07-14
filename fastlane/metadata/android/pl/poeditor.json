@@ -19,5 +19,8 @@
     },
     "Changelog for version 1.3.1": {
         "store_changelog_8": "+ Import tłumaczeń z PoEditor'a\n+ Dodano języki: chiński (tradycyjny), ukraiński, polski, włoski, indonezyjski"
+    },
+    "Changelog for version 1.3.2": {
+        "store_changelog_9": "+ Dodano język arabski. Aplikacja jest teraz dostępna w 18 językach.\n+ Zaimportowano tłumaczenia z platformy.\n+ Dodano możliwość przetłumaczenia nazwy aplikacji.\n+ Dziękujemy @Gitoffhelaen za przyjęcie próśb o usprawnienie literowania."
     }
 }

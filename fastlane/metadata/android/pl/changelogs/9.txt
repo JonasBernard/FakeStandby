@@ -1,0 +1,4 @@
++ Dodano język arabski. Aplikacja jest teraz dostępna w 18 językach.
++ Zaimportowano tłumaczenia z platformy.
++ Dodano możliwość przetłumaczenia nazwy aplikacji.
++ Dziękujemy @Gitoffhelaen za przyjęcie próśb o usprawnienie literowania.
