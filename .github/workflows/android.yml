@@ -84,11 +84,11 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew bundleAdfreeRelease --stacktrace
 
-    - name: Sign Adfree APK
+    - name: Sign Adfree AAB
       id: sign-apk
       uses: r0adkll/sign-android-release@v1
       with:
-        releaseDirectory: app/build/outputs/bundle/adfreeRelease/app-adfree-release.aab
+        releaseDirectory: app/build/outputs/bundle/adfreeRelease
         signingKeyBase64: ${{ secrets.DEPLOY_SIGN_KEY_JKS_BASE64 }}
         alias: ${{ secrets.DEPLOY_SIGN_KEY_ALIAS }}
         keyStorePassword: ${{ secrets.DEPLOY_SIGN_KEY_JKS_PASSWORD }}
