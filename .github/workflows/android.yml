@@ -75,9 +75,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    
     - name: Create whats-new files
       id: whats-new
-      run: echo "NOT IMPLEMENTED"
+      run: cd ci && node generate_whatsnew_files.js
       
     - name: Create draft release on Google Play
       uses: r0adkll/upload-google-play@v1
@@ -88,5 +92,5 @@ jobs:
         releaseName: ${{ needs.build.outputs.releaseVersion }}
         track: production
         status: draft
-        whatsNewDirectory: fastlane/whatsnew/
+        whatsNewDirectory: whatsnew/
         mappingFile: app/build/outputs/mapping/release/mapping.txt
