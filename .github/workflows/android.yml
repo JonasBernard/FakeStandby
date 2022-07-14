@@ -7,13 +7,15 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    outputs:
+      signedReleaseFile: ${{ steps.sign-apk.outputs.signedReleaseFile }}
+      releaseVersion: ${{ steps.get-version.outputs.version }}
 
     steps:
     - name: Get the version
-      id: get_version
-      run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+      id: get-version
+      run: echo ::set-output name=version::$(echo $GITHUB_REF | cut -d / -f 3)
           
     - uses: actions/checkout@v2
       
@@ -40,6 +42,10 @@ jobs:
         keyStorePassword: ${{ secrets.DEPLOY_SIGN_KEY_JKS_PASSWORD }}
         keyPassword: ${{ secrets.DEPLOY_SIGN_KEY_PASSWORD }}
         
+  gh-release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
     - name: Create Release on GitHub
       id: create-release
       uses: actions/create-release@v1.1.3
@@ -59,6 +65,28 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create-release.outputs.upload_url }}
-        asset_path: ${{ steps.sign-apk.outputs.signedReleaseFile }}
-        asset_name: FakeStandby_${{ steps.get_version.outputs.VERSION }}_adfree_release.apk
+        asset_path: ${{ needs.build.outputs.signedReleaseFile }}
+        asset_name: FakeStandby_${{ needs.build.outputs.releaseVersion }}_adfree_release.apk
         asset_content_type: application/vnd.android.package-archive
+        
+  play-store-release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Create whats-new files
+      id: whats-new
+      run: echo "NOT IMPLEMENTED"
+      
+    - name: Create draft release on Google Play
+      uses: r0adkll/upload-google-play@v1
+      with:
+        serviceAccountJson: ${{ SERVICE_ACCOUNT_JSON }}
+        packageName: android.jonas.fakestandby
+        releaseFile: ${{ needs.build.outputs.signedReleaseFile }}
+        releaseName: ${{ needs.build.outputs.releaseVersion }}
+        track: production
+        status: draft
+        whatsNewDirectory: fastlane/whatsnew/
+        mappingFile: app/build/outputs/mapping/release/mapping.txt
