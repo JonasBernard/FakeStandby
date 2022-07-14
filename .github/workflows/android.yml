@@ -45,6 +45,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ${{ steps.sign-apk.outputs.signedReleaseFile }}
+        path: .
         
   gh-release:
     runs-on: ubuntu-latest
