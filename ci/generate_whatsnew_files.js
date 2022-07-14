@@ -1,6 +1,3 @@
-const { slice } = require("nunjucks/src/filters");
-const { resolve } = require("path");
-
 function getFileSystem() {
   return [require("fs"), require("fs-extra")];
 }

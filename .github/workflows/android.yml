@@ -78,6 +78,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+    - run: npm install
     
     - name: Create whats-new files
       id: whats-new
