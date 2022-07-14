@@ -41,11 +41,19 @@ jobs:
         alias: ${{ secrets.DEPLOY_SIGN_KEY_ALIAS }}
         keyStorePassword: ${{ secrets.DEPLOY_SIGN_KEY_JKS_PASSWORD }}
         keyPassword: ${{ secrets.DEPLOY_SIGN_KEY_PASSWORD }}
+    - name: Save artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ steps.sign-apk.outputs.signedReleaseFile }}
         
   gh-release:
     runs-on: ubuntu-latest
     needs: build
     steps:
+    - name: Get artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: ${{ steps.sign-apk.outputs.signedReleaseFile }}
     - name: Create Release on GitHub
       id: create-release
       uses: actions/create-release@v1.1.3
@@ -73,6 +81,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+    - name: Get artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: ${{ steps.sign-apk.outputs.signedReleaseFile }}
+    
     - uses: actions/checkout@v2
 
     - uses: actions/setup-node@v3
