@@ -164,6 +164,7 @@ async function processLanguage(
   } else console.log("Skipped fastlane metatdata for " + name);
 
   console.log("Finished language: " + name);
+  console.log("");
 }
 
 (async () => {

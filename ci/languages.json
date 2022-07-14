@@ -4,13 +4,16 @@
     "android_file_name": "strings.xml",
     "fastlane_base_path": "fastlane/metadata/android/",
     "fastlane_file_name": "poeditor.json",
+    "play_store_base_path": "whatsnew/",
+    "play_store_file_name": "whatsnew-{{language.play_store_code}}",
     "languages":
     [
         {
             "name": "Arabic",
             "poeditor_code": "ar",
             "android_path": "values-ar/",
-            "fastlane_path": "ar/"
+            "fastlane_path": "ar/",
+            "play_store_code": "ar-SA"
         },
         {
             "name": "Bengali",
@@ -22,7 +25,8 @@
             "name": "Chinese (simplified)",
             "poeditor_code": "zh-Hans",
             "android_path": "values-zh-rCN/",
-            "fastlane_path": "zh-CN/"
+            "fastlane_path": "zh-CN/",
+            "play_store_code": "zh-CN"
         },
         {
             "name": "Chinese (traditional, android only)",
@@ -33,42 +37,49 @@
             "name": "Dutch",
             "poeditor_code": "nl",
             "android_path": "values-nl/",
-            "fastlane_path": "nl/"
+            "fastlane_path": "nl/",
+            "play_store_code": "nl-NL"
         },
         {
             "name": "English (fastlane only)",
             "poeditor_code": "en",
-            "fastlane_path": "en-US/"
+            "fastlane_path": "en-US/",
+            "play_store_code": "en-US"
         },
         {
             "name": "French",
             "poeditor_code": "fr",
             "android_path": "values-fr/",
-            "fastlane_path": "fr/"
+            "fastlane_path": "fr/",
+            "play_store_code": "fr-FR"
         },
         {
             "name": "German",
             "poeditor_code": "de",
             "android_path": "values-de/",
-            "fastlane_path": "de/"
+            "fastlane_path": "de/",
+            "play_store_code": "de-DE"
         },
         {
             "name": "Hindi",
             "poeditor_code": "hi",
             "android_path": "values-hi/",
-            "fastlane_path": "hi/"
+            "fastlane_path": "hi/",
+            "play_store_code": "hi-IN"
         },
         {
             "name": "Indonesian",
             "poeditor_code": "id",
             "android_path": "values-in/",
-            "fastlane_path": "in/"
+            "fastlane_path": "in/",
+            "play_store_code": "id-ID"
         },
         {
             "name": "Italian",
             "poeditor_code": "it",
             "android_path": "values-it/",
-            "fastlane_path": "it/"
+            "fastlane_path": "it/",
+            "play_store_code": "it-IT"
         },
         {
             "name": "Persian",
@@ -80,31 +91,36 @@
             "name": "Polish",
             "poeditor_code": "pl",
             "android_path": "values-pl/",
-            "fastlane_path": "pl/"
+            "fastlane_path": "pl/",
+            "play_store_code": "pl-PL"
         },
         {
             "name": "Portuguese (Brazil)",
             "poeditor_code": "pt-br",
             "android_path": "values-pt-rBR/",
-            "fastlane_path": "pt-BR/"
+            "fastlane_path": "pt-BR/",
+            "play_store_code": "pt-BR"
         },
         {
             "name": "Russian",
             "poeditor_code": "ru",
             "android_path": "values-ru/",
-            "fastlane_path": "ru/"
+            "fastlane_path": "ru/",
+            "play_store_code": "ru-RU"
         },
         {
             "name": "Spanish",
             "poeditor_code": "es",
             "android_path": "values-es/",
-            "fastlane_path": "es/"
+            "fastlane_path": "es/",
+            "play_store_code": "es-ES"
         },
         {
             "name": "Turkish",
             "poeditor_code": "tr",
             "android_path": "values-tr/",
-            "fastlane_path": "tr/"
+            "fastlane_path": "tr/",
+            "play_store_code": "tr-TR"
         },
         {
             "name": "Ukrainian",
