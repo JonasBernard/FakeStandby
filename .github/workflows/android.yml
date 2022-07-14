@@ -119,4 +119,4 @@ jobs:
         track: production
         status: draft
         whatsNewDirectory: whatsnew/
-        mappingFile: app/build/outputs/mapping/release/mapping.txt
+        mappingFile: app/build/outputs/mapping/adfreeRelease/mapping.txt
