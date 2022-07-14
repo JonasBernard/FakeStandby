@@ -1,4 +1,4 @@
-name: build
+name: build and release
 
 on:
   push:
@@ -157,8 +157,8 @@ jobs:
     - name: Get artifact
       uses: actions/download-artifact@v2
       with:
-        name: ${{ needs.build.outputs.signedReleaseFileName }}
-        path: ${{ needs.build.outputs.signedReleaseFileDir }}
+        name: ${{ needs.build-aab.outputs.signedReleaseFileName }}
+        path: ${{ needs.build-aab.outputs.signedReleaseFileDir }}
       
     - name: Create draft release on Google Play
       uses: r0adkll/upload-google-play@v1
