@@ -1,0 +1,1 @@
+* Changed target Android version to Androird 11.

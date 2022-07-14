@@ -19,5 +19,8 @@
     },
     "Changelog for version 1.3.1": {
         "store_changelog_8": "+ Übersetzungen von PoEditor verwendet\n+ Chinesisch (traditionel), Ukrainisch, Polnisch, Italienisch und Indonesisch hinzugefügt"
+    },
+    "Changelog for version 1.3.3": {
+        "store_changelog_10": "* Ziel-Android Version auf Androird 11 geändert."
     }
 }
