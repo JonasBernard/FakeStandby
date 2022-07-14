@@ -112,7 +112,7 @@ jobs:
     - name: Create draft release on Google Play
       uses: r0adkll/upload-google-play@v1
       with:
-        serviceAccountJson: ${{ secrets.GOOGLE_CLOUD_SERVICE_ACCOUNT_PLAY_STORE_JSON }}
+        serviceAccountJsonPlainText: ${{ secrets.GOOGLE_CLOUD_SERVICE_ACCOUNT_PLAY_STORE_JSON }}
         packageName: android.jonas.fakestandby
         releaseFiles: ${{ needs.build.outputs.signedReleaseFile }}
         releaseName: ${{ needs.build.outputs.releaseVersion }}
