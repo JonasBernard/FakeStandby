@@ -92,12 +92,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: Get artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: ${{ needs.build.outputs.signedReleaseFileName }}
-        path: ${{ needs.build.outputs.signedReleaseFileDir }}
-    
     - uses: actions/checkout@v2
 
     - uses: actions/setup-node@v3
@@ -108,6 +102,12 @@ jobs:
     - name: Create whats-new files
       id: whats-new
       run: cd ci && node generate_whatsnew_files.js
+    
+    - name: Get artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: ${{ needs.build.outputs.signedReleaseFileName }}
+        path: ${{ needs.build.outputs.signedReleaseFileDir }}
       
     - name: Create draft release on Google Play
       uses: r0adkll/upload-google-play@v1
