@@ -13,5 +13,17 @@
     },
     "Changelog vor version 1.2.3": {
         "store_changelog_6": "+ Agora o aplicativo está disponível em Espanhol."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ O app agora está disponível nessas 6 línguas:\n  - Chinês (simplificado, 60%)\n  - Francês (76%)\n  - Hindi (76%)\n  - Persa (17%)\n  - Português (76%)\n  - Russo (63%)\n+ Adicionada uma configuração para habilitar uma notificação persistente, em dispositivos que não suportam botões de configuração rápida.\n+ Adicionada uma opção para habilitar o standby falso ao ligar.\n+ O app agora habilita um bloqueio de acordar, isso deve resolver vários problemas.\n+ Adicionadas atividades exportadas para iniciar e parar o standby falso. Dessa forma é possível iniciar o overlay em apps de automação.\n(Isto não foi bem testado, por favor reporte quaisquer problemas com isso)\n+ Adicionado Fastlane e localizado e screenshots de dispositivos específicos.\n\n- Removido um botão redundante no diálogo, que sugere reiniciar o dispositivo.\n\n* Corrigido o problema #11\n* Fechado o problema #12"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Importadas traduções do PoEditor\n+ Adicionado Chinês (tradicional), Ucraniano, Polaco, Italiano, Indonésio"
+    },
+    "Changelog for version 1.3.2": {
+        "store_changelog_9": "+ Acionada a língua árabe. O app agora está disponível em 18 idiomas.\n+ Importadas todas as traduções da plataforma de tradução.\n+ Feito o nome do app traduzível.\n+ Obrigado a @Gitoffthelawn pelos pull requests para melhorar a gramática e "
+    },
+    "Changelog for version 1.3.3": {
+        "store_changelog_10": "* Mudada a versão alvo do Android para Android 11."
     }
 }

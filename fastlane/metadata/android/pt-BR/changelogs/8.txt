@@ -1,0 +1,2 @@
++ Importadas traduções do PoEditor
++ Adicionado Chinês (tradicional), Ucraniano, Polaco, Italiano, Indonésio

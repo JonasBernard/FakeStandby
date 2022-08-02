@@ -1,0 +1,4 @@
++ Acionada a língua árabe. O app agora está disponível em 18 idiomas.
++ Importadas todas as traduções da plataforma de tradução.
++ Feito o nome do app traduzível.
++ Obrigado a @Gitoffthelawn pelos pull requests para melhorar a gramática e 

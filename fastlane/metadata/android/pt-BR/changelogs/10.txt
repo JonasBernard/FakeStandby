@@ -1,0 +1,1 @@
+* Mudada a versão alvo do Android para Android 11.

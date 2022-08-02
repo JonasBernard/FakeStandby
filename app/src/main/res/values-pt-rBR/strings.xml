@@ -3,9 +3,9 @@
     <string name="notification_message">"Clique para ativar"</string>
 
     <!-- Ainda tá em inglês -->
-    <string name="accessibility_service_label">"FakeStandby Service"</string>
+    <string name="accessibility_service_label">"Serviço FakeStandby"</string>
     <string name="accessibility_service_description">"FakeStandby necessita desta função para que seja possível comandar cada tela e cada aplicativo. Este será usado apenas para providenciar o funcionamento do aplicativo e não irá acessar, armazenar, coletar ou compartilhar nenhum de seus dados."</string>
-    <string name="accessibility_error_not_running_title">"Algum serviço exigido não está funcionando"</string>
+    <string name="accessibility_error_not_running_title">"Algum serviço exigido não está em execução"</string>
     <string name="accessibility_error_not_running_message">"Um serviço exigido para o uso do FakeStandby não está funcionando. Por favor reinicie seu dispositivo."</string>
     <string name="accessibility_error_settings_label">"Abrir configurações"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Permissão exigida"</string>
@@ -17,26 +17,29 @@
     <string name="settings_category_overlay_options">"Opções do Aplicativo"</string>
     <string name="close_option_title">"Métodos para Revelar"</string>
     <string name="close_option_tap_four">"Pressione na tela com 4 ou mais toques ao mesmo tempo"</string>
-    <string name="close_option_swipe">"Role debaixo para cima"</string>
-    <string name="close_option_summary">"Escolha os métodos que podem ser usados para revelar o estado de Fake Standby"</string>
-    <string name="close_option_error_no_option_selected_title">"Nenhum método de revela selecionado"</string>
-    <string name="close_option_error_no_option_selected_description">"Nenhum método de revela selecionado para o Fake Standby"</string>
+    <string name="close_option_swipe">"Deslizar de baixo para cima"</string>
+    <string name="close_option_summary">"Escolha os métodos que podem ser usados para sair do estado de FakeStandby"</string>
+    <string name="close_option_error_no_option_selected_title">"Nenhum método para revelar selecionado"</string>
+    <string name="close_option_error_no_option_selected_description">"Nenhum método par revelar selecionado para o FakeStandby"</string>
     <string name="settings_category_others">"Mais informaçōes"</string>
     <string name="help_translate_title">"Ajude a traduzir o aplicativo"</string>
     <string name="help_translate_summary">"O app está indisponível no seu idioma nativo? Ajude a traduzí-lo e ajude ele a chegar ao mundo todo!"</string>
     <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Visite o site do projeto"</string>
-    <string name="license_activity_title">"Licença Pública Geral GNU"</string>
+    <string name="license_activity_title">"Licença Pública Geral GNU 3.0"</string>
     <string name="license_title">"Licença"</string>
     <string name="license_summary">"Veja as informações de licença do app."</string>
     <string name="view_source_title">"Veja o código fonte"</string>
     <string name="view_source_summary">"Visite o GitHub para ver todo o código fonte desse app."</string>
     <string name="settings_show_notification_title">"Sempre mostrar uma notificação para iniciar o Fake Standby"</string>
+    <string name="settings_show_notification_summary">"Use esta opção, se seu dispositivo não suporta botões de configurações rápidas customizadas."</string>
     <string name="setting_start_on_boot_title">"Iniciar standby ao ligar"</string>
     <string name="setting_start_on_boot_summary">"Se ativado, o FakeStandby vai ser iniciado assim que ao serviço de acessibilidade iniciar. Por exemplo depois de ligar."</string>
     <string name="notification_default_channel_name">"Principal"</string>
+    <string name="notification_default_channel_description">"Canal principal para a notificação de compatibilidade"</string>
     <string name="open_accessibility_settings_title">"Abrir configurações de acessibilidade"</string>
     <string name="open_accessibility_settings_description">"Abrir configurações de acessibilidade do dispositivo para gerenciar o serviço de acessibilidade do FakeStandby."</string>
+    <string name="settings_category_open_other">"Abrir outras configurações"</string>
     <string name="action_start_overlay">"Iniciar o Fake Standby"</string>
     <string name="action_stop_overlay">"Parar o FakeStandby"</string>
 </resources>

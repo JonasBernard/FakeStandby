@@ -43,6 +43,7 @@
 * Elessar Trancos  
 * Elizabeth Aburto  
 * Emir can  
+* Felixcrat  
 * Fernando Piedra  
 * Frank  
 * Freefeel  
@@ -53,7 +54,6 @@
 * Henrique  
 * Info  
 * Ioji Barrett  
-* jh5909  
 * jimmy  
 * jk  
 * Juan  
@@ -64,8 +64,9 @@
 * Lau  
 * liu  
 * Lqwh2h2cwa  
-* Maciej  
+* Lucassuperti  
 * Maciej   
+* Maciej  
 * makjdd  
 * marlon  
 * Martina Thakur  
@@ -74,6 +75,7 @@
 * Meeo35  
 * mode  
 * Mohamed messak  
+* Mrkotofey  
 * Muddy  
 * Murat  
 * musics  
@@ -84,6 +86,7 @@
 * odkate  
 * Pascal  
 * Pelian  
+* poi  
 * Pratik Mullick  
 * Randi Setiawan  
 * Redouane  
@@ -96,6 +99,7 @@
 * sardonicdozen  
 * Sergei  
 * su  
+* Sumit Prasad  
 * SuppaMan  
 * tenoredigrazia  
 * tGd  
@@ -104,6 +108,7 @@
 * tybercylez  
 * Tyson Silva  
 * undra thomas  
+* Vahidboush  
 * vip  
 * wainortyho  
 * xiaowei  

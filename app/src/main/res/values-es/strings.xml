@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Fuzzy -->
-    <string name="notification_message">"Haga clic para ejecutarejecutar"</string>
+    <string name="notification_message">"Haga clic para ejecutar"</string>
 
     <!-- Fuzzy -->
     <string name="accessibility_service_label">"Servicio FakeStandby"</string>
@@ -80,4 +80,10 @@
 
     <!-- Fuzzy -->
     <string name="notification_default_channel_name">"Principal"</string>
+    <string name="notification_default_channel_description">"Canal principal para la notificación de compatibilidad"</string>
+    <string name="open_accessibility_settings_title">"Abrir ajustes de accesibilidad"</string>
+    <string name="open_accessibility_settings_description">"Abre los ajustes de accesibilidad del dispositivo para gestionar el servicio de accesibilidad para FaleStandby"</string>
+    <string name="settings_category_open_other">"Abrir otros ajustes"</string>
+    <string name="action_start_overlay">"Iniciar FaleStandby"</string>
+    <string name="action_stop_overlay">"Detener FaleStandby"</string>
 </resources>

@@ -2,7 +2,15 @@
 <resources>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
     <string name="accessibility_error_settings_label">"گشودن ساماندهی"</string>
+
+    <!-- تنظیمات -->
+    <!-- Fuzzy -->
     <string name="title_activity_settings">"ساماندهی"</string>
+    <string name="close_option_title">"روش خروج"</string>
+    <string name="close_option_tap_four">"لمس صفحه با چهار انگشت به صورت همزمان"</string>
+    <string name="close_option_swipe">"لمس از پایین به بالا"</string>
+
+    <!-- کمک برای ترجمه -->
     <string name="help_translate_title">"یاری برای ترگومه برنامه"</string>
     <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"نگریدن به وبگاه برنامه"</string>

@@ -1,0 +1,18 @@
++ O app agora está disponível nessas 6 línguas:
+  - Chinês (simplificado, 60%)
+  - Francês (76%)
+  - Hindi (76%)
+  - Persa (17%)
+  - Português (76%)
+  - Russo (63%)
++ Adicionada uma configuração para habilitar uma notificação persistente, em dispositivos que não suportam botões de configuração rápida.
++ Adicionada uma opção para habilitar o standby falso ao ligar.
++ O app agora habilita um bloqueio de acordar, isso deve resolver vários problemas.
++ Adicionadas atividades exportadas para iniciar e parar o standby falso. Dessa forma é possível iniciar o overlay em apps de automação.
+(Isto não foi bem testado, por favor reporte quaisquer problemas com isso)
++ Adicionado Fastlane e localizado e screenshots de dispositivos específicos.
+
+- Removido um botão redundante no diálogo, que sugere reiniciar o dispositivo.
+
+* Corrigido o problema #11
+* Fechado o problema #12

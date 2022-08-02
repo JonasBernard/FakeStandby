@@ -26,11 +26,11 @@
     <!-- 假待机 -->
     <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"访问项目网站"</string>
-    <string name="license_activity_title">"GNU通用公共许可证3"</string>
+    <string name="license_activity_title">"GNU通用公共许可证3.0"</string>
     <string name="license_title">"许可"</string>
-    <string name="license_summary">"查看许可信息"</string>
+    <string name="license_summary">"查看许可信息。"</string>
     <string name="view_source_title">"查看源代码"</string>
-    <string name="view_source_summary">"访问GitHub"</string>
+    <string name="view_source_summary">"访问GitHub。"</string>
 
     <!-- 经过实验确认，这里的"假待机的通知"仅仅只是指软件本身的通知，而不是假待机时收到的通知，避免歧义和与软件名统一，翻译为"Fake Standby的通知" -->
     <string name="settings_show_notification_title">"一律显示Fake Standby的通知以保证本应用运行"</string>
