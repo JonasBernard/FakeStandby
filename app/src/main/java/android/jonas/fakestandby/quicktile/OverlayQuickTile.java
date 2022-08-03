@@ -11,8 +11,6 @@ import android.util.Log;
 import android.jonas.fakestandby.service.AccessibilityOverlayService;
 import android.jonas.fakestandby.utils.Constants;
 
-import androidx.fragment.app.DialogFragment;
-
 @TargetApi(Build.VERSION_CODES.N)
 public class OverlayQuickTile extends TileService {
 

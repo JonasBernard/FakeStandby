@@ -2,7 +2,7 @@ package android.jonas.fakestandby;
 
 import android.content.Context;
 import android.jonas.fakestandby.settings.SettingsActivity;
-import android.os.Build;
+
 import androidx.test.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
@@ -10,8 +10,7 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+
 import tools.fastlane.screengrab.Screengrab;
 import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;
 import tools.fastlane.screengrab.locale.LocaleTestRule;

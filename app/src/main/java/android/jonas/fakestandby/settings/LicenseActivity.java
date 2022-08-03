@@ -1,7 +1,6 @@
 package android.jonas.fakestandby.settings;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.jonas.fakestandby.R;
 import android.os.Bundle;
