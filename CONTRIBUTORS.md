@@ -49,6 +49,7 @@
 * Freefeel  
 * Giulio  
 * h  
+* h_1  
 * HA05 Hardy  
 * Hakan  
 * Henrique  
@@ -81,7 +82,6 @@
 * musics  
 * Mustafa hossain  
 * nate  
-* navier  
 * Niko  
 * odkate  
 * Pascal  
