@@ -164,7 +164,7 @@ jobs:
       uses: r0adkll/upload-google-play@v1
       with:
         serviceAccountJsonPlainText: ${{ secrets.GOOGLE_CLOUD_SERVICE_ACCOUNT_PLAY_STORE_JSON }}
-        packageName: android.jonas.fakestandby
+        packageName: de.jonasbernard.fakestandby
         releaseFiles: ${{ needs.build-aab.outputs.signedReleaseFile }}
         releaseName: ${{ needs.build-aab.outputs.releaseVersion }}
         track: production
