@@ -1,4 +1,4 @@
-package android.jonas.fakestandby.permissions;
+package de.jonasbernard.fakestandby.permissions;
 
 import android.app.Dialog;
 import android.os.Bundle;

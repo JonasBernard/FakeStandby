@@ -1,7 +1,7 @@
 # remove the leading '#' to uncomment lines
 
-app_package_name('android.jonas.fakestandby')
-tests_package_name('android.jonas.fakestandby.test')
+app_package_name('de.jonasbernard.fakestandby')
+tests_package_name('de.jonasbernard.fakestandby.test')
 # use_tests_in_packages(['your.screenshot.tests.package'])
 
 app_apk_path('app/build/outputs/apk/adfree/debug/app-adfree-debug.apk')

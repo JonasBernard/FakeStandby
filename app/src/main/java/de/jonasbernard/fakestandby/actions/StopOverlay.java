@@ -1,10 +1,10 @@
-package android.jonas.fakestandby.actions;
+package de.jonasbernard.fakestandby.actions;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
-import android.jonas.fakestandby.utils.Constants;
+import de.jonasbernard.fakestandby.service.AccessibilityOverlayService;
+import de.jonasbernard.fakestandby.utils.Constants;
 import android.os.Bundle;
 import android.util.Log;
 

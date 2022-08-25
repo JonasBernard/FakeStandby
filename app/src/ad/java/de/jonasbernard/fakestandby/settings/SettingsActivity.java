@@ -1,9 +1,9 @@
-package android.jonas.fakestandby.settings;
+package de.jonasbernard.fakestandby.settings;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.jonas.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
-import android.jonas.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
+import de.jonasbernard.fakestandby.permissions.AccessibilityServiceNotEnabledDialog;
+import de.jonasbernard.fakestandby.permissions.AccessibilityServiceNotRunningDialog;
 import android.os.Bundle;
 
 import com.google.android.gms.ads.AdRequest;
@@ -17,11 +17,11 @@ import androidx.preference.PreferenceManager;
 
 import android.util.Log;
 import android.view.View;
-import android.jonas.fakestandby.R;
-import android.jonas.fakestandby.permissions.OverlayPermissionRequiredDialog;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
-import android.jonas.fakestandby.utils.Constants;
-import android.jonas.fakestandby.permissions.PermissionUtils;
+import de.jonasbernard.fakestandby.R;
+import de.jonasbernard.fakestandby.permissions.OverlayPermissionRequiredDialog;
+import de.jonasbernard.fakestandby.service.AccessibilityOverlayService;
+import de.jonasbernard.fakestandby.utils.Constants;
+import de.jonasbernard.fakestandby.permissions.PermissionUtils;
 
 public class SettingsActivity extends AppCompatActivity {
 

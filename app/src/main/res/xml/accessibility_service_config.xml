@@ -6,5 +6,5 @@
     android:notificationTimeout="100"
     android:canRequestFilterKeyEvents="true"
     android:canRetrieveWindowContent="false"
-    android:settingsActivity="android.jonas.fakestandby.settings.SettingsActivity"
+    android:settingsActivity="de.jonasbernard.fakestandby.settings.SettingsActivity"
     />

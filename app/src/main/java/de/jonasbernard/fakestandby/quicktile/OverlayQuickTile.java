@@ -1,15 +1,15 @@
-package android.jonas.fakestandby.quicktile;
+package de.jonasbernard.fakestandby.quicktile;
 
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
-import android.jonas.fakestandby.permissions.PermissionUtils;
+import de.jonasbernard.fakestandby.permissions.PermissionUtils;
 import android.os.Build;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import android.util.Log;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
-import android.jonas.fakestandby.utils.Constants;
+import de.jonasbernard.fakestandby.service.AccessibilityOverlayService;
+import de.jonasbernard.fakestandby.utils.Constants;
 
 @TargetApi(Build.VERSION_CODES.N)
 public class OverlayQuickTile extends TileService {

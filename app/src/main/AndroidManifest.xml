@@ -50,7 +50,7 @@
             android:exported="false"
             android:label="@string/license_activity_title">
             <intent-filter>
-                <action android:name="android.jonas.fakestandby.license" />
+                <action android:name="de.jonasbernard.fakestandby.license" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

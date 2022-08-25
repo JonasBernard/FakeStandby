@@ -1,10 +1,10 @@
-package android.jonas.fakestandby.service;
+package de.jonasbernard.fakestandby.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.jonas.fakestandby.utils.Constants;
-import android.jonas.fakestandby.utils.Utils;
+import de.jonasbernard.fakestandby.utils.Constants;
+import de.jonasbernard.fakestandby.utils.Utils;
 import android.os.PowerManager;
 import android.util.Log;
 

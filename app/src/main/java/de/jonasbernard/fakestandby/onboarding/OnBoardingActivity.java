@@ -1,6 +1,6 @@
-package android.jonas.fakestandby.onboarding;
+package de.jonasbernard.fakestandby.onboarding;
 
-import android.jonas.fakestandby.R;
+import de.jonasbernard.fakestandby.R;
 import android.os.Bundle;
 import android.util.TypedValue;
 

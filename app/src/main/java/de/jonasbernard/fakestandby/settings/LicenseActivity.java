@@ -1,8 +1,8 @@
-package android.jonas.fakestandby.settings;
+package de.jonasbernard.fakestandby.settings;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.jonas.fakestandby.R;
+import de.jonasbernard.fakestandby.R;
 import android.os.Bundle;
 
 public class LicenseActivity extends AppCompatActivity {

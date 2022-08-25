@@ -1,4 +1,4 @@
-package android.jonas.fakestandby.permissions;
+package de.jonasbernard.fakestandby.permissions;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.AlertDialog;
@@ -15,8 +15,8 @@ import androidx.appcompat.view.ContextThemeWrapper;
 
 import java.util.List;
 
-import android.jonas.fakestandby.R;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
+import de.jonasbernard.fakestandby.R;
+import de.jonasbernard.fakestandby.service.AccessibilityOverlayService;
 
 public class PermissionUtils {
 

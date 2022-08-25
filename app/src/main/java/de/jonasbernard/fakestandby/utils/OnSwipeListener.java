@@ -1,4 +1,4 @@
-package android.jonas.fakestandby.utils;
+package de.jonasbernard.fakestandby.utils;
 
 import android.content.Context;
 import android.view.GestureDetector;

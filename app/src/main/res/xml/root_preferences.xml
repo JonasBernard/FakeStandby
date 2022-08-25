@@ -73,7 +73,7 @@
             app:title="@string/license_title"
             app:summary="@string/license_summary"
             app:icon="@drawable/ic_baseline_copyright_24">
-            <intent android:action="android.jonas.fakestandby.license" />
+            <intent android:action="de.jonasbernard.fakestandby.license" />
         </Preference>
 
     </PreferenceCategory>

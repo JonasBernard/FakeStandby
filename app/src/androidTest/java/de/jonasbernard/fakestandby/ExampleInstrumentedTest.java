@@ -1,7 +1,7 @@
 package android.jonas.fakestandby;
 
 import android.content.Context;
-import android.jonas.fakestandby.settings.SettingsActivity;
+import de.jonasbernard.fakestandby.settings.SettingsActivity;
 
 import androidx.test.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;

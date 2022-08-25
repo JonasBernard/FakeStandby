@@ -1,4 +1,4 @@
-package android.jonas.fakestandby.compatibility;
+package de.jonasbernard.fakestandby.compatibility;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -7,10 +7,10 @@ import android.content.Context;
 import android.content.Intent;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
-import android.jonas.fakestandby.R;
-import android.jonas.fakestandby.service.AccessibilityOverlayService;
-import android.jonas.fakestandby.settings.SettingsActivity;
-import android.jonas.fakestandby.utils.Constants;
+import de.jonasbernard.fakestandby.R;
+import de.jonasbernard.fakestandby.service.AccessibilityOverlayService;
+import de.jonasbernard.fakestandby.settings.SettingsActivity;
+import de.jonasbernard.fakestandby.utils.Constants;
 import android.os.Build;
 
 

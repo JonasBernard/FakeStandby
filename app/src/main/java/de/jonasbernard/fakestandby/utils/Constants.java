@@ -1,4 +1,4 @@
-package android.jonas.fakestandby.utils;
+package de.jonasbernard.fakestandby.utils;
 
 public class Constants {
 
