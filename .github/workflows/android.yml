@@ -26,10 +26,10 @@ jobs:
       with:
         java-version: 11
     
-    - name: Decode google-services.json
-      env:
-        FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
-      run: echo $FIREBASE_CONFIG > app/google-services.json
+    #- name: Decode google-services.json
+    #  env:
+    #    FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+    #  run: echo $FIREBASE_CONFIG > app/google-services.json
     
     - name: Build with Gradle
       run: ./gradlew assembleAdfreeRelease --stacktrace
@@ -82,7 +82,7 @@ jobs:
       run: echo $FIREBASE_CONFIG > app/google-services.json
     
     - name: Build with Gradle
-      run: ./gradlew bundleAdfreeRelease --stacktrace
+      run: ./gradlew bundleAdRelease --stacktrace
 
     - name: Sign Adfree AAB
       id: sign-apk
