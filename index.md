@@ -72,4 +72,4 @@ You can read the whole license [here](license-text)
 ## About me
 
 I'm a student from Germany working on this project in
-my freetime. Read about me [here](about).
+my spare time. Read about me [here](https://jonasbernard.de).
