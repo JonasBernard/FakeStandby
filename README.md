@@ -32,6 +32,18 @@
    </p>
 </div>
 
+## Disclaimer
+
+The application is very programmed in a very "technical" fashion. It may or may not work on your current phone model and with
+your particular version of Android. If you face any issues, you could write me or open an issue on GitHub.
+However, I can not guarantee to have a proper solution.
+I am testing the app on my personal device and as I am a single person developing this application I cannot effort
+all device models with every version of Android out there.
+
+Some smartphones have LCD displays with background lighting that only turns off when you actually press the power button to lock your phone.
+The concept of this app works better with OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
+You should not except huge power saving effects on any device, especially on devices with LCD displays.
+
 ## What is the problem?
 
 Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more?
@@ -54,13 +66,6 @@ all with your screen turned off!
 
 This app displays an overlay over the foreground app using Android's accessibility services. All it renders on the overlay
 is a black canvas, effectively turning your pixels off. The apps you're using won't notice this, because technically your phone is turned on.
-
-## Disclaimer
-
-Some smartphones have LCD displays with background lighting that only turns off when you actually press the power button to lock your phone.
-The concept of this app works better with OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
-You should not except huge power saving effects on any device, especially on devices with LCD displays.
-
 
 ## Contribute
 
