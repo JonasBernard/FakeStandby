@@ -46,6 +46,12 @@ on the overlay is a black canvas, effectifly turning your pixels off. The apps y
 
 ## Disclaimer
 
+The application is very programmed in a very "technical" fashion. It may or may not work on your current phone model and with
+your particular version of Android. If you face any issues, you could write me or open an issue on GitHub.
+However, I can not guarantee to have a proper solution.
+I am testing the app on my personal device and as I am a single person developing this application I cannot effort
+all device models with every version of Android out there.
+
 Some smartphones have LCD displays with background lighting, that only turns off, when you really press the power button to lock your phone.
 The concept works better for OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off"
 You should not except huge power saving effects on any device especially on devices with LCD display.
