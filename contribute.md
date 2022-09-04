@@ -17,7 +17,7 @@ While translating make sure to mind the context. You're translating an android a
 to keep track of the strings you're translating, and where they are displayed in the app.
 
 ## Code contribution
-To code contribute fork this repository and [create a pull request](https://github.com/JonasBernard/FakeStandby/compare) after you commited
+To code contribute fork this repository and [create a pull request](https://github.com/JonasBernard/FakeStandby/compare) after you committed
 your changes to your fork.
 
 Code should be tested on one real device at least, the more the better.
@@ -28,9 +28,9 @@ The rest of the translation can be done by someone else on the translation platf
 
 As the app will be published on F-Droid, the code has to fit their [Inclusion Policy](https://f-droid.org/en/docs/Inclusion_Policy/).
 This means, you can't just add any closed source dependencies or google services to the app. Make sure to double check the changes against this policy before
-commiting.
+committing.
 
 ## Contribute to Website and PR media
 To contribute to the website have a look at the [corresponding branch](https://github.com/JonasBernard/FakeStandby/tree/gh-pages).
 
-To add PR meida and images anywhere to the project, [contact me directly](mailto:public.jbernard@web.de).
+To add PR media and images anywhere to the project, [contact me directly](mailto:public.jbernard@web.de).

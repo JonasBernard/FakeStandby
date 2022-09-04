@@ -25,7 +25,7 @@ layout: main_page
 ## Where is the problem?
 
 Most smartphones have long-living batteries these days, but who doesn't want to keep their phone alive for just one hour more?
-While using an app, you maybe not nessesarily need you display. So, why don't turn it off? Up to 20% of your battery power
+While using an app, you maybe not necessarily need you display. So, why don't turn it off? Up to 20% of your battery power
 is consumed by the display.
 
 ## Here is the solution!
@@ -42,7 +42,7 @@ all with your screen turned off.
 ## How does it work?
 
 The app is basically launching an overlay over the app currently running. Therefore it is using Android's accessibility services. All it's rendering
-on the overlay is a black canvas, effectifly turning your pixels off. The apps you're using won't notice this, beacause technically your phone is turned on.
+on the overlay is a black canvas, effectively turning your pixels off. The apps you're using won't notice this, because technically your phone is turned on.
 
 ## Disclaimer
 
