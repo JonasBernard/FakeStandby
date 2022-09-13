@@ -41,4 +41,6 @@
     <string name="settings_category_open_other">"Open other settings"</string>
     <string name="action_start_overlay">"Start FakeStandby"</string>
     <string name="action_stop_overlay">"Stop FakeStandby"</string>
+    <string name="setting_invert_overlay_color_title">Invert color</string>
+    <string name="setting_invert_overlay_color_summary">Enable this if the FakeStandby appears in white due to dark mode.</string>
 </resources>

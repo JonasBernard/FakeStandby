@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.View;
+import android.content.res.Resources;
 
 import android.jonas.fakestandby.service.AccessibilityOverlayService;
 
@@ -15,10 +16,19 @@ public class OverlayView extends View {
 
     private boolean falling = false;
 
+    private Paint paint = new Paint();
+
     private OnHideFinishedListener onHideFinishedListener = null;
 
     public OverlayView(Context context) {
         super(context);
+    }
+
+    public void setInvertColor(boolean invert) {
+        if (invert)
+            this.paint.setColor(Resources.getSystem().getColor(android.R.color.white));
+        else
+            this.paint.setColor(Resources.getSystem().getColor(android.R.color.black));
     }
 
     @Override
@@ -27,7 +37,7 @@ public class OverlayView extends View {
         int width = getWidth();
         int height = getHeight();
 
-        canvas.drawRect(0,0, (float) width, height-yBorder, new Paint());
+        canvas.drawRect(0,0, (float) width, height-yBorder, this.paint);
 
         if (hiding) {
             if (yBorder > height) {

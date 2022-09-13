@@ -25,6 +25,12 @@
             app:title="@string/setting_start_on_boot_title"
             app:summary="@string/setting_start_on_boot_summary" />
 
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="setting_invert_overlay_color"
+            app:title="@string/setting_invert_overlay_color_title"
+            app:summary="@string/setting_invert_overlay_color_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

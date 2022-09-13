@@ -315,6 +315,11 @@ public class AccessibilityOverlayService extends AccessibilityService {
             // Set dimensions to current width and height (these may change from time to time due to device rotation)
             layoutParams.width = dm.widthPixels + 2 * pixelOffset;
             layoutParams.height = dm.heightPixels + 2 * pixelOffset;
+
+
+            // Set color of the overlay
+            view.setInvertColor(this.getInvertOverlayColorPref());
+
             // Add the view component
             windowManager.addView(view, layoutParams);
             // Set the state
@@ -521,6 +526,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_OVERLAY_SHOWING + " to " + (value ? "true":"false"));
     }
 
+    private boolean getInvertOverlayColorPref() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_invert_overlay_color", false);
+    }
+
     private boolean getStartOnBootPref() {
         return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_start_on_boot", false);
     }
@@ -561,7 +570,7 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
         unregisterBroadcastReceiver();
 
-        Log.i(getClass().getName(), "Accessibility service started.");
+        Log.i(getClass().getName(), "Accessibility service stopped.");
 
         return false;
     }
