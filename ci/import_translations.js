@@ -51,7 +51,7 @@ async function downloadTo(https, fs, fse, url, path) {
           // after download completed close filestream
           file.on("finish", () => {
             file.close();
-            console.log("Download completed for url: " + url);
+            console.log("Download completed for url: " + url + " to " + path);
             resolve();
           });
         });
@@ -68,7 +68,7 @@ function newPOEditor() {
 
 function preprocessLanguage(language) {
   if (language.android_path && !Array.isArray(language.android_path)) {
-    language.android_path = [language.android_base_path];
+    language.android_path = [language.android_path];
   }
   return language;
 }
