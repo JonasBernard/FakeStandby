@@ -4,7 +4,7 @@ description: >-
   screen while keeping apps running.
 tagline: Android app to turn off your screen while keeping apps running
 title: "FakeStandby"
-logo: /assets/webBanner.png
+logo: "/assets/webBanner.png"
 author:
   name: Jonas Bernard
   url: https://jonasbernard.de/
@@ -14,7 +14,7 @@ lang: en
 github_username: JonasBernard
 email: public.jbernard@web.de
 domain: fakestandby.jonasbernard.de
-url: "https://fakestandby.jonasbernard.de/"
+url: "https://fakestandby.jonasbernard.de"
 f-droid_url: "https://f-droid.org/packages/android.jonas.fakestandby/"
 plugins:
   - jekyll-seo-tag
