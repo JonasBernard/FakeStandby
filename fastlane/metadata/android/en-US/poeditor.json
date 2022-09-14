@@ -25,5 +25,6 @@
     },
     "Changelog for version 1.3.3": {
         "store_changelog_10": "* Changed target Android version to Androird 11."
-    }
+    },
+    "store_changelog_11": "+ Added a switch to invert the overlay color.\n+ Imported new translations\n+ Added the language hebrew\n\n* The switch to invert the color should fix #31.\n* Fixed typos from #28"
 }

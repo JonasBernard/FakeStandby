@@ -48,4 +48,6 @@
     <!-- 这里的"假待机"不应该翻译，与软件名不翻译统一 -->
     <string name="action_start_overlay">"启动FakeStandby"</string>
     <string name="action_stop_overlay">"停止假锁屏"</string>
+    <string name="setting_invert_overlay_color_title">"反转颜色"</string>
+    <string name="setting_invert_overlay_color_summary">"如果 FakeStanby 由于深色模式显示为白色，则启用此选项"</string>
 </resources>

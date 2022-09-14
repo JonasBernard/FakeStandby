@@ -25,5 +25,6 @@
     },
     "Changelog for version 1.3.3": {
         "store_changelog_10": "* Target Android version改为Android 11。"
-    }
+    },
+    "store_changelog_11": "store_changelog_11\n"
 }
