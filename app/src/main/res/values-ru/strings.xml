@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="notification_message">"Нажми, чтобы запустить"</string>
-    <string name="accessibility_service_label">"FakeStandby Service"</string>
-    <string name="accessibility_service_description">"FakeStandby необходим этот функционал для управления всеми экранами и всеми приложениями. FakeStandby не собирает и не передает никакой информации."</string>
     <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
-    <string name="accessibility_error_not_running_message">"Служба, необходимая для работы FakeStandby, не запущена. Пожалуйста, перезапустите устройство."</string>
-    <string name="accessibility_error_settings_label">"Открыть Настройки"</string>
-    <string name="accessibility_error_no_overlay_permission_title">"Необходимы разрешения"</string>
-    <string name="accessibility_error_no_overlay_permission_message">"Приложению не разрешено отображать оверлэи над другими приложениями. Для использования приложения, вам надо предоставить разрешение \"Показывать поверх других приложений\" для FakeStandby. Это разрешение даёт приложению возможность показывать контент поверх других приложений.
-Чтобы предоставить разрешение, включите переключатель на следующем экране."</string>
-    <string name="notification_channel_errors_name">"Ошибки и предупреждения"</string>
-    <string name="accessibility_error_not_enabled_title">"Некоторый функционал не включён"</string>
-    <string name="accessibility_error_not_enabled_message">"Разрешение доступа для FakeStandby не включено в настройках доступа устройства. Для запуска приложения эта служба должна быть включена. Просто откройте настройки доступа, прокрутите вниз до FakeStandby и включите её. На некоторых устройствах вы можете поискать в разделе \"установленные службы\""</string>
-    <string name="title_activity_settings">"Настройки"</string>
     <string name="settings_category_overlay_options">"Настройки лже-блокировки"</string>
-    <string name="close_option_title">"Методы закрытия"</string>
     <string name="close_option_tap_four">"Одновременое нажатие более чем тремя пальцами"</string>
-    <string name="close_option_swipe">"Свайп снизу вверх"</string>
-    <string name="close_option_summary">"Выберите метод для выхода из лже-блокировки"</string>
-    <string name="close_option_error_no_option_selected_title">"Метод закрытия не выбран"</string>
-    <string name="close_option_error_no_option_selected_description">"Не установлен метод выхода из режима лже-блокировки"</string>
-    <string name="settings_category_others">"Дальнейшая информация"</string>
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом!"</string>
     <string name="app_name">"FakeStandby"</string>

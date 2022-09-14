@@ -20,7 +20,7 @@
     <string name="close_option_swipe">"Deslizar de baixo para cima"</string>
     <string name="close_option_summary">"Escolha os métodos que podem ser usados para sair do estado de FakeStandby"</string>
     <string name="close_option_error_no_option_selected_title">"Nenhum método para revelar selecionado"</string>
-    <string name="close_option_error_no_option_selected_description">"Nenhum método par revelar selecionado para o FakeStandby"</string>
+    <string name="close_option_error_no_option_selected_description">"Nenhum método para revelar selecionado para o FakeStandby"</string>
     <string name="settings_category_others">"Mais informaçōes"</string>
     <string name="help_translate_title">"Ajude a traduzir o aplicativo"</string>
     <string name="help_translate_summary">"O app está indisponível no seu idioma nativo? Ajude a traduzí-lo e ajude ele a chegar ao mundo todo!"</string>
