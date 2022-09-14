@@ -61,6 +61,13 @@
             "play_store_code": "de-DE"
         },
         {
+            "name": "Hebrew",
+            "poeditor_code": "he",
+            "android_path": ["values-he/", "values-wi/"],
+            "fastlane_path": "he/",
+            "play_store_code": "he"
+        },
+        {
             "name": "Hindi",
             "poeditor_code": "hi",
             "android_path": "values-hi/",

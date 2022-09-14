@@ -66,13 +66,20 @@ function newPOEditor() {
   return require("node-poeditor");
 }
 
-function constructAndroidXMLPath(languageImportData, language) {
-  return (
+function preprocessLanguage(language) {
+  if (language.android_path && !Array.isArray(language.android_path)) {
+    language.android_path = [language.android_base_path];
+  }
+  return language;
+}
+
+function constructAndroidXMLPaths(languageImportData, language) {
+  return language.android_path.map(path => (
     languageImportData.workspace_path +
     languageImportData.android_base_path +
-    language.android_path +
+    path +
     languageImportData.android_file_name
-  );
+  ));
 }
 
 function constructFastlanePath(languageImportData, language) {
@@ -141,6 +148,8 @@ async function processLanguage(
 
   console.log("Start processing language: " + name);
 
+  language = preprocessLanguage(language);
+
   if (android_path) {
     console.log("Getting URL for android xml download...");
     const url = await getPOEditorAndroidXMLDownloadURL(
@@ -148,8 +157,10 @@ async function processLanguage(
       token,
       poeditor_code
     );
-    const path = constructAndroidXMLPath(languageImportData, language);
-    await downloadTo(https, fs, fse, url, path);
+    const paths = constructAndroidXMLPaths(languageImportData, language);
+    for (let path of paths) {
+      await downloadTo(https, fs, fse, url, path);
+    }
   } else console.log("Skipped android xml for " + name);
 
   if (fastlane_path) {
