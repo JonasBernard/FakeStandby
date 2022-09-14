@@ -51,7 +51,20 @@ async function downloadTo(https, fs, fse, url, path) {
           // after download completed close filestream
           file.on("finish", () => {
             file.close();
-            console.log("Download completed for url: " + url + " to " + path);
+            console.log("Download completed from url " + url + " to " + path);
+
+            // If file is empty, delete it again as gradle build will fail otherwise
+            fs.readFile(path, function(err, data) {
+              if (data.length == 0) {
+                fs.unlink(path, (err) => {
+                  if (err) {
+                      console.log(err);
+                  }
+                  console.log('Deleted file ' + path + "again as it was empty.");
+              })
+              }
+            })
+
             resolve();
           });
         });
