@@ -14,7 +14,7 @@
      <img src="https://img.shields.io/github/repo-size/JonasBernard/FakeStandby?label=repository%20size" alt="GitHub repo size">
      <br>
      <a href="https://drone.jonasbernard.de/JonasBernard/FakeStandby">
-       <img src="https://drone.jonasbernard.de/api/badges/JonasBernard/FakeStandby/status.svg" />
+       <img src="https://drone.jonasbernard.de/api/badges/JonasBernard/FakeStandby/status.svg" alt="Drone Pipeline Status" />
      </a>
      <img src="https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI" alt="GitHub Workflow Status">
      <a href="https://fakestandby.jonasbernard.de/">
