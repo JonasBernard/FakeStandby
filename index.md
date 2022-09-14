@@ -22,6 +22,10 @@ layout: main_page
   <h2><a href="#disclaimer">Please read the disclaimer.</a></h2>
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=JonasBernard/FakeStandby&type=Date)](https://star-history.com/#JonasBernard/FakeStandby&Date)
+
 ## Where is the problem?
 
 Most smartphones have long-living batteries these days, but who doesn't want to keep their phone alive for just one hour more?
