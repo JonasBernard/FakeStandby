@@ -1,0 +1,6 @@
++ Added a switch to invert the overlay color
++ Imported new translations
++ Added the language hebrew
+
+* The switch to invert the color should fix #31.
+* Fixed typos from #28
