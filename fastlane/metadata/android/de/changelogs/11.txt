@@ -1,0 +1,6 @@
++ Einstellung zum Invertieren der Farbe
++ Neue Übersetzungen
++ Hebräisch ist jetzt als Sprache verfügbar
+
+* Die Einstellung zum Intertieren sollte #31 lösen.
+* Tippfehler aus #28 behoben

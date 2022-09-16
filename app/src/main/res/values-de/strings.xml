@@ -21,7 +21,7 @@
     <string name="close_option_error_no_option_selected_description">"Es wurde keine Methode ausgewählt, um aus dem Fake-Standby-Modus wieder zurückzukehren"</string>
     <string name="settings_category_others">"Weitere Informationen"</string>
     <string name="help_translate_title">"Hilf, die App zu übersetzen"</string>
-    <string name="help_translate_summary">"Die App ist nicht in deiner Sprache verfügbar? Hilf mit bei der Übersetung!"</string>
+    <string name="help_translate_summary">"Die App ist nicht in deiner Sprache verfügbar? Hilf mit beim Übersetzen!"</string>
     <string name="app_name">"FakeStandby"</string>
     <string name="visit_website_title">"Besuche die Projektwebseite"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
@@ -29,15 +29,17 @@
     <string name="license_summary">"Lies dir die Lizenz dieser App durch."</string>
     <string name="view_source_title">"Quellcode ansehen"</string>
     <string name="view_source_summary">"Besuche GitHub, um dir den Quellcode dieser App anzusehen."</string>
-    <string name="settings_show_notification_title">"Immer eine Meldung, mit der fake-standy genutzt werden kann, anzeigen"</string>
+    <string name="settings_show_notification_title">"Immer eine Benachrichtigung, mit der FakeStandby genutzt werden kann, anzeigen"</string>
     <string name="settings_show_notification_summary">"Nutze diese Option, wenn dein Gerät keine Schnelleinstellungen unterstützt"</string>
     <string name="setting_start_on_boot_title">"Starte standby beim booten"</string>
     <string name="setting_start_on_boot_summary">"Falls aktiviert, startet der fake-standby sobald die Bedienungshilfen starten. Beispielsweise nach jedem Hochfahren."</string>
-    <string name="notification_default_channel_name">"Haupt"</string>
+    <string name="notification_default_channel_name">"Allgemein"</string>
     <string name="notification_default_channel_description">"Hauptkanal für Kompatiblitätsnachrichten"</string>
     <string name="open_accessibility_settings_title">"Öffne Bedienungshilfeneinstellungen"</string>
     <string name="open_accessibility_settings_description">"Öffne die Bedienungshilfen in den Geräteeinstellungen, um FakeStandby zu erlauben."</string>
     <string name="settings_category_open_other">"Sonstige Einstellungen öffnen"</string>
     <string name="action_start_overlay">"Starte FakeStandby"</string>
     <string name="action_stop_overlay">"Stoppe FakeStandby"</string>
+    <string name="setting_invert_overlay_color_title">"Farbe umkehren"</string>
+    <string name="setting_invert_overlay_color_summary">"Aktiviere diese Funktion, falls FakeStandby wegen des Dark-Modes weiß erscheint."</string>
 </resources>
