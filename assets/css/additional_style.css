@@ -1,0 +1,50 @@
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+
+    animation-name: hop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hop {
+    0% {
+        bottom: 20px;
+    }
+
+    10% {
+        bottom: 28px;
+    }
+
+    20% {
+        bottom: 34px;
+    }
+
+    30% {
+        bottom: 36px;
+    }
+
+    40% {
+        bottom: 37px;
+    }
+
+    50% {
+        bottom: 37.5px;
+    }
+
+    60% {
+        bottom: 37px;
+    }
+
+    70% {
+        bottom: 36px;
+    }
+
+    80% {
+        bottom: 34px;
+    }
+
+    90% {
+        bottom: 28px;
+    }
+}
