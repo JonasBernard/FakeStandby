@@ -5,6 +5,8 @@
     animation-name: hop;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+
+    transform: translate(-25px, 0);
 }
 
 @keyframes hop {
