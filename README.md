@@ -1,7 +1,6 @@
 <div>
-   <h1 align="center">FakeStandby<br><h6 align="center">An Android app for turning the screen off while keeping apps running.</h6></h1>
    <p align="center">
-     <img src="branding/app_icon_round.svg" height="150"><br>
+     <img src="https://socialify.git.ci/JonasBernard/FakeStandby/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2FJonasBernard%2FFakeStandby%2Fraw%2Fmaster%2Fbranding%2Fapp_icon_round_opaque.svg&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark" alt="FakeStandby" width="640" height="320" /><br>
      <a href="https://f-droid.org/packages/android.jonas.fakestandby/">
        <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="60">
      </a><br>
@@ -22,12 +21,6 @@
      </a><br>
      <a href="https://bestpractices.coreinfrastructure.org/projects/4235">
        <img src="https://bestpractices.coreinfrastructure.org/projects/4235/badge" alt="CII Best Practices">
-     </a>
-     <a href="https://github.com/JonasBernard/FakeStandby/issues">
-       <img src="https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby" alt="GitHub issues">
-     </a>
-     <a href="https://github.com/JonasBernard/FakeStandby/pulls">
-       <img src="https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby" alt="GitHub pull requests">
      </a>
    </p>
 </div>
