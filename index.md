@@ -22,7 +22,7 @@ layout: main_page
   <h2><a href="#disclaimer">Please read the disclaimer.</a></h2>
 </div>
 
-## Star History
+<img src="https://socialify.git.ci/JonasBernard/FakeStandby/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2FJonasBernard%2FFakeStandby%2Fraw%2Fmaster%2Fbranding%2Fapp_icon_round_opaque.svg&owner=1&pattern=Solid&stargazers=1&theme=Light" alt="FakeStandby" width="640" height="320" />
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JonasBernard/FakeStandby&type=Date)](https://star-history.com/#JonasBernard/FakeStandby&Date)
 
