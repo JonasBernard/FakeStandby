@@ -3,14 +3,13 @@ layout: main_page
 ---
 
 
-# Welcome to the project website of FakeStandby
 
-![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
+<img src="https://socialify.git.ci/JonasBernard/FakeStandby/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2FJonasBernard%2FFakeStandby%2Fraw%2Fmaster%2Fbranding%2Fapp_icon_round_opaque.svg&owner=1&pattern=Solid&stargazers=1&theme=Light" alt="FakeStandby" width="640" height="320" />
+
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4235/badge)](https://bestpractices.coreinfrastructure.org/projects/4235)
-![GitHub issues](https://img.shields.io/github/issues-raw/JonasBernard/FakeStandby)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/JonasBernard/FakeStandby)
+![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="hosted_button_id" value="SFPCZ53XCNE2A" />
@@ -18,13 +17,13 @@ layout: main_page
   <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
+[![Star History Chart](https://api.star-history.com/svg?repos=JonasBernard/FakeStandby&type=Date)](https://star-history.com/#JonasBernard/FakeStandby&Date)
+
+
 <div class="alert">
   <h2><a href="#disclaimer">Please read the disclaimer.</a></h2>
 </div>
 
-<img src="https://socialify.git.ci/JonasBernard/FakeStandby/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2FJonasBernard%2FFakeStandby%2Fraw%2Fmaster%2Fbranding%2Fapp_icon_round_opaque.svg&owner=1&pattern=Solid&stargazers=1&theme=Light" alt="FakeStandby" width="640" height="320" />
-
-[![Star History Chart](https://api.star-history.com/svg?repos=JonasBernard/FakeStandby&type=Date)](https://star-history.com/#JonasBernard/FakeStandby&Date)
 
 ## Where is the problem?
 
