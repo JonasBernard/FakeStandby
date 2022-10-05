@@ -50,3 +50,4 @@ trigger:
     include:
     - promote
     - custom
+    - cron
