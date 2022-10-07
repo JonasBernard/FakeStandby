@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="notification_message">"Нажмите для запуска"</string>
     <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
+    <string name="accessibility_error_not_running_message">"Необходимая служба не запущена. Пожалуйста, перезагрузите устройство. 
+"</string>
+    <string name="accessibility_error_settings_label">"Открыть настройки"</string>
+    <string name="notification_channel_errors_name">"Ошибки и предупреждения"</string>
+    <string name="title_activity_settings">"Настройки"</string>
     <string name="settings_category_overlay_options">"Настройки лже-блокировки"</string>
+    <string name="close_option_title">"Способы выхода"</string>
     <string name="close_option_tap_four">"Одновременое нажатие более чем тремя пальцами"</string>
+    <string name="settings_category_others">"Дальнейшая информация"</string>
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом!"</string>
     <string name="app_name">"FakeStandby"</string>

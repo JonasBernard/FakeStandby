@@ -4,6 +4,8 @@
     <!-- 點擊運行 -->
     <!-- Fuzzy -->
     <string name="notification_message">"點擊運行"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_label">"無障礙服務"</string>
 
     <!-- FakeStandby需要這種功能來控制每個屏幕和每個應用程序。該功能僅用於提供應用程序功能，不會訪問、保存、收集或共享任何數據。 -->
