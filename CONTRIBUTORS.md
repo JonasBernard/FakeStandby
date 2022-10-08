@@ -72,9 +72,8 @@
 * liu  
 * Lqwh2h2cwa  
 * Lucassuperti  
-* Maciej   
 * Maciej  
-* makjdd  
+* Maciej   
 * marlon  
 * Martina Thakur  
 * Max Burkardt  

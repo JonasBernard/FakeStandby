@@ -1,0 +1,25 @@
+<p>Hey there!</p>
+
+This is the report of your most current drone pipeline build.
+
+Unfortunately, it failed!
+
+<img src="https://github.com/JonasBernard/FakeStandby/raw/master/ci/failure.png" />
+
+<strong>Failed to import translations into the repo <a href="{{repo.link}}">{{repo.fullName}}</a></strong>
+
+<p>
+    The build was based on the commit
+    <strong><a href="{{commit.link}}">{{commit.SHA}}: {{commit.message}}</a></strong>
+     on branch <strong>{{commit.branch}}</strong>
+     authored by <string>{{commit.author.name}}</string>
+</p>
+
+<span>Some useful links:</span>
+<ul>
+    <li>See the build on drone: <a href="{{build.link}}">Build #{{build.number}}, {{build.status}}</a></li>
+    <li>See the commit on GitHub: <a href="{{commit.link}}">{{commit.SHA}}: {{commit.message}}</a></li>
+    <li>See the repository on GitHub: <a href="{{repo.link}}">{{repo.fullName}}</a></li>
+</ul>
+
+
