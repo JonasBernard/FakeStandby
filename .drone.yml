@@ -77,7 +77,7 @@ steps:
   depends_on:
   - git cleanup
   
-- name: send status mail (success)
+- name: send status mail
   image: drillster/drone-email
   when:
     event:
