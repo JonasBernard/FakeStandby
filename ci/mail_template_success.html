@@ -52,6 +52,10 @@
             align-self: flex-start;
         }
 
+        .items-start {
+            align-items: flex-start;
+        }
+
         .align-center {
             align-items: center;
         }
@@ -79,7 +83,7 @@
     <p>
         The build was based on the following commit:
         <div class="bg-secondary card m-2 flex flex-col">
-            <div class="flex justify-between m-2">
+            <div class="flex justify-between items-start m-2">
                 <strong><a href="{{commit.link}}">{{commit.message}}</a></strong>
                 <small class="badge">{{commit.branch}}</small>
             </div>
