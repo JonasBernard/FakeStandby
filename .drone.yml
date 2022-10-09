@@ -82,40 +82,9 @@ steps:
   when:
     event:
     - cron
-    - custom
     - promote
     status:
     - success
-  settings:
-    from.address:
-      from_secret: MAIL_FROM_ADDRESS
-    from.name:
-      from_secret: MAIL_FROM_NAME
-    host: 
-      from_secret: MAIL_SMTP_SERVER
-    recipients_only: true
-    recipients:
-      from_secret: MAIL_RECIPIENTS
-    username:
-      from_secret: MAIL_SMTP_USERNAME
-    password:
-      from_secret: MAIL_SMTP_PASSWORD
-    clienthostname:
-      from_secret: MAIL_HOSTNAME
-    subject: Sucessfully imported translations into {{repo.fullName}}!
-    body: file:///drone/src/ci/mail_template_success.html
-  depends_on:
-  - push
-  - git cleanup
-
-- name: send status mail (failure)
-  image: drillster/drone-email
-  when:
-    event:
-    - cron
-    - custom
-    - promote
-    status:
     - failure
   settings:
     from.address:
@@ -133,8 +102,8 @@ steps:
       from_secret: MAIL_SMTP_PASSWORD
     clienthostname:
       from_secret: MAIL_HOSTNAME
-    subject: Failed importing translations into {{repo.fullName}}!
-    body: file:///drone/src/ci/mail_template_failure.html
+    subject: "{{uppercasefirst build.status}}: Import translations into {{repo.fullName}}."
+    body: file:///drone/src/ci/mail_template.html
   depends_on:
   - push
   - git cleanup
