@@ -78,7 +78,7 @@ steps:
   - git cleanup
   
 - name: send status mail
-  image: drillster/drone-email
+  image: jonasbernard/drone-email
   when:
     event:
     - cron
@@ -88,22 +88,18 @@ steps:
     - failure
   settings:
     from.address:
-      from_secret: MAIL_FROM_ADDRESS
+      from_secret: ORG_MAIL_FROM_ADDRESS
     from.name:
-      from_secret: MAIL_FROM_NAME
+      from_secret: ORG_MAIL_FROM_NAME
     host: 
-      from_secret: MAIL_SMTP_SERVER
+      from_secret: ORG_MAIL_SMTP_SERVER
     recipients_only: true
     recipients:
-      from_secret: MAIL_RECIPIENTS
+      from_secret: ORG_MAIL_RECIPIENTS
     username:
-      from_secret: MAIL_SMTP_USERNAME
+      from_secret: ORG_MAIL_SMTP_USERNAME
     password:
-      from_secret: MAIL_SMTP_PASSWORD
-    clienthostname:
-      from_secret: MAIL_HOSTNAME
-    subject: "{{uppercasefirst build.status}}: Import translations into {{repo.fullName}}."
-    body: file:///drone/src/ci/mail_template.html
+      from_secret: ORG_MAIL_SMTP_PASSWORD
   depends_on:
   - push
   - git cleanup
