@@ -31,7 +31,6 @@
         }
 
         .card {
-            padding: 10px;
             border-radius: 5px;
             width: calc(100% - 40px);
         }
@@ -80,11 +79,11 @@
     <p>
         The build was based on the following commit:
         <div class="bg-secondary card m-2 flex flex-col">
-            <div class="flex justify-between">
+            <div class="flex justify-between m-2">
                 <strong><a href="{{commit.link}}">{{commit.message}}</a></strong>
                 <small class="badge">{{commit.branch}}</small>
             </div>
-            <div class="flex align-center">
+            <div class="flex align-center m-2">
                 <img class="align-start m-2" src="{{commit.author.avatar}}" style="border-radius: 50%;" width="30px" height="30px" alt="Avatar of {{commit.author.name}}">
                 <div class="flex flex-col">
                     <strong>{{commit.author.name}}</strong>
