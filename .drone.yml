@@ -41,10 +41,11 @@ steps:
 - name: git cleanup 
   image: bitnami/git
   commands:
-  - echo "Git status now:"
   - git status
+
   # Do not push package-lock.json
   - git restore package-lock.json
+
     # For some unknown reason, if two contributors have the same name, they appear twice in the file
   # but with different amount of whitespaces. And for some other weird reason, the two names
   # switch position in the list on each build.
@@ -52,7 +53,6 @@ steps:
   - bash -c "if [[ $(diff -w CONTRIBUTORS.md CONTRIBUTORS.old.md) == "" ]]; then git restore CONTRIBUTORS.md; fi"
   - rm CONTRIBUTORS.old.md
 
-  - echo "Git status now:"
   - git status
   depends_on:
   - create contributors.md
