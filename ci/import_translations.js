@@ -195,7 +195,7 @@ async function processLanguage(
   const token = process.env.POEDITOR_API_TOKEN;
 
   if (token.length == 0) {
-    console.err("No API token for PoEditor provided. Stopping");
+    console.error("No API token for PoEditor provided. Stopping");
     process.exit(4);
   }
 
