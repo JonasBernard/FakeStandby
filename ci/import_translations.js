@@ -142,7 +142,7 @@ async function getPOEditorFastlaneMetadataDownloadURL(poconnect, token, lang) {
     return result.url;
   } catch (err) {
     console.error(err);
-    process.exit(2);
+    process.exit(3);
   }
 }
 
@@ -193,6 +193,11 @@ async function processLanguage(
 
 (async () => {
   const token = process.env.POEDITOR_API_TOKEN;
+
+  if (token.length == 0) {
+    console.err("No API token for PoEditor provided. Stopping");
+    process.exit(4);
+  }
 
   const [fs, fse] = getFileSystem();
   const languageImportData = getLanguageImportData(fs);
