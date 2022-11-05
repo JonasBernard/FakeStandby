@@ -50,7 +50,7 @@ steps:
   # but with different amount of whitespaces. And for some other weird reason, the two names
   # switch position in the list on each build.
   # If the changes on the file CONTRIBUTORS.md are just whitespaces, we discard them again:
-  - bash -c "if [[ diff -w CONTRIBUTORS.md CONTRIBUTORS.old.md = "" ]]; then git restore CONTRIBUTORS.md; fi"
+  - bash -c "if [[ {diff -w CONTRIBUTORS.md CONTRIBUTORS.old.md} = "" ]]; then git restore CONTRIBUTORS.md; fi"
   - rm CONTRIBUTORS.old.md
 
   - git status
