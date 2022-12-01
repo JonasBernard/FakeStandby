@@ -15,7 +15,7 @@
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 21 languages!
+> The app is now already translated into 22 languages!
 
  
 * 200308  
@@ -34,6 +34,7 @@
 * Antonio Silva  
 * Atiq kaled  
 * bibobob  
+* bill  
 * Cetinibrahim  
 * Chebab zouhir   
 * Coke  
@@ -44,6 +45,7 @@
 * Diego flores   
 * dour  
 * Doy Fancher  
+* Edu  
 * Elessar Trancos  
 * Elizabeth Aburto  
 * Emir can  
@@ -55,6 +57,7 @@
 * h  
 * h_1  
 * Hakan  
+* Hakimjon  
 * Hans-Guenther Kost  
 * Henrique  
 * Info  
@@ -73,8 +76,8 @@
 * liu  
 * Lqwh2h2cwa  
 * Lucassuperti  
-* Maciej  
 * Maciej   
+* Maciej  
 * marlon  
 * Martina Thakur  
 * Max Burkardt  
@@ -101,7 +104,6 @@
 * Redouane  
 * Riccardo Bettoli  
 * Rinat  
-* Robb  
 * Ruben Marquez   
 * Salih  
 * sans  
@@ -129,10 +131,12 @@
 * Джесіка  
 * Игорь Петрович Гуменников  
 * Мирон  
+* Михаил  
 * حسين  
 * محمد  
 * 张思桐  
 * 染色体X_Y  
+* 江兆陽  
 * 满满  
 * 煌上煌  
 * 王在祥  
