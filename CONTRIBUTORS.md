@@ -18,6 +18,7 @@
 > The app is now already translated into 22 languages!
 
  
+* 18439301296  
 * 200308  
 * 2352406Mk  
 * 774  
@@ -33,6 +34,8 @@
 * Anon  
 * Antonio Silva  
 * Atiq kaled  
+* Ban ban  
+* Bayu  
 * bibobob  
 * bill  
 * Cetinibrahim  
@@ -50,7 +53,6 @@
 * Elizabeth Aburto  
 * Emir can  
 * Felixcrat  
-* Fernando Piedra  
 * Frank  
 * Freefeel  
 * Giulio  
@@ -109,12 +111,12 @@
 * sans  
 * sardonicdozen  
 * Sergei  
+* SILVIO  
 * su  
 * Sumit Prasad  
 * SuppaMan  
 * tenoredigrazia  
 * tGd  
-* Thomas kuruvilla George  
 * Tom  
 * Tom  
 * tybercylez  
@@ -141,6 +143,7 @@
 * 煌上煌  
 * 王在祥  
 * 王无极  
+* 瑞杰  
 * 电音爱好者  
 * 祺杰呀  
 * 荔枝  

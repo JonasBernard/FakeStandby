@@ -1,0 +1,4 @@
++ Sekarang tombol navigasi di layar (rumah, kembali, aplikasi terbaru) juga dalam warna hitam.
++ Ketika perangkat Anda memiliki notch, bagian-bagian di sebelah notch harus ditutup. 
++ Bar navigasi dalam pengaturan sekarang bertema dengan benar. 
++ Stabilitas telah meningkat untuk menggunakan aplikasi dalam orientasi lanskap.

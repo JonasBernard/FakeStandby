@@ -1,0 +1,16 @@
+<p>
+  Sebagian besar smartphone saat ini memiliki baterai yang tahan lama, tetapi siapa yang tidak ingin ponsel mereka bertahan lebih dari satu jam?
+  Saat menggunakan aplikasi, Anda mungkin tidak membutuhkan layar Anda nyala. Jadi, mengapa tidak mematikannya? <b>Hingga 20%</b> daya baterai Anda dikonsumsi oleh layar.
+</p>
+
+<p>
+  FakeStandby adalah aplikasi Android untuk mematikan layar sambil menjalankan aplikasi. Ini termasuk pekerjaan latar depan, yang artinya Anda dapat menyimpan
+	
+  <ul>
+    <li>listening to music on YouTube</li>
+    <li>staying online on WhatsApp and other text messengers</li> 
+    <li>running your favorite game</li>
+  </ul>
+
+  all with your screen turned off.
+</p>

@@ -1,0 +1,19 @@
++ Sekarang aplikasi ini tersedia dalam 6 bahasa baru berikut:
+   - Cina (sederhana, 60%)
+   - Prancis (76%)
+   - Bahasa Hindi (76%)
+   - Persia (17%)
+   - Portugis (76%)
+   - Rusia (63%)
++ Menambahkan pengaturan untuk mengaktifkan notifikasi tetap untuk perangkat yang tidak mendukung quick settings.
++ Menambahkan pengaturan untuk memulai fake standby saat boot.
++ Sekarang aplikasi ini menggunakan wake lock. Seharusnya ini memperbaiki banyak masalah.
++ Menambahkan aktivitas yang diekspor untuk memulai dan menghentikan fake standby. Dengan cara ini, Anda dapat memulai
+   overlay dari aplikasi otomasi.
+   (Ini tidak diuji dengan baik. Harap laporkan masalah apa pun dengan itu.)
++ Menambahkan Fastlane dan tangkapan layar lokal dan perangkat spesifik.
+
+- Dihapus tombol redundan pada dialog, yang menyarankan untuk me-restart perangkat.
+
+* Memperbaiki masalah #11
+* Menutup masalah #12
