@@ -15,7 +15,9 @@
      <a href="https://drone.jonasbernard.de/JonasBernard/FakeStandby">
        <img src="https://drone.jonasbernard.de/api/badges/JonasBernard/FakeStandby/status.svg" alt="Drone Pipeline Status" />
      </a>
-     <img src="https://img.shields.io/github/actions/workflow/status/JonasBernard/FakeStandby/android.yml" alt="GitHub Workflow Status">
+     <a href="https://github.com/JonasBernard/FakeStandby/actions/workflows/android.yml">
+       <img src="https://img.shields.io/github/actions/workflow/status/JonasBernard/FakeStandby/android.yml" alt="GitHub Workflow Status">
+     </a>
      <a href="https://fakestandby.jonasbernard.de/">
        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Ffakestandby.jonasbernard.de" alt="Website Status">
      </a><br>
@@ -73,7 +75,7 @@ I also want to thank all the nice people who have donated some money!
 
 FakeStandby is an Android app that turns off your screen while keeping apps running.
 
-Copyright (C) 2021  Jonas Bernard
+Copyright (C) 2023  Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
