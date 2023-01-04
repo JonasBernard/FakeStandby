@@ -15,7 +15,7 @@
      <a href="https://drone.jonasbernard.de/JonasBernard/FakeStandby">
        <img src="https://drone.jonasbernard.de/api/badges/JonasBernard/FakeStandby/status.svg" alt="Drone Pipeline Status" />
      </a>
-     <img src="https://img.shields.io/github/actions/workflow/status/JonasBernard/FakeStandby/android.yml?branch=master alt="GitHub Workflow Status">
+     <img src="https://img.shields.io/github/actions/workflow/status/JonasBernard/FakeStandby/android.yml?branch=master" alt="GitHub Workflow Status">
      <a href="https://fakestandby.jonasbernard.de/">
        <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=light-green&up_message=online&url=https%3A%2F%2Ffakestandby.jonasbernard.de" alt="Website Status">
      </a><br>
