@@ -67,7 +67,7 @@ async function writeFile(fileContent) {
   try {
     await fse.outputFile("CONTRIBUTORS.md", fileContent);
   } catch (error) {
-     console.log(err);
+     console.log(error);
      process.exit(3);
   }
 }

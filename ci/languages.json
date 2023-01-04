@@ -11,9 +11,9 @@
         {
             "name": "Arabic",
             "poeditor_code": "ar",
-            "android_path": "values-ar/",
+            "android_path": "values-/",
             "fastlane_path": "ar/",
-            "play_store_code": "ar-SA"
+            "play_store_code": "ar"
         },
         {
             "name": "Bengali",
@@ -65,7 +65,7 @@
             "poeditor_code": "he",
             "android_path": ["values-he/", "values-wi/"],
             "fastlane_path": "he/",
-            "play_store_code": "he"
+            "play_store_code": "iw-IL"
         },
         {
             "name": "Hindi",
@@ -75,11 +75,18 @@
             "play_store_code": "hi-IN"
         },
         {
+            "name": "Hungarian",
+            "poeditor_code": "hu",
+            "android_path": "values-hu/",
+            "fastlane_path": "hu/",
+            "play_store_code": "hu-HU"
+        },
+        {
             "name": "Indonesian",
             "poeditor_code": "id",
             "android_path": "values-in/",
-            "fastlane_path": "in/",
-            "play_store_code": "id-ID"
+            "fastlane_path": "id/",
+            "play_store_code": "id"
         },
         {
             "name": "Italian",
@@ -123,6 +130,12 @@
             "play_store_code": "es-ES"
         },
         {
+            "name": "Swahili",
+            "poeditor_code": "sw",  
+            "android_path": "values-sw/",
+            "play_store_code": "sw"
+        },
+        {
             "name": "Turkish",
             "poeditor_code": "tr",
             "android_path": "values-tr/",
@@ -133,7 +146,13 @@
             "name": "Ukrainian",
             "poeditor_code": "uk",
             "android_path": "values-uk/",
-            "fastlane_path": "uk/"
+            "fastlane_path": "uk/",
+            "play_store_code": "uk"
+        },
+        {
+            "name": "Uzbek",
+            "poeditor_code": "uz",
+            "android_path": "values-uz/"
         }
     ]
 }
