@@ -58,7 +58,7 @@ steps:
   - create contributors.md
 
 - name: push
-  image: JonasBernard/drone-git-push
+  image: jonasbernard/drone-git-push
   # We have to bypass the push, if we run this by promoting it on an older commit as we could get merge conflicts
   # in the build environment and this is not something that we want.
   when:
