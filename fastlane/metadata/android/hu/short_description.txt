@@ -1,0 +1,1 @@
+Kapcsold ki a képernyö miközben az alkalmazás fut

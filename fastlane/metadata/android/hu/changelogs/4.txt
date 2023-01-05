@@ -1,0 +1,1 @@
++ Hozzáadta a weboldal linkjét, a forráskód linkjét és a licenc megjegyzését az alkalmazáshoz.

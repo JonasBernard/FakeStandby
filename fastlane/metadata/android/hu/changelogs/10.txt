@@ -1,0 +1,1 @@
+* Megváltozott a cél Android verzió Androird 11.

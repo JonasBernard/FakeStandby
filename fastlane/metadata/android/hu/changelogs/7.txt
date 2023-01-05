@@ -1,0 +1,19 @@
++ Az alkalmazás mostantól a következő 6 új nyelven érhető el:
+  - Kínai (egyszerűsített, 60%)
+  - francia (76%)
+  - hindi (76%)
+  - perzsa (17%)
+  - portugál (76%)
+  - orosz (63%)
++ Hozzáadtunk egy beállítást a tartós értesítés engedélyezéséhez olyan eszközök esetében, amelyek nem támogatják a gyorsbeállításokat.
++ Hozzáadtunk egy beállítást a hamis készenléti állapot indításához a rendszerindításkor.
++ Az alkalmazás mostantól ébresztési zárat szerez. Ez sok problémát orvosolhat.
++ Hozzáadva exportált tevékenységek a hamis készenléti állapot indításához és leállításához. Így elindíthatja a
+  automatizálási alkalmazásokból.
+  (Ezt nem teszteltük jól. Kérjük, jelezzétek, ha bármilyen probléma merülne fel ezzel kapcsolatban.)
++ Hozzáadva a Fastlane és a lokalizált és eszközspecifikus képernyőképek.
+
+- Eltávolítottunk egy felesleges gombot a párbeszédpanelen, amely a készülék újraindítását tanácsolja.
+
+* Javítottuk a 11. problémát
+* Bezártuk a #12-es problémát

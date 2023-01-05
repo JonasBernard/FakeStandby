@@ -1,0 +1,6 @@
++ Hozzáadott egy kapcsolót az overlay színének invertálására
++ Új fordítások importálása
++ Hozzáadva a héber nyelv
+
+* A szín invertálására szolgáló kapcsolónak a #31-et kell javítania.
+* Kijavította a 28. helyen szereplő elgépeléseket

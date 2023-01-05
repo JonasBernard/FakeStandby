@@ -1,0 +1,32 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Kapcsold ki a képernyö miközben az alkalmazás fut"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  A legtöbb okostelefon manapság már hosszú élettartamú akkumulátorral rendelkezik, de ki ne szeretné, ha a telefonja csak egy órával tovább bírná?\n  Egy alkalmazás használata közben talán nincs szükséged a kijelződre. Akkor miért nem kapcsolja ki? <b>Az akkumulátor akár 20%-át</b> is kímélheti.\n  energiáját a kijelző fogyasztja.\n</p>\n\n<p>\n  A FakeStandby egy Android alkalmazás, amellyel kikapcsolhatja a képernyőt, miközben az alkalmazások továbbra is futnak. Ez magában foglalja az előtérben lévő munkákat is, ami azt jelenti, hogy\n  hogy továbbra is\n\t\n  <ul>\n    <li>zenét hallgathat a YouTube-on</li>\n    <li>a WhatsAppon és más szöveges üzenetküldőkön online maradhat</li>\n    <li>futtathatja kedvenc játékát</li>\n  </ul>\n\n  Mindezt kikapcsolt képernyő mellett.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Hozzáadta a weboldal linkjét, a forráskód linkjét és a licenc megjegyzését az alkalmazáshoz."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ A képernyőn megjelenő navigációs gombok (kezdőlap, vissza, legutóbbi alkalmazások) szintén fekete színűek.\n+ Ha a készülékeden bevágás van, a bevágás melletti részeket is le kell fedni.\n+ A beállítások navigációs sávja mostantól megfelelően tematizált.\n+ Javult a stabilitás az alkalmazás tájolásban történő használatakor."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Az alkalmazás már spanyol nyelven is elérhető."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ Az alkalmazás mostantól a következő 6 új nyelven érhető el:\n  - Kínai (egyszerűsített, 60%)\n  - francia (76%)\n  - hindi (76%)\n  - perzsa (17%)\n  - portugál (76%)\n  - orosz (63%)\n+ Hozzáadtunk egy beállítást a tartós értesítés engedélyezéséhez olyan eszközök esetében, amelyek nem támogatják a gyorsbeállításokat.\n+ Hozzáadtunk egy beállítást a hamis készenléti állapot indításához a rendszerindításkor.\n+ Az alkalmazás mostantól ébresztési zárat szerez. Ez sok problémát orvosolhat.\n+ Hozzáadva exportált tevékenységek a hamis készenléti állapot indításához és leállításához. Így elindíthatja a\n  automatizálási alkalmazásokból.\n  (Ezt nem teszteltük jól. Kérjük, jelezzétek, ha bármilyen probléma merülne fel ezzel kapcsolatban.)\n+ Hozzáadva a Fastlane és a lokalizált és eszközspecifikus képernyőképek.\n\n- Eltávolítottunk egy felesleges gombot a párbeszédpanelen, amely a készülék újraindítását tanácsolja.\n\n* Javítottuk a 11. problémát\n* Bezártuk a #12-es problémát"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Importált fordítások a PoEditorból\n+ Hozzáadva: kínai (hagyományos), ukrán, lengyel, olasz, indonéz"
+    },
+    "Changelog for version 1.3.2": {
+        "store_changelog_9": "+ Hozzáadott arab nyelv. Az alkalmazás mostantól 18 nyelven érhető el.\n+ Az összes fordítást importáltuk a fordítási platformról.\n+ Az alkalmazás neve lefordíthatóvá vált\n+ Köszönet @Gitoffthelawn-nak a helyesírás javítására irányuló pull request-ekért és"
+    },
+    "Changelog for version 1.3.3": {
+        "store_changelog_10": "* Megváltozott a cél Android verzió Androird 11."
+    },
+    "Changelog for version 1.3.4": {
+        "store_changelog_11": "+ Hozzáadott egy kapcsolót az overlay színének invertálására\n+ Új fordítások importálása\n+ Hozzáadva a héber nyelv\n\n* A szín invertálására szolgáló kapcsolónak a #31-et kell javítania.\n* Kijavította a 28. helyen szereplő elgépeléseket"
+    }
+}

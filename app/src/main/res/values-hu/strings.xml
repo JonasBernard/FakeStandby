@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_message">"Kattints az indításhoz"</string>
+    <string name="accessibility_service_label">"FakeStandby szolgáltatás"</string>
+    <string name="accessibility_service_description">"A FakeStandby-nek szüksége van erre a funkcióra, hogy minden képernyő és minden alkalmazás vezérlését lehetővé tegye. Ez a funkció csak az alkalmazás funkcionalitásának biztosítására szolgál, és nem fér hozzá, nem ment, nem gyűjt és nem oszt meg semmilyen adatot."</string>
+    <string name="accessibility_error_not_running_title">"Néhány szükséges szolgáltatás nem müködik"</string>
+    <string name="accessibility_error_not_running_message">"Egy szükséges szolgáltatás a FakeStanbynak nem müködik.Kérlek indíts újra."</string>
+    <string name="accessibility_error_settings_label">"Nyisd meg a beállításokat"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Engedély szükséges."</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Az alkalmazás nem jeleníthet meg más alkalmazások fölött overlayeket. Az alkalmazás futtatásához a FakeStandby számára engedélyeznie kell a \\"Megjelenítés más alkalmazások felett\\" engedélyt. Az engedély lehetővé teszi, hogy az alkalmazás más alkalmazások tartalma felett jelenítsen meg tartalmat. Az engedély megadásához engedélyezze a kapcsolót a következő képernyőn."</string>
+    <string name="notification_channel_errors_name">"Hibák és veszélyek"</string>
+    <string name="accessibility_error_not_enabled_title">"Néhány funkció nincs bekapcsolva"</string>
+    <string name="accessibility_error_not_enabled_message">"A FakeStandby valamilyen opciója nincs engedélyezve a készülék hozzáférhetőségi beállításaiban. Az alkalmazás futtatásához ezt a szolgáltatást engedélyezni kell. Egyszerűen nyissa meg az elérhetőségi beállításokat, görgessen le a FakeStandby szolgáltatásra, és engedélyezze. Egyes eszközökön a \\"telepített szolgáltatások\\" alatt keresheti az opciót."</string>
+    <string name="title_activity_settings">"Beállítások."</string>
+    <string name="settings_category_overlay_options">"Fake Standby opciók"</string>
+    <string name="close_option_title">"Kilépési módok"</string>
+    <string name="close_option_tap_four">"Kattints a képernyöre 4 vagy több ujjal ugyan abban az idöben."</string>
+    <string name="close_option_swipe">"Mozgasd az ujjjad az ajjától a tetejéig."</string>
+    <string name="close_option_summary">"Válassza ki a FakeStandby állapotból való kilépésre használható módszereket."</string>
+    <string name="close_option_error_no_option_selected_title">"Nincs bezárási mód beállítva."</string>
+    <string name="close_option_error_no_option_selected_description">"Nincs bezárási mód beállítva a FakeStandby számára"</string>
+    <string name="settings_category_others">"További információ"</string>
+    <string name="help_translate_title">"Segíts lefordítani az alkalmazást"</string>
+    <string name="help_translate_summary">"Az alkalmazás jelenleg nem érhető el az Ön anyanyelvén? Segíts lefordítani, hogy az egész világot bejárja!"</string>
+    <string name="app_name">"FakeStandby"</string>
+    <string name="visit_website_title">"Nézd meg a projekt weboldalát"</string>
+    <string name="license_activity_title">"GNU General Public License 3.0"</string>
+    <string name="license_title">"Licensz"</string>
+    <string name="license_summary">"Nézd meg a licensz információt az alkalmazásról"</string>
+    <string name="view_source_title">"Lásd a forrás kódot"</string>
+    <string name="view_source_summary">"Látogasson el a GitHub oldalra, hogy megnézze az alkalmazás teljes forráskódját."</string>
+    <string name="settings_show_notification_title">"Mindig megjelenik egy értesítés a kamu készenléti állapot indításához"</string>
+    <string name="settings_show_notification_summary">"Használja ezt a lehetőséget, ha a készülék nem támogatja az egyéni gyorsbeállítási csempéket."</string>
+    <string name="setting_start_on_boot_title">"Indíts el a fakestandbyt indításkor."</string>
+    <string name="setting_start_on_boot_summary">"Ha engedélyezve van, a hamis készenléti állapot elindul, amint az elérhetőségi szolgáltatás elindul. Például a rendszerindítás után."</string>
+    <string name="notification_default_channel_name">"Fő"</string>
+    <string name="notification_default_channel_description">"A kompatibilitási értesítés fő csatornája"</string>
+    <string name="open_accessibility_settings_title">"Nyisd meg a kisegítö lehetöségeket"</string>
+    <string name="open_accessibility_settings_description">"Nyissa meg az eszköz akadálymentesítési beállításait a FakeStandby akadálymentesítési szolgáltatásának kezeléséhez."</string>
+    <string name="settings_category_open_other">"Nyisd meg a további beállításokat"</string>
+    <string name="action_start_overlay">"Indítsd el a FakeStandbyt"</string>
+    <string name="action_stop_overlay">"Állítsd meg a FakeStandbyt"</string>
+    <string name="setting_invert_overlay_color_title">"Invertált szín"</string>
+    <string name="setting_invert_overlay_color_summary">"Engedélyezze ezt, ha a FakeStandby a sötét üzemmód miatt fehéren jelenik meg."</string>
+</resources>

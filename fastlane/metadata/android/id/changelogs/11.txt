@@ -1,0 +1,6 @@
++ Menambahkan opsi untuk membalikkan warna overlay
++ Mengimpor terjemahan baru
++ Menambahkan Bahasa Ibrani
+
+* Opsi untuk membalikkan warna seharusnya memperbaiki masalah #31.
+* Memperbaiki kesalahan ketik dari #28

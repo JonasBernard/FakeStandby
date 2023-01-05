@@ -1,0 +1,4 @@
++ A képernyőn megjelenő navigációs gombok (kezdőlap, vissza, legutóbbi alkalmazások) szintén fekete színűek.
++ Ha a készülékeden bevágás van, a bevágás melletti részeket is le kell fedni.
++ A beállítások navigációs sávja mostantól megfelelően tematizált.
++ Javult a stabilitás az alkalmazás tájolásban történő használatakor.

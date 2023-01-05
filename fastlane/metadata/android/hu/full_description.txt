@@ -1,0 +1,18 @@
+<p>
+  A legtöbb okostelefon manapság már hosszú élettartamú akkumulátorral rendelkezik, de ki ne szeretné, ha a telefonja csak egy órával tovább bírná?
+  Egy alkalmazás használata közben talán nincs szükséged a kijelződre. Akkor miért nem kapcsolja ki? <b>Az akkumulátor akár 20%-át</b> is kímélheti.
+  energiáját a kijelző fogyasztja.
+</p>
+
+<p>
+  A FakeStandby egy Android alkalmazás, amellyel kikapcsolhatja a képernyőt, miközben az alkalmazások továbbra is futnak. Ez magában foglalja az előtérben lévő munkákat is, ami azt jelenti, hogy
+  hogy továbbra is
+	
+  <ul>
+    <li>zenét hallgathat a YouTube-on</li>
+    <li>a WhatsAppon és más szöveges üzenetküldőkön online maradhat</li>
+    <li>futtathatja kedvenc játékát</li>
+  </ul>
+
+  Mindezt kikapcsolt képernyő mellett.
+</p>

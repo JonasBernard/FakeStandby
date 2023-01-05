@@ -1,0 +1,4 @@
++ Hozzáadott arab nyelv. Az alkalmazás mostantól 18 nyelven érhető el.
++ Az összes fordítást importáltuk a fordítási platformról.
++ Az alkalmazás neve lefordíthatóvá vált
++ Köszönet @Gitoffthelawn-nak a helyesírás javítására irányuló pull request-ekért és

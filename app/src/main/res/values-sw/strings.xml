@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_message">"Bonyeza ili kuwasha"</string>
+    <string name="accessibility_service_label">"FakeStandby Service"</string>
+    <string name="accessibility_service_description">"FakeStandby inahitaji utendakazi huu ili kuwezesha kudhibiti kila skrini na kila programu. Kipengele hiki kitatumika tu kutoa utendakazi wa programu na hakitafikia, kuhifadhi, kukusanya au kushiriki data yoyote."</string>
+    <string name="accessibility_error_not_running_title">"Baadhi ya huduma zinazohitajika hazifanyi kazi"</string>
+    <string name="accessibility_error_not_running_message">"Baadhi ya huduma zinazohitajika hazifanyi kazi. Tafadhali zima na uwashe kifaa chako."</string>
+    <string name="accessibility_error_settings_label">"Fungua mipangilio"</string>
+    <string name="accessibility_error_no_overlay_permission_title">"Ruhusa inahitajika"</string>
+    <string name="accessibility_error_no_overlay_permission_message">"Programu hairuhusiwi kuonyesha mabango juu ya programu zingine. Ili kuendesha programu unahitaji kutoa ruhusa ya \\"Onyesha juu ya programu zingine\\" kwa FakeStandby. Ruhusa hiyo huwezesha programu kuonyesha maudhui juu ya maudhui ya programu nyingine. Ili kutoa ruhusa, wezesha swichi kwenye skrini ifuatayo."</string>
+    <string name="notification_channel_errors_name">"Makosa na maonyo"</string>
+    <string name="title_activity_settings">"Mipangilio"</string>
+</resources>

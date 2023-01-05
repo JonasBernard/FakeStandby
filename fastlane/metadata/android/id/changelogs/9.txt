@@ -1,0 +1,4 @@
++ Menambahkan bahasa arab. Aplikasi ini sekarang tersedia dalam 18 bahasa.
++ Mengimpor semua terjemahan dari platform terjemahan.
++ Membuat nama aplikasi dapat diterjemahkan
++ Terima kasih kepada @Gitoffthelawn untuk pull request untuk meningkatkan ejaan dan 

@@ -1,0 +1,32 @@
+{
+    "Description of the app for F-Droid Store. One sentence, no more than 30-50 chars, no trailing punctuation, focus on actions what the users does with the app, e.g. \"Read and send emails\" instead of \"Email client\".": {
+        "store_short_description": "Matikan layar anda sambil menjalankan aplikasi"
+    },
+    "Description of the app for F-Droid Store. Can conatin simple html.": {
+        "store_full_description": "<p>\n  Sebagian besar smartphone saat ini memiliki baterai yang tahan lama, tetapi siapa yang tidak ingin ponsel mereka bertahan lebih dari satu jam?\n  Saat menggunakan aplikasi, Anda mungkin tidak membutuhkan layar Anda nyala. Jadi, mengapa tidak mematikannya? <b>Hingga 20%</b> daya baterai Anda dikonsumsi oleh layar.\n</p>\n\n<p>\n  FakeStandby adalah aplikasi Android untuk mematikan layar sambil menjalankan aplikasi. Ini termasuk pekerjaan latar depan, yang artinya Anda dapat menyimpan\n\t\n  <ul>\n    <li>listening to music on YouTube</li>\n    <li>staying online on WhatsApp and other text messengers</li> \n    <li>running your favorite game</li>\n  </ul>\n\n  all with your screen turned off.\n</p>"
+    },
+    "Changelog for version 1.2.1": {
+        "store_changelog_4": "+ Menambahkan link situs web, link kode sumber, dan catatan Lisensi ke aplikasi."
+    },
+    "Changelog for version 1.2.2": {
+        "store_changelog_5": "+ Sekarang tombol navigasi di layar (rumah, kembali, aplikasi terbaru) juga dalam warna hitam.\n+ Ketika perangkat Anda memiliki notch, bagian-bagian di sebelah notch harus ditutup. \n+ Bar navigasi dalam pengaturan sekarang bertema dengan benar. \n+ Stabilitas telah meningkat untuk menggunakan aplikasi dalam orientasi lanskap."
+    },
+    "Changelog vor version 1.2.3": {
+        "store_changelog_6": "+ Sekarang aplikasi ini tersedia dalam Bahasa Spanyol."
+    },
+    "Changelog for version 1.3.0": {
+        "store_changelog_7": "+ Sekarang aplikasi ini tersedia dalam 6 bahasa baru berikut:\n   - Cina (sederhana, 60%)\n   - Prancis (76%)\n   - Bahasa Hindi (76%)\n   - Persia (17%)\n   - Portugis (76%)\n   - Rusia (63%)\n+ Menambahkan pengaturan untuk mengaktifkan notifikasi tetap untuk perangkat yang tidak mendukung quick settings.\n+ Menambahkan pengaturan untuk memulai fake standby saat boot.\n+ Sekarang aplikasi ini menggunakan wake lock. Seharusnya ini memperbaiki banyak masalah.\n+ Menambahkan aktivitas yang diekspor untuk memulai dan menghentikan fake standby. Dengan cara ini, Anda dapat memulai\n   overlay dari aplikasi otomasi.\n   (Ini tidak diuji dengan baik. Harap laporkan masalah apa pun dengan itu.)\n+ Menambahkan Fastlane dan tangkapan layar lokal dan perangkat spesifik.\n\n- Dihapus tombol redundan pada dialog, yang menyarankan untuk me-restart perangkat.\n\n* Memperbaiki masalah #11\n* Menutup masalah #12"
+    },
+    "Changelog for version 1.3.1": {
+        "store_changelog_8": "+ Terjemahan yang diimpor dari PoEditor\n+ Ditambahkan Cina (tradisional), Ukraina, Polandia, Italia, Indonesia"
+    },
+    "Changelog for version 1.3.2": {
+        "store_changelog_9": "+ Menambahkan bahasa arab. Aplikasi ini sekarang tersedia dalam 18 bahasa.\n+ Mengimpor semua terjemahan dari platform terjemahan.\n+ Membuat nama aplikasi dapat diterjemahkan\n+ Terima kasih kepada @Gitoffthelawn untuk pull request untuk meningkatkan ejaan dan "
+    },
+    "Changelog for version 1.3.3": {
+        "store_changelog_10": "* Ubah target versi Android ke Android 11."
+    },
+    "Changelog for version 1.3.4": {
+        "store_changelog_11": "+ Menambahkan opsi untuk membalikkan warna overlay\n+ Mengimpor terjemahan baru\n+ Menambahkan Bahasa Ibrani\n\n* Opsi untuk membalikkan warna seharusnya memperbaiki masalah #31.\n* Memperbaiki kesalahan ketik dari #28"
+    }
+}
