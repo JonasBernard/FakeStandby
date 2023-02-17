@@ -11,7 +11,7 @@
         {
             "name": "Arabic",
             "poeditor_code": "ar",
-            "android_path": "values-/",
+            "android_path": "values-ar/",
             "fastlane_path": "ar/",
             "play_store_code": "ar"
         },
