@@ -24,10 +24,10 @@ public class OverlayNotification {
     public OverlayNotification(Context context) {
         start_intent = new Intent(context, AccessibilityOverlayService.class);
         start_intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW);
-        start_pendingIntent = PendingIntent.getService(context, 0, start_intent, 0);
+        start_pendingIntent = PendingIntent.getService(context, 0, start_intent, PendingIntent.FLAG_IMMUTABLE);
 
         settings_intent = new Intent(context, SettingsActivity.class);
-        settings_pendingIntent = PendingIntent.getActivity(context, 1, settings_intent, 0);
+        settings_pendingIntent = PendingIntent.getActivity(context, 1, settings_intent, PendingIntent.FLAG_IMMUTABLE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = context.getString(R.string.notification_default_channel_name);
