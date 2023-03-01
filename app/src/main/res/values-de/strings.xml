@@ -2,21 +2,21 @@
 <resources>
     <string name="notification_message">"Zum Starten klicken"</string>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
-    <string name="accessibility_service_description">"Diese Option wird benötigt um die Funktionen der App bereitszustellen. Sie wird nur dafür benutzt, die Funktionen der App bereitzustellen und nicht dafür Daten zu speichern, sammeln oder zu versenden, die abgerufen werden können."</string>
+    <string name="accessibility_service_description">"Diese Option wird benötigt, um die Funktionen der App bereitzustellen. Es werden keine Daten gespeichert, sammelt oder zu versendet."</string>
     <string name="accessibility_error_not_running_title">"Einige benötigte Funktionen sind deaktiviert"</string>
-    <string name="accessibility_error_not_running_message">"Ein Dienst läuft nicht korrekt. Bitte starte dein Gerät neu."</string>
+    <string name="accessibility_error_not_running_message">"Ein Dienst läuft nicht. Bitte starte dein Gerät neu."</string>
     <string name="accessibility_error_settings_label">"Einstellungen öffnen"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Der App fehlt eine Berechtigung"</string>
     <string name="accessibility_error_no_overlay_permission_message">"Damit die App funktioniert, wird diese Berechtigung benötigt. Die Berechtigung macht es der App möglich, die Inhalte anderer Apps mit eigenen Inhalten zu überdecken. Um die Berechtigung zu erteilen, aktiviere die Option in der nachfolgenden Ansicht."</string>
     <string name="notification_channel_errors_name">"Fehler und Warnungen"</string>
     <string name="accessibility_error_not_enabled_title">"Einige Funktionen sind deaktiviert"</string>
-    <string name="accessibility_error_not_enabled_message">"Der Service für Barrierefreiheit ist in den Einstellungen deaktiviert. Die App funktioniert nur, wenn diese Einstellung aktiviert ist. Um sie zu aktivieren, öffne die Geräteinstellungen, gehe zu Bedienungshilfen, scrolle nach unten bis zu FakeStandby Service und erlaube die Benutzung der Barrierefreiheits-Funktionen. Bei einigen Geräten ist die Funktion unter dem Menüpunkt \"Installierte Dienste\" zu finden."</string>
+    <string name="accessibility_error_not_enabled_message">"Der Service für Barrierefreiheit ist in den Einstellungen deaktiviert. Die App funktioniert nur, wenn diese Einstellung aktiviert ist. Um sie zu aktivieren, öffne die Geräteeinstellungen, gehe zu Bedienungshilfen, scrolle nach unten bis zu FakeStandby und erlaube die Benutzung der Barrierefreiheitsfunktionen. Bei einigen Geräten ist die Funktion unter dem Menüpunkt \\"Installierte Dienste\\" zu finden."</string>
     <string name="title_activity_settings">"Einstellungen"</string>
-    <string name="settings_category_overlay_options">"Fake-Standby-Optionen"</string>
-    <string name="close_option_title">"Fake-Standby verlassen"</string>
+    <string name="settings_category_overlay_options">"FakeStandby-Optionen"</string>
+    <string name="close_option_title">"FakeStandby verlassen"</string>
     <string name="close_option_tap_four">"Tippe an mindestens 4 verschiedenen Punkten gleichzeitig auf den Bildschirm"</string>
     <string name="close_option_swipe">"Wische von unten nach oben"</string>
-    <string name="close_option_summary">"Wähle mit welchen Eingaben du den Fake-Standby-Modus wieder verlassen möchtest"</string>
+    <string name="close_option_summary">"Wähle, mit welchen Eingaben du den FakeStandby-Modus wieder verlassen möchtest"</string>
     <string name="close_option_error_no_option_selected_title">"Keine Art zum Verlassen festgelegt"</string>
     <string name="close_option_error_no_option_selected_description">"Es wurde keine Methode ausgewählt, um aus dem Fake-Standby-Modus wieder zurückzukehren"</string>
     <string name="settings_category_others">"Weitere Informationen"</string>
@@ -30,12 +30,20 @@
     <string name="view_source_title">"Quellcode ansehen"</string>
     <string name="view_source_summary">"Besuche GitHub, um dir den Quellcode dieser App anzusehen."</string>
     <string name="settings_show_notification_title">"Immer eine Benachrichtigung, mit der FakeStandby genutzt werden kann, anzeigen"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"Nutze diese Option, wenn dein Gerät keine Schnelleinstellungen unterstützt"</string>
-    <string name="setting_start_on_boot_title">"Starte standby beim booten"</string>
-    <string name="setting_start_on_boot_summary">"Falls aktiviert, startet der fake-standby sobald die Bedienungshilfen starten. Beispielsweise nach jedem Hochfahren."</string>
+
+    <!-- Fuzzy -->
+    <string name="setting_start_on_boot_title">"Starte Standby beim Booten"</string>
+
+    <!-- Fuzzy -->
+    <string name="setting_start_on_boot_summary">"Falls aktiviert, startet der FakeStandby sobald die Bedienungshilfen starten. Beispielsweise nach jedem Hochfahren."</string>
     <string name="notification_default_channel_name">"Allgemein"</string>
-    <string name="notification_default_channel_description">"Hauptkanal für Kompatiblitätsnachrichten"</string>
-    <string name="open_accessibility_settings_title">"Öffne Bedienungshilfeneinstellungen"</string>
+    <string name="notification_default_channel_description">"Hauptkanal für Kompatiblitätsbenachrichtigungen"</string>
+    <string name="open_accessibility_settings_title">"Öffne Einstellungen für die Bedienungshilfe"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Öffne die Bedienungshilfen in den Geräteeinstellungen, um FakeStandby zu erlauben."</string>
     <string name="settings_category_open_other">"Sonstige Einstellungen öffnen"</string>
     <string name="action_start_overlay">"Starte FakeStandby"</string>

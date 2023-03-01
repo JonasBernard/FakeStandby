@@ -2,18 +2,30 @@
 <resources>
     <string name="notification_message">"शुरू करने के लिए दबाएं"</string>
     <string name="accessibility_service_label">"FakeStandby Service"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"फेक्सटेंडबाई का कार्य संभव करने तथा सारे ऐप और सारे स्क्रीन को काबू करने के लिए इस कार्यक्षमता की आवश्यकता होती है। ये कार्यक्षमता सिर्फ इस ऐप की सुविधा को संभव करने के लिए इस्तेमाल होगी, और ये आप की किसी भी प्रकार की जानकारी को एक्सेस, साझा या सेव नहीं करती।"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"कुछ आवश्यक सेवा नहीं चल रही है"</string>
     <string name="accessibility_error_not_running_message">"फेकस्टेंडबाई के लिए आवश्यक, एक सेवा नहीं चल रही है। कृप्या अपनी डिवाइस को फिर से चालू करें।"</string>
     <string name="accessibility_error_settings_label">"सेटिंग्स खोलें"</string>
     <string name="accessibility_error_no_overlay_permission_title">"अनुमति की आवश्यकता है"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"ऐप को दूसरे ऐप के ऊपर ओवरले दिखाने की अनुमति नहीं है। इस ऐप को चलने के लिए आप को फेकस्टेंडबाई को \\"दूसरे ऐप के ऊपर दिखने\\" की अनुमति देनी होगी। ये अनुमति ऐप को दूसरे ऐप्स के उपर कॉन्टेंट दिखाने में सक्षम करती है। अनुमति प्रदान करने के लिए एनेबल का स्विच दबाएं। "</string>
     <string name="notification_channel_errors_name">"त्रुटियां और चेतावनियां"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"कुछ कार्यछमताएं अभी सक्षम नहीं हैं"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"फेकस्टेंडबाई के कुछ विकल्प एक्सेसिबिलिटी सेटिंग्स में एनेबल्ड नहीं है। इस ऐप को चलने के लिए इस सेवा का चालू रहना आवश्यक है। फेकस्टेंडबाई को एक्सेसिबिलिटी सेटिंग्स में नीचे जाकर एनेबल करें। कुछ डिवाइसेज में ये विकल्प \\"इंस्टॉल्ड सेवाओं\\" के विकल्प के भीतर मिलेगा।"</string>
     <string name="title_activity_settings">"सेटिंग्स"</string>
     <string name="settings_category_overlay_options">"फेकस्टेंडबाई के विकल्प"</string>
     <string name="close_option_title">"बाहर आने के तरीके"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"स्क्रीन को एक साथ 4 या 4 से अधिक उंगलियों से दबाएं"</string>
     <string name="close_option_swipe">"नीचे से ऊपर की ओर स्वाइप करें"</string>
     <string name="close_option_summary">"फेकस्टेंडबाई से बाहर आने के तरीकों में से चुनाव करें"</string>
@@ -21,22 +33,40 @@
     <string name="close_option_error_no_option_selected_description">"
 फेकस्टेंडबाई बंद करने के कोई भी तरीकों का चुनाव नहीं किया गया है"</string>
     <string name="settings_category_others">"अधिक जानकारी"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"ऐप का अनुवाद करने में सहायता करें"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"क्या ये ऐप आप की मात्र भाषा में मौजूद नहीं है? अनुवाद में सहायता कर इस ऐप को लोकप्रिय करने में मदद करें!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"प्रोजेक्ट की वेबसाइट पे जाएँ"</string>
     <string name="license_activity_title">"GNU जनरल पब्लिक लाइसेंस 3.0"</string>
     <string name="license_title">"लाइसेंस"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"ऐप की लाइसेंसिंग जानकारियों को देखें। "</string>
     <string name="view_source_title">"सोर्स कोड देखें"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"पूरा सोर्स कोड देखने के लिए GitHub पे जाएँ"</string>
     <string name="settings_show_notification_title">"फेकस्टैंडबाई सुरु करने के लिए हमेशा एक नोटिफिकेशन दिखाएं"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"अगर आप का डिवाइस कस्टम क्विक सेटिंग टाइल्स का सहारा नहीं देता, तो आप इस विकल्प को चुनें"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"बूट के बाद स्टैंडबाय चालू करें"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"फेकस्टैंडबाई एक्सेसिबिलिटी सुविधा के सुरु होते ही चालू हो जाएगी अगर ये विकल्प इनेबल होगा तो। उदाहरण के तौर पर बूट के बाद।"</string>
     <string name="notification_default_channel_name">"मुख्य"</string>
     <string name="notification_default_channel_description">"अनुकूलता नोटिफिकेशनन के लिए मुख्य चैनल"</string>
     <string name="open_accessibility_settings_title">"एक्सेसिबिलिटी सीटिंग्स खोलें"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"फेकस्टैंडबाई सुविधा का संचालन करने के लिए इस डिवाइस का एक्सेसिबिलिटी सेटिंग्स खोले।"</string>
     <string name="settings_category_open_other">"दूसरी सेटिंग्स खोलें"</string>
     <string name="action_start_overlay">"फेकस्टैंडबाई चालू करें"</string>

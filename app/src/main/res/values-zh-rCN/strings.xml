@@ -2,46 +2,75 @@
 <resources>
     <string name="notification_message">"点击运行"</string>
     <string name="accessibility_service_label">"FakeStandby 服务"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby 需要这些功能来控制每个屏幕和APP。这些功能仅用来提供APP所需的功能，并不会访问，保持，收集或分享任何数据。"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"一些必须的服务未在运行"</string>
     <string name="accessibility_error_not_running_message">"FakeStandby必须的服务未在运行，请重启您的设备。"</string>
     <string name="accessibility_error_settings_label">"打开设置"</string>
     <string name="accessibility_error_no_overlay_permission_title">"需要授权"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"该应用程序不允许在其他应用程序上显示覆盖。 为了运行该应用程序，您需要为FakeStandby授予“在其他应用程序上显示”权限。 该权限使该应用可以显示其他应用的内容。 要授予权限，请在以下屏幕上启用开关。"</string>
     <string name="notification_channel_errors_name">"错误和警告"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"有些功能没有启用"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"设备的无障碍设置中未启用FakeStandby的某些选项。 要运行该应用程序，必须启用该服务。 只需打开无障碍设置，向下滚动到FakeStandby并启用它。 在某些设备上，您可能会在“已安装的服务”下找到该选项。"</string>
     <string name="title_activity_settings">"设置"</string>
     <string name="settings_category_overlay_options">"假待机设置"</string>
     <string name="close_option_title">"退出方式"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"用四根以上的手指同时点击屏幕"</string>
     <string name="close_option_swipe">"从底部划到顶部"</string>
     <string name="close_option_summary">"选择一个退出假待机状态的方式"</string>
     <string name="close_option_error_no_option_selected_title">"没有设置退出方式"</string>
     <string name="close_option_error_no_option_selected_description">"没有设置关闭方式"</string>
     <string name="settings_category_others">"更多信息"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"帮助翻译这个APP"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"该应用程序当前没有适配您的母语吗？ 帮助翻译以让它国际化！"</string>
 
     <!-- 假待机 -->
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"访问项目网站"</string>
     <string name="license_activity_title">"GNU通用公共许可证3.0"</string>
     <string name="license_title">"许可"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"查看许可信息。"</string>
     <string name="view_source_title">"查看源代码"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"访问GitHub。"</string>
 
     <!-- 经过实验确认，这里的"假待机的通知"仅仅只是指软件本身的通知，而不是假待机时收到的通知，避免歧义和与软件名统一，翻译为"Fake Standby的通知" -->
     <string name="settings_show_notification_title">"一律显示Fake Standby的通知以保证本应用运行"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"如果您的设备不支持自定义快速设置小部件，请使用此选项。"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"开机时启动假待机"</string>
 
     <!-- 为什么是"备用数据库"？不应该是软件本身吗，望原翻译人员告知 -->
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"启用后，将在启动辅助功能后立即启动Fake Standby。 例如，开机后。"</string>
     <string name="notification_default_channel_name">"菜单"</string>
     <string name="notification_default_channel_description">"在菜单上显示兼容性通知"</string>
     <string name="open_accessibility_settings_title">"打开辅助功能设置"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"打开设备的辅助功能设置以管理FakeStandby的辅助功能服务。"</string>
     <string name="settings_category_open_other">"打开其他设置"</string>
 

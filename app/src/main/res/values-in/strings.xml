@@ -2,7 +2,11 @@
 <resources>
     <string name="notification_message">"Tekan untuk mulai"</string>
     <string name="accessibility_service_label">"Layanan FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby memerlukan fungsi ini untuk mengendalikan layar dan aplikasi. Fitur ini hanya digunakan untuk fungsionalitas aplikasi dan tidak akan mengakses, menyimpan, mengumpulkan, atau membagikan data apa pun."</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"Beberapa layanan yang diperlukan tidak berjalan"</string>
     <string name="accessibility_error_not_running_message">"Layanan yang diperlukan untuk FakeStandby tidak berjalan. Hidupkan ulang perangkat anda."</string>
     <string name="accessibility_error_settings_label">"Buka Setelan"</string>
@@ -14,10 +18,14 @@
 
     <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"Beberapa fungsi tidak diaktifkan"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"Beberapa opsi untuk FakeStandby tidak diaktifkan di pengaturan aksesibilitas perangkat Anda. Untuk menjalankan aplikasi, layanan itu harus diaktifkan. Cukup buka pengaturan aksesibilitas, gulir ke bawah ke FakeStandby dan aktifkan. Di beberapa perangkat, Anda mungkin mencari opsi di bagian \\"Layanan Terinstal\\""</string>
     <string name="title_activity_settings">"Setelan"</string>
     <string name="settings_category_overlay_options">"Opsi fake standby"</string>
     <string name="close_option_title">"Metode keluar"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"Sentuh layar dengan 4 atau lebih jari secara bersamaan"</string>
     <string name="close_option_swipe">"Usap dari bawah ke atas"</string>
 
@@ -26,22 +34,40 @@
     <string name="close_option_error_no_option_selected_title">"Tidak ada metode keluar yang terpilih"</string>
     <string name="close_option_error_no_option_selected_description">"Tidak ada metode yang dipilih untuk keluar dari fake standby"</string>
     <string name="settings_category_others">"Informasi tambahan"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"Bantu untuk menerjemahkan aplikasi ini"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"Saat ini aplikasi ini tidak tersedia dalam bahasa asli Anda? Bantu menerjemahkannya untuk membantunya menyebar ke seluruh dunia!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"Kunjungi situs web proyek"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"Lisensi"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"Lihat informasi lisensi aplikasi."</string>
     <string name="view_source_title">"Lihat kode sumber"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"Kunjungi GitHub untuk melihat semua kode sumber aplikasi ini."</string>
     <string name="settings_show_notification_title">"Selalu tampilkan notifikasi untuk memulai fake standby"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"Gunakan opsi ini jika perangkat Anda tidak mendukung custom quick settings tiles."</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"Mulai standby saat boot"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"Saat diaktifkan, fake standby akan dimulai segera setelah layanan aksesibilitas dimulai. Misalnya setelah boot."</string>
     <string name="notification_default_channel_name">"Utama"</string>
     <string name="notification_default_channel_description">"Channel utama untuk pemberitahuan kompatibilitas"</string>
     <string name="open_accessibility_settings_title">"Buka setelan aksesibilitas"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Buka pengaturan aksesibilitas perangkat untuk mengelola layanan aksesibilitas untuk FakeStandby."</string>
     <string name="settings_category_open_other">"Buka setelan lainnya"</string>
     <string name="action_start_overlay">"Mulai FakeStandby"</string>

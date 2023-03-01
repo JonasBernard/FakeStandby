@@ -7,12 +7,17 @@
     <!-- Fuzzy -->
     <string name="title_activity_settings">"ساماندهی"</string>
     <string name="close_option_title">"روش خروج"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"لمس صفحه با چهار انگشت به صورت همزمان"</string>
     <string name="close_option_swipe">"لمس از پایین به بالا"</string>
 
     <!-- کمک برای ترجمه -->
+    <!-- Fuzzy -->
     <string name="help_translate_title">"یاری برای ترگومه برنامه"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"نگریدن به وبگاه برنامه"</string>
     <string name="license_activity_title">"گواهینامه همگانی فراگیر گنو ۳.۰"</string>
     <string name="license_title">"گواهینامه"</string>

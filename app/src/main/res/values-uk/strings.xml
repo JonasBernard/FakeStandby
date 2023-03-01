@@ -2,40 +2,70 @@
 <resources>
     <string name="notification_message">"Натисніть, щоб запустити"</string>
     <string name="accessibility_service_label">"Сервіс FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby вимагає цієї функціональності, щоб зробити можливим керування кожним екраном та кожною програмою. Ця функція використовується лише для забезпечення функціональності програми та не забезпечує доступ, збереження, збирання або передачу будь-яких даних."</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"Якась необхідна служба не запущена"</string>
     <string name="accessibility_error_not_running_message">"Потрібна служба для FakeStandby не запущена. Будь ласка, перезапустіть ваш пристрій."</string>
     <string name="accessibility_error_settings_label">"Відкрити Налаштування"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Потрібен дозвіл"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"Додатоку не дозволено відображатися поверх інших програм. Щоб запустити програму, необхідно надати дозвіл \\"Відображати поверх інших програм\\" для FakeStandby. Це дозволяє програмі відображати вміст поверх вмісту інших програм. Щоб дозволити, увімкніть перемикач на наступному екрані."</string>
     <string name="notification_channel_errors_name">"Помилки та попередження"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"Деякі функції не включені"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"У налаштуваннях доступності вашого пристрою не ввімкнена якась опція для FakeStandby. Щоб запустити програму, цю службу слід увімкнути. Просто відкрийте параметри доступності, перейдіть до FakeStandby і увімкніть його. На деяких пристроях можна знайти опцію в розділі \\"встановлені служби\\"."</string>
     <string name="title_activity_settings">"Налаштування"</string>
     <string name="settings_category_overlay_options">"Фальшиві варіанти режиму очікування"</string>
     <string name="close_option_title">"Методи виходу"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"Торкніться екрана 4 або більше дотиків одночасно"</string>
     <string name="close_option_swipe">"Проведіть по екрану знизу наверх"</string>
     <string name="close_option_summary">"Виберіть методи, які можна використовувати для виходу з фальшивого стану очікування"</string>
     <string name="close_option_error_no_option_selected_title">"Не встановлено метод закриття"</string>
     <string name="close_option_error_no_option_selected_description">"Не встановлено метод закриття для фальшивого режиму очікування"</string>
     <string name="settings_category_others">"Додаткова інформація"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"Допомога в перекладі програми"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"Програма недоступна вашою рідною мовою? Допоможіть перекласти її!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"Відвідайте веб-сайт проектів"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"Ліцензія"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"Переглянути інформацію про ліцензування програми."</string>
     <string name="view_source_title">"Переглянути вихідний код"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"Відвідайте GitHub, щоб побачити весь вихідний код програми."</string>
     <string name="settings_show_notification_title">"Завжди показувати повідомлення для запуску фальшивого режиму очікування."</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"Використовуйте цю опцію, якщо пристрій не підтримує плитки користувацьких швидких налаштувань."</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"Старт під час завантаження"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"Якщо ввімкнено, фальшивий режим очікування буде запущено, щойно буде запущена служба доступності. Наприклад, після завантаження."</string>
     <string name="notification_default_channel_name">"Головний"</string>
     <string name="notification_default_channel_description">"Основний канал для повідомлення про сумісність"</string>
     <string name="open_accessibility_settings_title">"Відкрити налаштування доступності"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Відкрийте налаштування спеціальних можливостей пристрою, щоб керувати службою спеціальних можливостей для FakeStandby."</string>
     <string name="settings_category_open_other">"Відкрити інші налаштування"</string>
     <string name="action_start_overlay">"Старт FakeStandby"</string>

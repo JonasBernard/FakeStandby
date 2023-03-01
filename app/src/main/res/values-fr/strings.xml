@@ -2,40 +2,70 @@
 <resources>
     <string name="notification_message">"Cliquez pour lancer"</string>
     <string name="accessibility_service_label">"Service FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby a besoin de cette fonction pour pouvoir contrôler chaque écran et chaque application. Cette option sera utilisée seulement pour fournir la fonction de l'application et n'accèdera, n'enregistrera, ne collectera ni ne partagera aucune information."</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"Un service requis ne fonctionne pas"</string>
     <string name="accessibility_error_not_running_message">"Un service requis pour FakeStandby ne fonctionne pas. Veuillez redémarrer votre appareil."</string>
     <string name="accessibility_error_settings_label">"Ouvrir les paramètres"</string>
     <string name="accessibility_error_no_overlay_permission_title">"Permission requise"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"L'application ne peut s'afficher par dessus les autres. Pour pouvoir utiliser l'application vous devez autoriser la permission \\"Se superposer aux autres applications\\" pour FakeStandby. Cette permission autorise l'application à s'afficher par dessus les autres. Pour autoriser la permission, veuiller activer le switch sur l'écran qui suit."</string>
     <string name="notification_channel_errors_name">"Erreurs et alertes"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"Une fonctionnalité n'est pas activée"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"FakeStandby n'est pas activé dans les paramètres d'accessibilité de votre appareil. Pour pouvoir utiliser l'application, elle doit être activée. Ouvrez simplement les paramètres d'accessibilité, faites défiler jusqu'à FakeStandby et activez-le. Sur certains appareils vous trouverez l'option dans \\"Services installés\\""</string>
     <string name="title_activity_settings">"Paramètres"</string>
     <string name="settings_category_overlay_options">"Options de FakeStandby"</string>
     <string name="close_option_title">"Méthodes de fermeture"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"Appuyez sur l'écran 4 fois ou plus"</string>
     <string name="close_option_swipe">"Glissez de bas en haut"</string>
     <string name="close_option_summary">"Choisissez les méthodes pouvant être utilisées pour quitter FakeStandby"</string>
     <string name="close_option_error_no_option_selected_title">"Aucune méthode de fermeture sélectionnée"</string>
     <string name="close_option_error_no_option_selected_description">"Vous devez sélectionner au moins une méthode de fermeture de FakeStandby"</string>
     <string name="settings_category_others">"Informations supplémentaires"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"Aider à traduire l'application"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"L'application n'est pas disponible dans votre langue? Traduisez-la pour lui faire faire le tour du monde!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"Visiter le site des projets"</string>
     <string name="license_activity_title">"GNU General Public License 3.0"</string>
     <string name="license_title">"License"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"Voir la license d'utilisation de l'application."</string>
     <string name="view_source_title">"Voir le code source"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"Visiter GitHub pour voir le code source de cette application."</string>
     <string name="settings_show_notification_title">"Toujours afficher une notification pour démarrer FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"Utilisez cette option si votre appareil ne supporte pas les tuiles de paramétrages rapides"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"Lancer au démarrage de l'appareil"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"Une fois activé, FakeStandby sera lancé une fois le service d'accessibilité lancé, par exemple après le (re)démarrage de l'appareil."</string>
     <string name="notification_default_channel_name">"Principal"</string>
     <string name="notification_default_channel_description">"Canal principal pour la notification de compatibilité"</string>
     <string name="open_accessibility_settings_title">"Ouvrir les paramètres d'accessibilité"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Ouvre les paramètres d'accessibilité de l'appareil pour gérer l'accès de FakeStandby"</string>
     <string name="settings_category_open_other">"Ouvrir les autres paramètres"</string>
     <string name="action_start_overlay">"Lancer FakeStandby"</string>

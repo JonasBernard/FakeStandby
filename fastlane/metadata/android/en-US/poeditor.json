@@ -28,5 +28,8 @@
     },
     "Changelog for version 1.3.4": {
         "store_changelog_11": "+ Added a switch to invert the overlay color\n+ Imported new translations\n+ Added the language hebrew\n\n* The switch to invert the color should fix #31.\n* Fixed typos from #28"
+    },
+    "Changelog for version 1.3.5": {
+        "store_changelog_12": "+ Added new translations. App is available in 24 languages now.\n* Fixed issue #55\n"
     }
 }

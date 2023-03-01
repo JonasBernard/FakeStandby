@@ -11,6 +11,8 @@
     <!-- FakeStandby需要這種功能來控制每個屏幕和每個應用程序。該功能僅用於提供應用程序功能，不會訪問、保存、收集或共享任何數據。 -->
     <!-- Fuzzy -->
     <string name="accessibility_service_description">"FakeStandby需要這種功能來控制每個屏幕和每個應用程序。該功能僅用於提供應用程序功能，不會訪問、保存、收集或共享任何數據。"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"一些必須的服務沒有運行"</string>
     <string name="accessibility_error_not_running_message">"FakeStandby所需的服務沒有運行。請重啟你的設備"</string>
     <string name="accessibility_error_settings_label">"打開設置"</string>
@@ -19,11 +21,17 @@
     <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"不允許該應用程序在其他應用程序上顯示覆蓋圖。 若要運行該應用，您需要授予FakeStandby“在其他應用上顯示”的許可權。 該許可權使應用程序可以在其他應用程序的內容上顯示內容。 要授予許可權，請啟用以下荧幕上的開關。"</string>
     <string name="notification_channel_errors_name">"錯誤警告"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"某些功能未啟用"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_message">"您設備的協助工具設定中未啟用FakeStandby的某些選項。 要運行該應用程序，必須啟用該服務。 只需打開協助工具設定，向下滾動到FakeStandby並啟用它。 在某些設備上，您可以在“已安裝的服務”下查找選項"</string>
     <string name="title_activity_settings">"設置"</string>
     <string name="settings_category_overlay_options">"假裝待機選項"</string>
     <string name="close_option_title">"退出方式"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"用四根或者更多手指點擊屏幕"</string>
     <string name="close_option_swipe">"從底部滑到頂部"</string>
     <string name="close_option_summary">"選擇一個退出假裝待機的方法"</string>
@@ -32,13 +40,23 @@
 
     <!-- Fuzzy -->
     <string name="settings_category_others">"更多信息"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"幫助翻譯該APP"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"該程序沒有您的母語嗎?請幫忙翻譯讓他走向世界"</string>
     <string name="app_name">"假裝待機"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"訪問項目網站"</string>
     <string name="license_activity_title">"GNU通用許可證3.0"</string>
     <string name="license_title">"許可"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"查看應用程序許可信息"</string>
     <string name="view_source_title">"查看源代碼"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"訪問GitHub查看源代碼"</string>
 </resources>

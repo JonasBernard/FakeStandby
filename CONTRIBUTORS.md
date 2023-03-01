@@ -15,7 +15,7 @@
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 24 languages!
+> The app is now already translated into 25 languages!
 
  
 * 18439301296  
@@ -38,7 +38,6 @@
 * Bayu  
 * bill  
 * Cetinibrahim  
-* Chebab zouhir   
 * Coke  
 * Cor Menger  
 * cykgle  
@@ -46,11 +45,11 @@
 * DarkGagan  
 * Diego flores   
 * dour  
-* Doy Fancher  
 * Edu  
 * Elessar Trancos  
 * Elizabeth Aburto  
 * Emir can  
+* Fahad  
 * Felixcrat  
 * Freefeel  
 * Gabriel  
@@ -76,8 +75,9 @@
 * Lau  
 * Lqwh2h2cwa  
 * Lucassuperti  
-* Maciej   
+* MAAHIL566  
 * Maciej  
+* Maciej   
 * marlon  
 * Martina Thakur  
 * Max Burkardt  
@@ -111,6 +111,7 @@
 * SILVIO  
 * su  
 * Sumit Prasad  
+* SuperKubaGaming56  
 * SuppaMan  
 * tenoredigrazia  
 * tGd  
@@ -123,6 +124,7 @@
 * wainortyho  
 * xiaowei  
 * Yang Hongyi  
+* Youssef   
 * zhanghm  
 * zuoxp  
 * zwis  

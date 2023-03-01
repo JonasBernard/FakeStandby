@@ -1,0 +1,2 @@
++ Neue Übersetzungen hinzugefügt. Die App ist nun in 24 Sprachen verfügbar.
+* Problem #55 gefixt

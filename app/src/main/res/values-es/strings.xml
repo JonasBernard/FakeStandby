@@ -56,14 +56,24 @@
 
     <!-- Fuzzy -->
     <string name="settings_category_others">"Más información"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"Ayuda a traducir la aplicación"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"¿La aplicación no está disponible actualmente en tu idioma nativo? ¡Ayuda a traducirlo para que se distribuya por todo el mundo!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"Visite el sitio web de los proyectos"</string>
     <string name="license_activity_title">"GNU Licencia Pública General 3.0"</string>
     <string name="license_title">"Licencia"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"Consulte la información de licencia de la aplicación."</string>
     <string name="view_source_title">"Ver código fuente"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"Visite GitHub para ver todo el código fuente de esta aplicación"</string>
 
     <!-- Fuzzy -->
@@ -82,6 +92,8 @@
     <string name="notification_default_channel_name">"Principal"</string>
     <string name="notification_default_channel_description">"Canal principal para la notificación de compatibilidad"</string>
     <string name="open_accessibility_settings_title">"Abrir ajustes de accesibilidad"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Abre los ajustes de accesibilidad del dispositivo para gestionar el servicio de accesibilidad para FaleStandby"</string>
     <string name="settings_category_open_other">"Abrir otros ajustes"</string>
     <string name="action_start_overlay">"Iniciar FaleStandby"</string>

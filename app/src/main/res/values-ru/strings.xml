@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="notification_message">"Нажмите для запуска"</string>
+
+    <!-- Fuzzy -->
     <string name="accessibility_error_not_running_title">"Необходимая служба не запущена"</string>
     <string name="accessibility_error_not_running_message">"Необходимая служба не запущена. Пожалуйста, перезагрузите устройство. 
 "</string>
@@ -9,24 +11,44 @@
     <string name="title_activity_settings">"Настройки"</string>
     <string name="settings_category_overlay_options">"Настройки лже-блокировки"</string>
     <string name="close_option_title">"Способы выхода"</string>
+
+    <!-- Fuzzy -->
     <string name="close_option_tap_four">"Одновременое нажатие более чем тремя пальцами"</string>
     <string name="settings_category_others">"Дальнейшая информация"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_title">"Помогите с переводом приложения"</string>
+
+    <!-- Fuzzy -->
     <string name="help_translate_summary">"Приложение ещё не переведено на ваш язык? Помогите с переводом!"</string>
     <string name="app_name">"FakeStandby"</string>
+
+    <!-- Fuzzy -->
     <string name="visit_website_title">"Посетить сайт проекта"</string>
     <string name="license_activity_title">"Универсальная общественная лицензия GNU 3.0"</string>
     <string name="license_title">"Лицензия"</string>
+
+    <!-- Fuzzy -->
     <string name="license_summary">"Посмотреть информацию о лизензировании этого приложения."</string>
     <string name="view_source_title">"Посмотреть исходный код"</string>
+
+    <!-- Fuzzy -->
     <string name="view_source_summary">"Посетить GitHub для просмотра исходного кода."</string>
     <string name="settings_show_notification_title">"Всегда показывать уведомление для запуска лже-блокировки"</string>
+
+    <!-- Fuzzy -->
     <string name="settings_show_notification_summary">"Используйте эту опцию если ваше устройство не поддерживает плитки быстрых настроек."</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_title">"Начать лже-блокировку при загрузке"</string>
+
+    <!-- Fuzzy -->
     <string name="setting_start_on_boot_summary">"Когда включено, лже-блокировка будет запущена сразу же после запуска службы доступности. Например, при загрузке."</string>
     <string name="notification_default_channel_name">"Основной"</string>
     <string name="notification_default_channel_description">"Основной канал для уведомлений совместимости"</string>
     <string name="open_accessibility_settings_title">"Открыть настройки доступности"</string>
+
+    <!-- Fuzzy -->
     <string name="open_accessibility_settings_description">"Открыть настройки доступности устройства для управления службой доступности для FakeStandby."</string>
     <string name="settings_category_open_other">"Открыть другие настройки"</string>
     <string name="action_start_overlay">"Запустить FakeStandby"</string>

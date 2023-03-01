@@ -15,15 +15,21 @@
         "store_changelog_6": "+ Die App ist jetzt auf Spanisch verfügbar."
     },
     "Changelog for version 1.3.0": {
-        "store_changelog_7": "Die App ist bereits in den 6 folgenden Sprachen verfügbar:\n  - Chinesisch (vereinfacht, 60%)\n  - Französisch (76%)\n  - Hindi (76%)\n  - Persisch (17%)\n  - Portugiesisch (76%)\n  - Russisch (63%)\n+ Hinzugefügt wurde die Option eine dauerhafte Meldung anzuzeigen, falls das Gerät keine Schnelleinstellung erlaubt\n+ Hinzugefügt wurde die Option fake-standby beim Hochfahren zu starten\n+ The app acquires a wake lock now. This should fix many issues.\n+ Externe Steuerung ermöglicht, damit du deiner Automatisierungapp das Abblenden überlassen kannst\n(Nicht umfassend getestet. Probleme bitte melden.)\n+ Added Fastlane and localized and device specific screenshots.\n\n- Entfernt wurde ein überflüssiger Hinweis das Gerät neu zu starten\n\n* Problem behoben #11\n* Problem bearbeitet #12"
+        "store_changelog_7": "Die App ist in den 6 folgenden Sprachen verfügbar:\n  - Chinesisch (vereinfacht, 60%)\n  - Französisch (76%)\n  - Hindi (76%)\n  - Persisch (17%)\n  - Portugiesisch (76%)\n  - Russisch (63%)\n+ Hinzugefügt wurde die Option eine dauerhafte Meldung anzuzeigen, falls das Gerät keine Schnelleinstellung erlaubt\n+ Hinzugefügt wurde die Option FakeStandby beim Hochfahren zu starten\n+ Die App benutzt nun Android \"Wake Locks\". Dies sollte einige Fehler beheben.\n+ Externe Steuerung ermöglicht, damit du deiner Automatisierungapp das Abblenden überlassen kannst\n(Nicht umfassend getestet. Probleme bitte melden.)\n+ Fastlane hinzugefügt für an Sprachen und Geräte angepasste Screenshots.\n\n- Entfernt wurde ein überflüssiger Button im Dialog, der dazu auffordert, das Gerät neu zu starten\n\n* Problem #11 behoben\n* Problem #12 bearbeitet"
     },
     "Changelog for version 1.3.1": {
-        "store_changelog_8": "+ Übersetzungen von PoEditor verwendet\n+ Chinesisch (traditionel), Ukrainisch, Polnisch, Italienisch und Indonesisch hinzugefügt"
+        "store_changelog_8": "+ Übersetzungen von PoEditor verwendet\n+ Chinesisch (traditionell), Ukrainisch, Polnisch, Italienisch und Indonesisch hinzugefügt"
+    },
+    "Changelog for version 1.3.2": {
+        "store_changelog_9": "+ Arabisch hinzugefügt. Die App ist nun in 18 Sprachen verfügbar.\n+ Alle neuen Übersetzungen importiert.\n+ Der App-Name kann nun übersetzt werden.\n+ Thanks to @Gitoffthelawn for pull requests to improve spelling"
     },
     "Changelog for version 1.3.3": {
         "store_changelog_10": "* Ziel-Android Version auf Androird 11 geändert."
     },
     "Changelog for version 1.3.4": {
         "store_changelog_11": "+ Einstellung zum Invertieren der Farbe\n+ Neue Übersetzungen\n+ Hebräisch ist jetzt als Sprache verfügbar\n\n* Die Einstellung zum Intertieren sollte #31 lösen.\n* Tippfehler aus #28 behoben"
+    },
+    "Changelog for version 1.3.5": {
+        "store_changelog_12": "+ Neue Übersetzungen hinzugefügt. Die App ist nun in 24 Sprachen verfügbar.\n* Problem #55 gefixt"
     }
 }
