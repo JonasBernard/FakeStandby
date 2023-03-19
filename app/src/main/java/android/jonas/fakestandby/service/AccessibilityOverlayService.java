@@ -6,6 +6,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
+import androidx.core.content.ContextCompat;
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
@@ -362,8 +365,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
             // Close navigation drawer
-            Intent closeIntent = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
-            sendBroadcast(closeIntent);
+            // Intent closeIntent = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+            // sendBroadcast(closeIntent);
+            // OR
+            // this.performGlobalAction(AccessibilityService.GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE);
 
             // Add the view then show it
             addView();
