@@ -22,6 +22,7 @@ public class OverlayView extends View {
 
     public OverlayView(Context context) {
         super(context);
+        this.setForceDarkAllowed(false);
     }
 
     public void setInvertColor(boolean invert) {
