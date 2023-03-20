@@ -1,0 +1,4 @@
++ Added a "secure mode" switch that is activated by default. If activated, the FakeStandby will dismiss itself after a timeout. This is to prevent the users from locking themselves out of their own phone.
+* Fix the compatibility notification for devices without quick tile support.
+* Hopefully fixed a lot of issues regarding not being able to start the Accessibility Service on devices with Android 12 and newer
+* The app is now compiled against SDK version 31 instead of 30

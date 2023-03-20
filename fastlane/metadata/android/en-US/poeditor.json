@@ -34,5 +34,8 @@
     },
     "Changelog for version 1.3.6": {
         "store_changelog_13": "- The app is not closing the navigation drawer any more because it caused a permission problem on devices running Android 12 and newer. [1]\n\nReference: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs"
+    },
+    "Changelog for version 1.4.0": {
+        "store_changelog_14": "+ Added a \"secure mode\" switch that is activated by default. If activated, the FakeStandby will dismiss itself after a timeout. This is to prevent the users from locking themselves out of their own phone.\n* Fix the compatibility notification for devices without quick tile support.\n* Hopefully fixed a lot of issues regarding not being able to start the Accessibility Service on devices with Android 12 and newer\n* The app is now compiled against SDK version 31 instead of 30"
     }
 }
