@@ -44,7 +44,12 @@ function getPOEditorJSONFilePath(languageImportData, language) {
 function readPOEditorJSONFile(languageImportData, language, fs) {
     const path = getPOEditorJSONFilePath(languageImportData, language);
     console.log("Reading file " + path);
-    let rawdata = fs.readFileSync(path);
+    let rawdata = "";
+    try {
+      rawdata = fs.readFileSync(path);
+    } catch (e) {
+      console.log("Error reading file. Maybe it does not exist because no translations are available.")
+    }
     if (!rawdata || rawdata == "") {
         console.error("No translated data found. Skipping language.");
         return {};
