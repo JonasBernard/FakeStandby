@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.graphics.PixelFormat;
 import android.jonas.fakestandby.settings.NoCloseOptionSelectedNotification;
 import android.os.Build;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -58,6 +59,14 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     // Store the y-location where dragging started
     public static float BasePX = 0;
+
+    // Handler to have one global timeout for secure mode
+    private Handler handler = new Handler();
+    private Runnable hide_runnable = new Runnable() {
+        public void run() {
+            hide();
+        }
+    };
 
     // Store the current state of the Overlay
     public static byte state = Constants.Overlay.State.UNSET;
@@ -335,6 +344,8 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
     private void removeView() {
         try {
+            // Reset secure mode countdown
+            handler.removeCallbacks(hide_runnable);
             // Remove the view component
             windowManager.removeView(view);
             // Set the state
@@ -387,6 +398,11 @@ public class AccessibilityOverlayService extends AccessibilityService {
                     Log.i(getClass().getName(), "Finished blending to black");
                 }
             }).start();
+
+            if (this.getIsSecureModeOn()) {
+                handler.removeCallbacks(hide_runnable);
+                handler.postDelayed(hide_runnable, 15000);
+            }
 
             Log.i(getClass().getName(), "Successfully started blending to black");
         } else {
@@ -529,6 +545,10 @@ public class AccessibilityOverlayService extends AccessibilityService {
     private void writeOverlayShowingPref(boolean value) {
         getSharedPreferences(Constants.Preferences.PREFERENCE_NAME, MODE_PRIVATE).edit().putBoolean(Constants.Preferences.IS_OVERLAY_SHOWING, value).apply();
         Log.i(getClass().getName(), "Successfully wrote preference " + Constants.Preferences.IS_OVERLAY_SHOWING + " to " + (value ? "true":"false"));
+    }
+
+    private boolean getIsSecureModeOn() {
+        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("setting_secure_mode", true);
     }
 
     private boolean getInvertOverlayColorPref() {

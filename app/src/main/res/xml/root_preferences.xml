@@ -18,6 +18,12 @@
             app:key="setting_show_notification"
             app:title="@string/settings_show_notification_title"
             app:summary="@string/settings_show_notification_summary" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="setting_secure_mode"
+            app:title="@string/setting_start_secure_mode_title"
+            app:summary="@string/setting_start_secure_mode_summary" />
         
         <SwitchPreference
             app:defaultValue="false"

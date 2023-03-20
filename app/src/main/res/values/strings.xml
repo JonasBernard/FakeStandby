@@ -43,4 +43,6 @@
     <string name="action_stop_overlay">"Stop FakeStandby"</string>
     <string name="setting_invert_overlay_color_title">Invert color</string>
     <string name="setting_invert_overlay_color_summary">Enable this if the FakeStandby appears in white due to dark mode.</string>
+    <string name="setting_start_secure_mode_title">Secure mode</string>
+    <string name="setting_start_secure_mode_summary">If enabled, the FakeStandby will deactivate itself after 15 seconds after is has been started. This is to test if the app works on your phone and to prevent that you accidentally lock yourself out of your phone. Set this switch to off as soon as you have verified that you can turn off the FakeStandby after starting it.</string>
 </resources>
