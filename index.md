@@ -68,7 +68,7 @@ Feel free to contribute to the FakeStandby project! Make sure to look at the [Co
 ## Licensing
 
 FakeStandby is an android app that turns off your screen while keeping apps running.
-Copyright (C) 2020  Jonas Bernard
+Copyright (C) 2023 Jonas Bernard
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
