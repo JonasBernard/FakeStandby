@@ -155,11 +155,13 @@ public class AccessibilityOverlayService extends AccessibilityService {
 
                 //Drop the notification
                 dropNotification();
+                break;
             case Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION:
                 Log.i(getClass().getName(), "Received intent to hide the compat notification");
 
                 //Cancel the notification
                 cancelNotification();
+                break;
             case Constants.Intent.Extra.OverlayAction.NOTHING:
                 Log.i(getClass().getName(), "Received intent to do nothing");
 
