@@ -22,12 +22,12 @@ your changes to your fork.
 
 Code should be tested on one real device at least, the more the better.
 
-Whatever you do, do not hardcode stings that are displayed to the user!
-Strings have to be added to the according string xml files in at least English.
+Whatever you do, do not hard code stings that are displayed to the user!
+Strings have to be added to the according string XML files in at least English.
 The rest of the translation can be done by someone else on the translation platform.
 
 As the app will be published on F-Droid, the code has to fit their [Inclusion Policy](https://f-droid.org/en/docs/Inclusion_Policy/).
-This means, you can't just add any closed source dependencies or google services to the app. Make sure to double check the changes against this policy before
+This means, you can't just add any closed source dependencies or google services to the app. Make sure to double-check the changes against this policy before
 committing.
 
 ## Contribute to Website and PR media
