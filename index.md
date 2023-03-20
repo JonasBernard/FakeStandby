@@ -8,7 +8,7 @@ layout: main_page
 
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/JonasBernard/FakeStandby)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonasBernard/FakeStandby/Android%20CI)
+![GitHub Workflow status](https://img.shields.io/github/actions/workflow/status/JonasBernard/FakeStandby/android.yml)
 ![GitHub](https://img.shields.io/github/license/JonasBernard/FakeStandby?color=light-green)
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
