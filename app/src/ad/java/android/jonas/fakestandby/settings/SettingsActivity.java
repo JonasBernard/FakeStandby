@@ -23,7 +23,7 @@ import android.jonas.fakestandby.service.AccessibilityOverlayService;
 import android.jonas.fakestandby.utils.Constants;
 import android.jonas.fakestandby.permissions.PermissionUtils;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private AdView adView;
 
@@ -62,20 +62,21 @@ public class SettingsActivity extends AppCompatActivity {
 
         adView.loadAd(adRequest);
 
-        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
-            @Override
-            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-                if (key.equals("setting_show_notification")) {
-                    Intent intent = new Intent(getApplicationContext(), AccessibilityOverlayService.class);
-                    if (sharedPreferences.getBoolean("setting_show_notification", false)) {
-                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION);
-                    } else {
-                        intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION);
-                    }
-                    startService(intent);
-                }
+        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        Log.i(getClass().getName(), "Preference changed: " + key);
+        if (key.equals("setting_show_notification")) {
+            Intent intent = new Intent(getApplicationContext(), AccessibilityOverlayService.class);
+            if (sharedPreferences.getBoolean("setting_show_notification", false)) {
+                intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.SHOW_NOTIFICATION);
+            } else {
+                intent.putExtra(Constants.Intent.Extra.OverlayAction.KEY, Constants.Intent.Extra.OverlayAction.HIDE_NOTIFICATION);
             }
-        });
+            startService(intent);
+        }
     }
 
     @Override
