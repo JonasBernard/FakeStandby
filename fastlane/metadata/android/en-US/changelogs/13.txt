@@ -1,0 +1,3 @@
+- The app is not closing the navigation drawer any more because it caused a permission problem on devices running Android 12 and newer. [1]
+
+Reference: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs

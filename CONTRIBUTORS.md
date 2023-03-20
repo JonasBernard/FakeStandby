@@ -15,7 +15,7 @@
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 25 languages!
+> The app is now already translated into 26 languages!
 
  
 * 18439301296  
@@ -28,6 +28,7 @@
 * Agungkris  
 * Alejandro  
 * Alexandr  
+* Ali  
 * Ali  
 * Alice  
 * anas  
@@ -56,7 +57,6 @@
 * Giulio  
 * h  
 * h_1  
-* Hakan  
 * Hakimjon  
 * Hans-Guenther Kost  
 * Henrique  
@@ -89,7 +89,6 @@
 * musics  
 * Mustafa hossain  
 * nate  
-* Niko  
 * NNT909  
 * odkate  
 * Pascal  
@@ -127,13 +126,13 @@
 * Youssef   
 * zhanghm  
 * zuoxp  
+* Zurich Rose  
 * zwis  
 * Валерий Ермолаев  
 * Джесіка  
 * Игорь Петрович Гуменников  
 * Мирон  
 * Михаил  
-* حسين  
 * محمد  
 * 张思桐  
 * 染色体X_Y  
