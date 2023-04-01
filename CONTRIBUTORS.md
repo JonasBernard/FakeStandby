@@ -15,7 +15,7 @@
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 26 languages!
+> The app is now already translated into 27 languages!
 
  
 * 18439301296  
@@ -50,6 +50,7 @@
 * Elessar Trancos  
 * Elizabeth Aburto  
 * Emir can  
+* F6vjrB5G  
 * Fahad  
 * Felixcrat  
 * Freefeel  
