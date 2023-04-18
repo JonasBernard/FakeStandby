@@ -38,12 +38,17 @@ So, why not turn off all the pixels on it? Plus, this app can help prevent burn-
 FakeStandby is an Android app to turn off your screen while keeping apps running. This includes foreground jobs, which means
 you can keep
 
-- listening to podcasts
 - listening to music on YouTube
-- staying online with various text messengers
+- staying online in various text messengers
 - running your favorite game
+- listening to podcasts
 
 all with your screen turned off!
+
+## Some more use cases
+
+A user has reported to use the app to keep the GPS tracking in a buggy navigation app running, whlie the phone is in the pocket.
+Another user wrote me he uses it while driving to have a video call in only one direction where the calling person could see them, but the driver is not distracted.
 
 ## How does it work?
 
