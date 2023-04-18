@@ -42,6 +42,10 @@ keep
 
 all with your screen turned off.
 
+## Some more use cases
+
+A user has reported to use the app to keep the GPS tracking in a buggy navigation app running, whlie the phone is in the pocket. Another user wrote me he uses it while driving to have a video call in only one direction where the calling person could see them, but the driver is not distracted.
+
 ## How does it work?
 
 The app is basically launching an overlay over the app currently running. Therefore it is using Android's accessibility services. All it's rendering
