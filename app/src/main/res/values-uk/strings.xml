@@ -70,4 +70,6 @@
     <string name="settings_category_open_other">"Відкрити інші налаштування"</string>
     <string name="action_start_overlay">"Старт FakeStandby"</string>
     <string name="action_stop_overlay">"Стоп FakeStandby"</string>
+    <string name="setting_invert_overlay_color_title">"Інвертувати колір"</string>
+    <string name="setting_invert_overlay_color_summary">"Виберіть це якщо FakeStandby з'являється білим через чорну тему."</string>
 </resources>

@@ -8,14 +8,14 @@
 > Those require very precise and good work. Thanks to all code contributors!
 
  
-* [dependabot[bot]](https://github.com/apps/dependabot) (6 contributions)  
+* [dependabot[bot]](https://github.com/apps/dependabot) (7 contributions)  
 * [Gitoffthelawn](https://github.com/Gitoffthelawn) (3 contributions)  
 * [Poussinou](https://github.com/Poussinou) (1 contribution) 
 
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 27 languages!
+> The app is now already translated into 30 languages!
 
  
 * 18439301296  
@@ -37,6 +37,7 @@
 * Atiq kaled  
 * Ban ban  
 * Bayu  
+* Bennett  
 * bill  
 * Cetinibrahim  
 * Coke  
@@ -61,17 +62,16 @@
 * Hakimjon  
 * Hans-Guenther Kost  
 * Henrique  
+* Htwet  
 * Info  
 * Ioji Barrett  
 * Ivars   
 * jimmy  
-* jk  
 * Juan  
 * Juan Vargas  
 * Kaan Kutan  
 * Kakaraka  
 * Katherine  
-* Kristijan Krezic  
 * L  
 * Lau  
 * Lqwh2h2cwa  
@@ -93,6 +93,7 @@
 * nate  
 * NNT909  
 * odkate  
+* Onesimus Herman  
 * Pascal  
 * Pelian  
 * poi  
@@ -111,6 +112,7 @@
 * Sergei  
 * SILVIO  
 * su  
+* Subham Jena  
 * Sumit Prasad  
 * SuperKubaGaming56  
 * SuppaMan  
@@ -120,6 +122,7 @@
 * Tom  
 * tybercylez  
 * Tyson Silva  
+* Uglješa  
 * undra thomas  
 * Vahidboush  
 * wainortyho  
@@ -130,9 +133,10 @@
 * zuoxp  
 * Zurich Rose  
 * zwis  
-* Валерий Ермолаев  
+* Андрей Адаменко  
 * Джесіка  
 * Игорь Петрович Гуменников  
+* Магомед  
 * Мирон  
 * Михаил  
 * محمد  
