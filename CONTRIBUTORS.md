@@ -8,7 +8,7 @@
 > Those require very precise and good work. Thanks to all code contributors!
 
  
-* [dependabot[bot]](https://github.com/apps/dependabot) (7 contributions)  
+* [dependabot[bot]](https://github.com/apps/dependabot) (8 contributions)  
 * [Gitoffthelawn](https://github.com/Gitoffthelawn) (3 contributions)  
 * [Poussinou](https://github.com/Poussinou) (1 contribution) 
 
@@ -26,6 +26,7 @@
 * aevw  
 * Agung krisdayanto  
 * Agungkris  
+* Ai686Leo  
 * Alejandro  
 * Alexandr  
 * Ali  
@@ -103,6 +104,7 @@
 * Randi Setiawan  
 * Redouane  
 * Riccardo Bettoli  
+* Riduan Pahuluan  
 * Rinat  
 * Ruben Marquez   
 * Ryan  
@@ -139,6 +141,7 @@
 * Магомед  
 * Мирон  
 * Михаил  
+* Сергей   
 * محمد  
 * 张思桐  
 * 染色体X_Y  
@@ -153,4 +156,5 @@
 * 荔枝  
 * 蒙昌明  
 * 郑硕  
-* 陈上杰 
+* 陈上杰  
+* 骨头 

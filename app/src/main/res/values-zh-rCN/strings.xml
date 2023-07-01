@@ -15,8 +15,6 @@
     <!-- Fuzzy -->
     <string name="accessibility_error_no_overlay_permission_message">"该应用程序不允许在其他应用程序上显示覆盖。 为了运行该应用程序，您需要为FakeStandby授予“在其他应用程序上显示”权限。 该权限使该应用可以显示其他应用的内容。 要授予权限，请在以下屏幕上启用开关。"</string>
     <string name="notification_channel_errors_name">"错误和警告"</string>
-
-    <!-- Fuzzy -->
     <string name="accessibility_error_not_enabled_title">"有些功能没有启用"</string>
 
     <!-- Fuzzy -->
@@ -24,16 +22,12 @@
     <string name="title_activity_settings">"设置"</string>
     <string name="settings_category_overlay_options">"假待机设置"</string>
     <string name="close_option_title">"退出方式"</string>
-
-    <!-- Fuzzy -->
     <string name="close_option_tap_four">"用四根以上的手指同时点击屏幕"</string>
     <string name="close_option_swipe">"从底部划到顶部"</string>
     <string name="close_option_summary">"选择一个退出假待机状态的方式"</string>
     <string name="close_option_error_no_option_selected_title">"没有设置退出方式"</string>
     <string name="close_option_error_no_option_selected_description">"没有设置关闭方式"</string>
     <string name="settings_category_others">"更多信息"</string>
-
-    <!-- Fuzzy -->
     <string name="help_translate_title">"帮助翻译这个APP"</string>
 
     <!-- Fuzzy -->
@@ -41,8 +35,6 @@
 
     <!-- 假待机 -->
     <string name="app_name">"FakeStandby"</string>
-
-    <!-- Fuzzy -->
     <string name="visit_website_title">"访问项目网站"</string>
     <string name="license_activity_title">"GNU通用公共许可证3.0"</string>
     <string name="license_title">"许可"</string>
@@ -50,9 +42,7 @@
     <!-- Fuzzy -->
     <string name="license_summary">"查看许可信息。"</string>
     <string name="view_source_title">"查看源代码"</string>
-
-    <!-- Fuzzy -->
-    <string name="view_source_summary">"访问GitHub。"</string>
+    <string name="view_source_summary">"访问GitHub查看所有源代码。"</string>
 
     <!-- 经过实验确认，这里的"假待机的通知"仅仅只是指软件本身的通知，而不是假待机时收到的通知，避免歧义和与软件名统一，翻译为"Fake Standby的通知" -->
     <string name="settings_show_notification_title">"一律显示Fake Standby的通知以保证本应用运行"</string>
