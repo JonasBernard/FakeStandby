@@ -1,0 +1,3 @@
+- Додаток більше не закриває панель навігації, оскільки це спричиняло проблему з дозволами на пристроях під управлінням Android 12 і новіших версій. [1]
+
+Довідка: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs

@@ -8,7 +8,7 @@
 > Those require very precise and good work. Thanks to all code contributors!
 
  
-* [dependabot[bot]](https://github.com/apps/dependabot) (8 contributions)  
+* [dependabot[bot]](https://github.com/apps/dependabot) (9 contributions)  
 * [Gitoffthelawn](https://github.com/Gitoffthelawn) (3 contributions)  
 * [Poussinou](https://github.com/Poussinou) (1 contribution) 
 
@@ -26,6 +26,7 @@
 * aevw  
 * Agung krisdayanto  
 * Agungkris  
+* AHMED  
 * Ai686Leo  
 * Alejandro  
 * Alexandr  
@@ -94,6 +95,7 @@
 * nate  
 * NNT909  
 * odkate  
+* Odkate.s4  
 * Onesimus Herman  
 * Pascal  
 * Pelian  
@@ -108,6 +110,7 @@
 * Rinat  
 * Ruben Marquez   
 * Ryan  
+* Saelor  
 * Salih  
 * sans  
 * sardonicdozen  
@@ -115,7 +118,6 @@
 * SILVIO  
 * su  
 * Subham Jena  
-* Sumit Prasad  
 * SuperKubaGaming56  
 * SuppaMan  
 * tenoredigrazia  
@@ -127,6 +129,7 @@
 * Uglješa  
 * undra thomas  
 * Vahidboush  
+* Vir  
 * wainortyho  
 * xiaowei  
 * Yang Hongyi  

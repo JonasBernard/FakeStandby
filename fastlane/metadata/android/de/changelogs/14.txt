@@ -1,0 +1,4 @@
++ Es wurde ein Schalter für den "sicheren Modus" hinzugefügt, der standardmäßig aktiviert ist. Wenn aktiviert, wird sich der FakeStandby nach einer Zeitüberschreitung selbst schließen. Dies soll verhindern, dass sich die Benutzer von ihrem eigenen Telefon aussperren.
+* Korrigieren Sie die Kompatibilitätsbenachrichtigung für Geräte ohne Quick Tile-Unterstützung.
+* Hoffentlich wurden viele Probleme behoben, die dazu führten, dass der Eingabehilfedienst auf Geräten mit Android 12 und neuer nicht gestartet werden konnte
+* Die App wird jetzt gegen SDK Version 31 statt 30 kompiliert

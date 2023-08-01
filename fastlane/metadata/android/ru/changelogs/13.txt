@@ -1,0 +1,2 @@
+- Приложение больше не закрывает панель навигации, потому что это вызвало проблему с разрешениями на устройствах с версией Android 12 и новее. [1]
+Ссылка: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs

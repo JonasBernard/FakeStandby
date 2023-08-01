@@ -1,0 +1,3 @@
+- Die App schließt die Navigationsleiste nicht mehr, da sie auf Geräten mit Android 12 und neuer ein Berechtigungsproblem verursacht hat. [1]
+
+Referenz: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs

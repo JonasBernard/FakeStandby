@@ -31,5 +31,11 @@
     },
     "Changelog for version 1.3.5": {
         "store_changelog_12": "+ Neue Übersetzungen hinzugefügt. Die App ist nun in 24 Sprachen verfügbar.\n* Problem #55 gefixt"
+    },
+    "Changelog for version 1.3.6": {
+        "store_changelog_13": "- Die App schließt die Navigationsleiste nicht mehr, da sie auf Geräten mit Android 12 und neuer ein Berechtigungsproblem verursacht hat. [1]\n\nReferenz: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs"
+    },
+    "Changelog for version 1.4.0": {
+        "store_changelog_14": "+ Es wurde ein Schalter für den \"sicheren Modus\" hinzugefügt, der standardmäßig aktiviert ist. Wenn aktiviert, wird sich der FakeStandby nach einer Zeitüberschreitung selbst schließen. Dies soll verhindern, dass sich die Benutzer von ihrem eigenen Telefon aussperren.\n* Korrigieren Sie die Kompatibilitätsbenachrichtigung für Geräte ohne Quick Tile-Unterstützung.\n* Hoffentlich wurden viele Probleme behoben, die dazu führten, dass der Eingabehilfedienst auf Geräten mit Android 12 und neuer nicht gestartet werden konnte\n* Die App wird jetzt gegen SDK Version 31 statt 30 kompiliert"
     }
 }
