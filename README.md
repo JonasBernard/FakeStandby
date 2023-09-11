@@ -59,7 +59,7 @@ is a black canvas, effectively turning your pixels off. The apps you're using wo
 
 Some smartphones have LCD displays with background lighting that only turns off when you actually press the power button to lock your phone.
 The concept of this app works better with OLED or AMOLED displays, where "turning pixels black" is identical to "turning pixels off".
-You should not except huge power saving effects on any device, especially on devices with LCD displays.
+You should not expect huge power saving effects on any device, especially on devices with LCD displays.
 
 
 ## Contribute
