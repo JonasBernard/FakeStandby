@@ -8,9 +8,10 @@
 > Those require very precise and good work. Thanks to all code contributors!
 
  
-* [dependabot[bot]](https://github.com/apps/dependabot) (10 contributions)  
+* [dependabot[bot]](https://github.com/apps/dependabot) (11 contributions)  
 * [Gitoffthelawn](https://github.com/Gitoffthelawn) (3 contributions)  
-* [Poussinou](https://github.com/Poussinou) (1 contribution) 
+* [Poussinou](https://github.com/Poussinou) (1 contribution)  
+* [Rudxain](https://github.com/Rudxain) (1 contribution) 
 
 ## POEditor (Translation)
 
@@ -21,7 +22,6 @@
 * 18439301296  
 * 200308  
 * 2352406Mk  
-* 774  
 * Adam  
 * aevw  
 * Agung krisdayanto  
@@ -62,7 +62,6 @@
 * h  
 * h_1  
 * Hakimjon  
-* Hans-Guenther Kost  
 * Henrique  
 * Htwet  
 * Info  
@@ -72,7 +71,6 @@
 * Juan  
 * Juan Vargas  
 * Kaan Kutan  
-* Kakaraka  
 * Katherine  
 * L  
 * Lau  
@@ -134,7 +132,6 @@
 * xiaowei  
 * Yang Hongyi  
 * Youssef   
-* zhanghm  
 * zuoxp  
 * Zurich Rose  
 * zwis  
@@ -146,18 +143,15 @@
 * Михаил  
 * Сергей   
 * محمد  
-* 张思桐  
 * 染色体X_Y  
 * 江兆陽  
-* 满满  
 * 煌上煌  
 * 王在祥  
 * 王无极  
 * 瑞杰  
 * 电音爱好者  
 * 祺杰呀  
-* 荔枝  
-* 蒙昌明  
 * 郑硕  
+* 鄭智元  
 * 陈上杰  
 * 骨头 
