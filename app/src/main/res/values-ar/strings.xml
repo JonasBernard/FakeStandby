@@ -9,18 +9,37 @@
     <string name="accessibility_error_no_overlay_permission_title">"الإذن مطلوب"</string>
     <string name="accessibility_error_no_overlay_permission_message">"لا يُسمح لهذا التطبيق بالعرض المركب فوق التطبيقات الأخرى.  لتشغيل هذا التطبيق ، تحتاج إلى منح إذن \ \"العرض فوق التطبيقات الأخرى \\" لـ FakeStandby.  يتيح هذا الإذن لهذا التطبيق إمكانية عرض المحتوى فوق محتوى التطبيقات الأخرى.  لمنح هذا الإذن ، قم بتمكين المفتاح على الشاشة التالية."</string>
     <string name="notification_channel_errors_name">"أخطاء وتحذيرات"</string>
-    <string name="accessibility_error_not_enabled_title">"هناك بعض الوضائف غير مفعّلة"</string>
+    <string name="accessibility_error_not_enabled_title">"هناك بعض الوظائف غير مفعّلة"</string>
     <string name="accessibility_error_not_enabled_message">"لم يتم تمكين FakeStandby في إعدادات إمكانية الوصول بجهازك.  لتشغيل هذا التطبيق ، يجب تمكين هذه الخدمة.  ما عليك سوى فتح إعدادات إمكانية الوصول ، والتمرير لأسفل إلى FakeStandby وتمكينه.  في بعض الأجهزة ، قد تبحث عن الخيار ضمن \ \"الخدمات المثبتة \\""</string>
     <string name="title_activity_settings">"الإعدادات"</string>
     <string name="settings_category_overlay_options">"خيارات وضع الإستعداد"</string>
     <string name="close_option_title">"طرق الإنهاء"</string>
-    <string name="close_option_tap_four">"إنقُر الشاشة بـ4 أو أكثر من اللمسات المتزامنة"</string>
-    <string name="close_option_swipe">"إسحب من الزر للأعلى"</string>
+    <string name="close_option_tap_four">"إنقُر على الشاشة بـ4 أصابع أو أكثر"</string>
+    <string name="close_option_swipe">"إسحب بإصبعك من أسفل الشاشة للأعلى"</string>
     <string name="close_option_summary">"إخترق الطُرق الممكن إستخدامها لإنهاء وضع الإستعداد المزيّف"</string>
     <string name="close_option_error_no_option_selected_title">"لم تعيّن طريقة للإغلاق"</string>
-
-    <!-- Fuzzy -->
     <string name="close_option_error_no_option_selected_description">"لم تعيّن طريقة لإغلاق وضع الإستعداد المزيّف"</string>
     <string name="settings_category_others">"مزيدٌ من المعلومات"</string>
+    <string name="help_translate_title">"ساعد في ترجمة هذا التطبيق"</string>
+    <string name="help_translate_summary">"إذا لم يكن هذا التطبيق متاحًا حاليًا بلغتك الأم، فيمكنك المساعدة في ترجمته للسماح له بالانتشار حول العالم!"</string>
     <string name="app_name">"FakeStandby"</string>
+    <string name="visit_website_title">"زيارة الموقع الإلكتروني للمشروع"</string>
+    <string name="license_activity_title">"رخصة GNU العامة 3.0"</string>
+    <string name="license_title">"الترخيص"</string>
+    <string name="license_summary">"راجع معلومات الترخيص."</string>
+    <string name="view_source_title">"عرض الكود المصدري"</string>
+    <string name="view_source_summary">"تفضل بزيارة GitHub لرؤية جميع برمجيات المصدر."</string>
+    <string name="settings_show_notification_title">"قم دائمًا بإظهار إشعار لبدء وضع الاستعداد المزيف"</string>
+    <string name="settings_show_notification_summary">"استخدم هذا الخيار إذا كان جهازك لا يدعم ازرار الإعدادات السريعة المخصصة في لوحة التحكم الخاصة بهاتفك."</string>
+    <string name="setting_start_on_boot_title">"بدء وضع الاستعداد الوهمي عند إعادة تشغيل الهاتف"</string>
+    <string name="setting_start_on_boot_summary">"عند التمكين، سيبدأ وضع الاستعداد المزيف بمجرد بدء خدمة إمكانية الوصول. على سبيل المثال، بعد إعادة تشغيل الهاتف."</string>
+    <string name="notification_default_channel_name">"رئيسي"</string>
+    <string name="notification_default_channel_description">"القناة الرئيسية لإشعار التوافق"</string>
+    <string name="open_accessibility_settings_title">"افتح إعدادات إمكانية الوصول"</string>
+    <string name="open_accessibility_settings_description">"افتح إعدادات إمكانية الوصول بالجهاز لإدارة خدمة إمكانية الوصول لـ FakeStandby."</string>
+    <string name="settings_category_open_other">"افتح الإعدادات الأخرى"</string>
+    <string name="action_start_overlay">"ابدأ وضع FakeStandby"</string>
+    <string name="action_stop_overlay">"إيقاف وضع FakeStandby"</string>
+    <string name="setting_invert_overlay_color_title">"عكس اللون"</string>
+    <string name="setting_invert_overlay_color_summary">"قم بتمكين هذا الخيار إذا ظهر FakeStandby باللون الأبيض بسبب الوضع المظلم."</string>
 </resources>

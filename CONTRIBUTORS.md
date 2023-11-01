@@ -16,7 +16,7 @@
 ## POEditor (Translation)
 
 > Special thanks also goes to the great people helping with the translations!
-> The app is now already translated into 30 languages!
+> The app is now already translated into 31 languages!
 
  
 * 18439301296  
@@ -69,13 +69,13 @@
 * Ivars   
 * jimmy  
 * Juan  
-* Juan Vargas  
 * Kaan Kutan  
 * Katherine  
 * L  
 * Lau  
 * Lqwh2h2cwa  
 * Lucassuperti  
+* M-30  
 * MAAHIL566  
 * Maciej  
 * Maciej   
@@ -146,11 +146,9 @@
 * 染色体X_Y  
 * 江兆陽  
 * 煌上煌  
-* 王在祥  
 * 王无极  
 * 瑞杰  
 * 电音爱好者  
-* 祺杰呀  
 * 郑硕  
 * 鄭智元  
 * 陈上杰  

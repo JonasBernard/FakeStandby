@@ -1,0 +1,3 @@
+- لم يعد التطبيق يغلق درج التنقل لأنه تسبب في مشكلة في الأذونات على الأجهزة التي تعمل بنظام أندرويد 12 والإصدارات الأحدث.  [1]
+
+ المرجع: [1] https://developer.android.com/about/versions/12/behavior-changes-all#close-system-dialogs
