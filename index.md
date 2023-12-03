@@ -16,7 +16,6 @@ layout: main_page
   <input type="image" src="https://img.shields.io/badge/donate_via-paypal-yellow" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
   <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
 </form>
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JonasBernard" data-color="#3f7366" data-emoji="🍵" data-font="Lato" data-text="Buy me a tee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JonasBernard/FakeStandby&type=Date)](https://star-history.com/#JonasBernard/FakeStandby&Date)
 
@@ -91,3 +90,5 @@ You can read the whole license [here](license-text)
 
 I'm a student from Germany working on this project in
 my spare time. Read about me [here](https://jonasbernard.de).
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JonasBernard" data-color="#3f7366" data-emoji="🍵" data-font="Lato" data-text="Buy me a tee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
