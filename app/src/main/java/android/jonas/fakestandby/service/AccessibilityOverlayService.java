@@ -378,11 +378,12 @@ public class AccessibilityOverlayService extends AccessibilityService {
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
             // Close navigation drawer
-            // Intent closeIntent = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
-            // sendBroadcast(closeIntent);
-            // OR
-            // this.performGlobalAction(AccessibilityService.GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE);
-
+            if (Build.VERSION.SDK_INT >= 31) {
+                this.performGlobalAction(AccessibilityService.GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE);
+            } else {
+                Intent closeIntent = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+                sendBroadcast(closeIntent);
+            }
             // Add the view then show it
             addView();
             state = Constants.Overlay.State.SHOWING;
