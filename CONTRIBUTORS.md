@@ -37,7 +37,6 @@
 * Anon  
 * Antonio Silva  
 * Atiq kaled  
-* Ban ban  
 * Bayu  
 * Bennett  
 * bill  
@@ -147,7 +146,6 @@
 * 江兆陽  
 * 煌上煌  
 * 王无极  
-* 瑞杰  
 * 电音爱好者  
 * 郑硕  
 * 鄭智元  
