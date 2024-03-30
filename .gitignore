@@ -25,3 +25,5 @@ whatsnew/
 
 node_modules/
 .vscode/
+
+ci/.env

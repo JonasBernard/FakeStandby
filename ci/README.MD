@@ -1,3 +1,7 @@
+## How to run import_translations.js
+
+Just set the environment variable `POEDITOR_API_TOKEN` to a token to access POEditor and run `import_translations.js` with `node`.
+
 ## How to add new languages?
 
 1. Add the name of the language.
