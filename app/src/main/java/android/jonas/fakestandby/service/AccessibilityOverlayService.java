@@ -326,11 +326,11 @@ public class AccessibilityOverlayService extends AccessibilityService {
         // Check for the right state
         if (state == Constants.Overlay.State.INITIALIZED ||
                 state == Constants.Overlay.State.REMOVED) {
-            // Set dimensions to current width and height (these may change from time to time due to device rotation)
-            layoutParams.width = dm.widthPixels + 2 * pixelOffset;
-            layoutParams.height = dm.heightPixels + 2 * pixelOffset;
-
-
+            // Because device rotation crashed my code according to GH issues, I switched to just making the overlay "large enough".
+            int rectDim = Math.max(dm.widthPixels, dm.heightPixels);
+            layoutParams.width = rectDim + 2 * pixelOffset;
+            layoutParams.height = rectDim + 2 * pixelOffset;
+            
             // Set color of the overlay
             view.setInvertColor(this.getInvertOverlayColorPref());
 
