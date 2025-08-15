@@ -112,7 +112,7 @@ jobs:
     needs: build-apk
     steps:
     - name: Get artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ needs.build-apk.outputs.signedReleaseFileName }}
         path: ${{ needs.build-apk.outputs.signedReleaseFileDir }}
@@ -155,7 +155,7 @@ jobs:
       run: cd ci && node generate_whatsnew_files.js
     
     - name: Get artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ needs.build-aab.outputs.signedReleaseFileName }}
         path: ${{ needs.build-aab.outputs.signedReleaseFileDir }}
