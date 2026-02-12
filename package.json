@@ -5,7 +5,7 @@
   },
   "license" : "GPL-3.0",
   "dependencies": {
-    "@octokit/rest": "^18.2.0",
+    "@octokit/rest": "^22.0.1",
     "fs": "^0.0.1-security",
     "fs-extra": "^9.1.0",
     "node-poeditor": "^1.0.7",
